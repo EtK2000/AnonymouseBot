@@ -1,0 +1,968 @@
+# turn 1
+o 23 31 wwwwww
+# turn 2
+o 23 25 nnnwww
+# turn 3
+o 20 22 nnnnnw
+# turn 4
+o 15 21 s
+o 24 30 nwwww
+# turn 5
+o 16 21 e
+o 23 26 nwwww
+# turn 6
+o 16 22 s
+o 25 29 a1
+o 26 28 a1
+# turn 7
+o 17 22 e
+o 22 22 nnnnn
+# turn 8
+o 17 23 e
+o 17 22 www
+# turn 9
+o 17 24 s
+o 17 19 e
+o 26 28 nnww
+# turn 10
+o 18 24 e
+o 17 20 s
+The order: 'o 24 26 a0' was ignored # Attack ignored - pirate ship is reloading
+# turn 11
+o 18 25 s
+o 18 20 s
+The order: 'o 25 29 nwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 12
+o 19 25 s
+o 19 20 e
+o 25 29 nnnw
+# turn 13
+o 20 25 e
+o 19 21 e
+o 22 28 wwww
+# turn 14
+o 20 26 s
+o 19 22 e
+# turn 15
+o 21 26 s
+o 19 23 e
+o 22 24 nnnw
+# turn 16
+o 22 26 s
+o 19 24 s
+o 19 23 wwww
+# turn 17
+o 23 26 e
+o 20 24 e
+o 19 19 a0
+o 24 26 nnww
+# turn 18
+o 23 27 e
+o 19 19 nn
+# turn 19
+o 23 28 e
+o 17 19 s
+o 22 24 nwww
+# turn 20
+o 23 29 e
+o 18 19 e
+o 21 21 nnww
+# turn 21
+o 23 30 e
+o 18 20 e
+o 19 19 www
+# turn 22
+o 23 31 nnnwww
+# turn 23
+o 20 28 wwwwww
+# turn 24
+o 20 22 nnnnnn
+# turn 25
+o 14 22 nn
+# turn 26
+o 12 22 e
+o 18 21 e
+o 19 16 s
+# turn 27
+o 12 23 s
+o 18 22 s
+o 20 16 s
+# turn 28
+o 13 23 e
+o 19 22 e
+o 21 16 e
+# turn 29
+o 13 24 e
+The order: 'o 19 23 nwwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 30
+o 13 25 s
+The order: 'o 19 23 nnwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 31
+o 14 25 s
+The order: 'o 19 23 nnwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 32
+o 15 25 s
+The order: 'o 19 23 nnwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 33
+o 16 25 e
+The order: 'o 19 23 nnwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 34
+o 16 26 s
+The order: 'o 19 23 nnwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 35
+o 17 26 s
+The order: 'o 21 17 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 nwwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 36
+o 18 26 s
+The order: 'o 19 23 nwwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 37
+o 19 26 e
+The order: 'o 20 25 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 19 23 nwwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 38
+o 19 27 e
+o 20 25 nwwww
+# turn 39
+o 19 28 s
+o 19 21 nnww
+# turn 40
+o 20 28 s
+o 17 19 s
+The order: 'o 19 23 wwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 41
+o 21 28 e
+o 18 19 s
+The order: 'o 19 23 wwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 42
+o 21 29 e
+o 19 19 e
+The order: 'o 19 23 wwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 43
+o 21 30 s
+o 19 20 e
+The order: 'o 19 23 wwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 44
+o 22 30 s
+o 19 21 e
+The order: 'o 19 23 wwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 45
+o 23 30 e
+o 19 22 e
+The order: 'o 19 23 wwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 46
+o 23 31 a0
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 47
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 48
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 49
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 50
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 51
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 52
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 53
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+The order: 'o 21 17 a2' is invalid # The pirate is drunk - can't do anything
+# turn 54
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+The order: 'o 21 17 a2' is invalid # The pirate is drunk - can't do anything
+# turn 55
+o 21 17 a2
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 56
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 57
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 58
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 59
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 60
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 61
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 62
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 63
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 64
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 65
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 66
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 67
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 68
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 69
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 70
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 71
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 72
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 73
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 74
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 75
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 76
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 77
+o 23 31 a0
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 78
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 79
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 80
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 81
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 82
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 83
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 84
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 85
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 86
+o 21 17 a2
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 87
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 88
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 89
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 90
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 91
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 92
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 93
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 94
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 95
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 96
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 97
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 98
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 99
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 100
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 101
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 102
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 103
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 104
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 105
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 106
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 107
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 108
+o 23 31 a0
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 109
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 110
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 111
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 112
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 113
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 114
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 115
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 116
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 117
+o 21 17 a2
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 118
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 119
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 120
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 121
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 122
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 123
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 124
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 125
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 126
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 127
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 128
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 129
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 130
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 131
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 132
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 133
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 134
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 135
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 136
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 137
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 138
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 139
+o 23 31 a0
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 140
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 141
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 142
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 143
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 144
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 145
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 146
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 147
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 148
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 149
+o 21 17 a2
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 150
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 151
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 152
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 153
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 154
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 155
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 156
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 157
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 158
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 159
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 160
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 161
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 162
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 163
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 164
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 165
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 166
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 167
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 168
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 169
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 170
+o 23 31 a0
+The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 171
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 172
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 173
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 174
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 175
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 176
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 177
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 178
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 179
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 180
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 181
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 182
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 183
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 184
+o 21 17 a2
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 185
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 186
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 187
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 188
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 189
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 190
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 191
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 192
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 193
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 194
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 195
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 196
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 197
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 198
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 199
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 200
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 201
+o 23 31 a0
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 202
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 203
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 204
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 205
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 206
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 207
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 208
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 209
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 210
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 211
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 212
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 213
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 214
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 215
+o 21 17 a2
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 216
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 217
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 218
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 219
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 220
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 221
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 222
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 223
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 224
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 225
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 226
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 227
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 228
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 229
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 230
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 231
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 232
+o 23 31 a0
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 233
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 234
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 235
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 236
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 237
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 238
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 239
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 240
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 241
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 242
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 243
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 244
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 245
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 246
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 247
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 248
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 249
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 250
+o 21 17 a2
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 251
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 252
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 253
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 254
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 255
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 256
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 257
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 258
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 259
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 260
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 261
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 262
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 263
+o 23 31 a0
+The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 264
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 265
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 266
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 267
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 268
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 269
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 270
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 271
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 272
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 273
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 274
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 275
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 276
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 277
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 278
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 279
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 280
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 281
+o 21 17 a2
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 282
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 283
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 284
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 285
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 286
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 287
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 288
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 289
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 290
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 291
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 292
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 293
+The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 294
+o 23 31 a0
+The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 295
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 296
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 297
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 298
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 299
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 300
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
+# turn 301
+The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure

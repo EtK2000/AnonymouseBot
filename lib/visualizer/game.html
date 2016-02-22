@@ -1,0 +1,108 @@
+
+    <div class="container-fluid">
+        <button type="button" class="btn-debug"></button>
+
+        <div class="row">
+            <div class="score">
+                <div class="name">{{visualizer.state.replay.meta['playernames'][1]}}</div>
+                <div class="value" style="background-image: url(../visualizer/data/img/ScoreCircles/ScoreCircle_2.png);">
+                    {{visualizer.state.replay.scores[turn][1]}}
+                </div>
+                <div class="value" style="background-image: url(../visualizer/data/img/ScoreCircles/ScoreCircle_1.png);">
+                    {{visualizer.state.replay.scores[turn][0]}}
+                </div>
+                <div class="name">{{visualizer.state.replay.meta['playernames'][0]}}</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="avatar game-visible">
+                    <div class="image">
+                        <img src="../visualizer/data/img/Avatars/021_Avatar_owel_1.png" />
+                    </div>
+                    <div class="title">{{visualizer.state.replay.meta['playernames'][0]}} </div>
+                    <div class="progress">
+                        <div class="ball">{{visualizer.state.replay.scores[turn][0]}}</div>
+                        <div class="in" style="height: {{(visualizer.state.replay.scores[turn][0]*71 / maxpoints) + '%'}}; background-image: url(../visualizer/data/img/ScoreBars/ScoreBar_1.png);"><i></i></div>
+                    </div>
+                </div>
+                <div class="code pull-left debug-visible">
+                    <div ng-repeat="line in debugMessages[0][turn]" class="debug-line">
+                        <span class="debug-message debug-level{{line.level}}">{{line.message}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="board">
+                    <div class="water">
+                        <!--board-->
+                        <div class="canvas-wrapper">
+                            <div id="game-canvas"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="avatar game-visible">
+                    <div class="image">
+                        <img src="../visualizer/data/img/Avatars/021_Avatar_owel_2.png" />
+                    </div>
+                    <div class="title">{{ visualizer.state.replay.meta['playernames'][1]}} </div>
+                    <div class="progress">
+                        <div class="ball">{{visualizer.state.replay.scores[turn][1]}}</div>
+                        <div class="in" style="height: {{(visualizer.state.replay.scores[turn][1]*71 / maxpoints) + '%'}}; background-image: url(../visualizer/data/img/ScoreBars/ScoreBar_2.png)"><i></i></div>
+                    </div>
+                </div>
+                <div class="code pull-right debug-visible">
+                    <div ng-repeat="line in debugMessages[1][turn]" class="debug-line">
+                        <span class="debug-message debug-level{{line.level}}">{{line.message}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-center player">
+            <div class="col-md-2">
+                <div class="avatar debug-visible">
+                    <div class="image">
+                        <img src="../visualizer/data/img/Avatars/021_Avatar_owel_1.png" />
+                    </div>
+                    <div class="title">{{ visualizer.state.replay.meta['playernames'][0]}} </div>
+                    <div class="value left">{{visualizer.state.replay.scores[turn][0]}}</div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="text">Turn {{ turn }}/{{ visualizer.state.replay.duration }}</div>
+
+                <div class="btn-group" role="group">
+                    <div class="btn left"></div>
+                    <button type="button" class="btn first" ng-click="firstTurn()"></button>
+                    <button type="button" class="btn slower"  ng-click="speed(-1)"></button>
+                    <button type="button" class="btn prev" ng-click="prevTurn()"></button>
+
+                    <button type="button" class="btn play" ng-hide="playing"  ng-click="togglePlay()"></button>
+                    <button type="button" class="btn pause" ng-show="playing"  ng-click="togglePlay()"></button>
+
+                    <button type="button" class="btn next" ng-click="nextTurn()"></button>
+                    <button type="button" class="btn faster" ng-click="speed(1)"></button>
+                    <button type="button" class="btn last" ng-click="lastTurn()"></button>
+                    <div class="btn right"></div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="avatar debug-visible">
+                    <div class="image">
+                        <img src="../visualizer/data/img/Avatars/021_Avatar_owel_2.png" />
+                    </div>
+                    <div class="title">{{ visualizer.state.replay.meta['playernames'][1]}}</div>
+                    <div class="value right">{{visualizer.state.replay.scores[turn][1]}} </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../visualizer/lib/jquery-1.9.1.min.js"></script>
+    <script src="../visualizer/lib/bootstrap.min.js"></script>
+    <script src="../visualizer/lib/site.js"></script>

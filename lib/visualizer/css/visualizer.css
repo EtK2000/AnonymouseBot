@@ -1,0 +1,345 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin:0;
+    padding:0;
+    height: 100%;
+    font-size: 14px;
+}
+
+body {
+    margin:0;
+    padding:0;
+    height: 100%;
+    font-family: "Alef Hebrew",
+            "Helvetica Neue",
+            Helvetica,
+            Arial,
+            sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.top-bar {
+    text-align: center;
+    height: 130px;
+    width: 650px;
+    display: inline-block;
+}
+
+
+.game .debug-button {
+    margin-top: 15px;
+    margin-left: 50px;
+    position: absolute;
+    height: 48px;
+    width: 119px;
+}
+
+.top-bar .top-scores {
+    height: 100%;
+}
+
+.top-bar .top-scores .top-player-name {
+    position: relative;
+    display: inline-block;
+    height: 76px;
+    width: 150px;
+    vertical-align: middle;
+    text-align: center;
+    font: 26px "Alef Hebrew";
+    padding-top: 18px;
+    line-height: 22px;
+    text-shadow: 1px 2px black;
+}
+
+.top-bar .top-scores .top-player-name .top-player-name-text {
+    width: 100%;
+    word-wrap: break-word;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.top-bar .top-scores .top-player-score {
+    display: inline-block;
+    height: 85px;
+    width: 85px;
+    text-align: center;
+    vertical-align: top;
+    font: 45px "Alef Hebrew";
+    padding-top: 2px;
+    text-shadow: 1px 2px black;
+}
+
+.game {
+    height: 100%;
+    direction: ltr;
+}
+
+.game .content {
+    height: calc(100% - 60px - 130px);
+    text-align: center;
+}
+
+.game .content .ctrl-btn {
+    cursor: pointer;
+}
+
+.game .content .score-player {
+    display: inline-block;
+    width: 15%;
+    height: 100%;
+}
+
+.game .content .score-player .avatar {
+    height: 30%;
+}
+
+.game .content .score-player .player-name {
+    height: 5%;
+}
+
+.game .content .score-player .progress-bar {
+    height: 55%;
+}
+
+.game .content .score-player .player-score {
+    height: 10%;
+}
+
+.game .content .score-player .side-player-name .side-player-name-text{
+    display: inline-block;
+    height: 85px;
+    width: 85px;
+    text-align: center;
+    border: 1px solid green;
+    vertical-align: top;
+    font-size: 45px;
+    padding-top: 2px;
+}
+
+.game .content .score-player .side-player-name .side-player-name-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/*
+.canvas-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: inherit;
+
+    #game-canvas {
+        height: 80%;
+        width: 80%;
+        position: relative;
+        top: 60px;
+        left: -90px;
+    }
+*/
+.game .content .canvas-wrapper {
+    height: calc(100% - 130px);
+    width: 69%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.game .content .canvas-wrapper.smaller-canvas {
+    width: 49%;
+}
+
+.game .content .canvas-wrapper .toggle-log-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #7ca8b0;
+}
+/*
+#game-canvas {
+    height: 100%;
+    width: 100%;
+}
+*/
+.game .content .debug-info {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    vertical-align: top;
+    font: Alef
+    font-size: 10px;
+    text-align: left;
+    overflow: auto;
+    font-family: monospace;
+    background: #223140;
+}
+
+.game .content .debug-info .debug-line:nth-child(odd) {
+    background: #223140;
+}
+
+.game .content .debug-info .debug-line .debug-message.debug-level0 {
+    color: #AFD7FF;
+}
+
+.game .content .debug-info .debug-line .debug-message.debug-level1 {
+    color: orange;
+}
+
+.game .content .debug-info .debug-line .debug-message.debug-level2 {
+    color: red;
+}
+
+.bottom-bar .controls {
+    width: 69%;
+    display: inline-block;
+    text-align: center;
+    height: 60px;
+}
+
+.bottom-bar .controls .scores-bar {
+    height: 60px;
+    text-align: left;
+}
+
+.bottom-bar .controls .scores-bar .scores-line {
+    height: 30px;
+    padding: 0 10px;
+}
+
+.bottom-bar .controls .scores-bar .scores-line .bar {
+    display: inline-block;
+    border: 1px solid black;
+    height: 20px;
+    overflow: hidden;
+    width: calc(100% - 30px);
+}
+
+.bottom-bar .controls .scores-bar .scores-line .bar .filling {
+    height: 100%;
+    width: 0;
+}
+
+.bottom-bar .controls .scores-bar .scores-line .score {
+    display: inline-block;
+    width: 30px;
+    text-align: right;
+    font-size: 1.7em;
+    vertical-align: bottom;
+}
+
+.bottom-bar .controls .scores-bar .scores-line.player1 {
+    color: #E96E31;
+}
+
+.bottom-bar .controls .scores-bar .scores-line.player1 .bar {
+    border-color: #E96E31;
+}
+
+.bottom-bar .controls .scores-bar .scores-line.player1 .bar .filling {
+    background-color: #E96E31;
+}
+
+.bottom-bar .controls .scores-bar .scores-line.player2 {
+    color: #2E3192;
+}
+
+.bottom-bar .controls .scores-bar .scores-line.player2 .bar {
+    border-color: #2E3192;
+}
+
+.bottom-bar .controls .scores-bar .scores-line.player2 .bar .filling {
+    background-color: #2E3192;
+}
+
+.bottom-bar .player1 {
+    color: #E96E31;
+}
+
+.bottom-bar .player2 {
+    color: #2E3192;
+}
+
+.bottom-bar .player {
+    width: 15%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.bottom-bar .player .ship-image {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    height: 70px;
+    width: 70px;
+}
+
+.bottom-bar .player .ship-image img {
+    position: relative;
+    width: 210px;
+}
+
+.bottom-bar .player.player1 .ship-image img {
+    right: 70px;
+    top: -140px;
+}
+
+.bottom-bar .player .name {
+    font-size: 2em;
+    overflow: hidden;
+    max-height: 176px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bottom-bar .controls .game-controls {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.bottom-bar .controls .game-controls .ctrl-btn {
+    cursor: pointer;
+}
+
+.bottom-bar .controls .game-controls .ctrl-btn.speed {
+    margin: -4px;
+}
+
+.bottom-bar .controls .game-controls .ctrl-btn img {
+    height: 30px;
+}
+
+.bottom-bar .controls .game-controls .ctrl-btn:hover .normal {
+    display: none;
+}
+
+.bottom-bar .controls .game-controls .ctrl-btn .invert {
+    display: none;
+}
+
+.bottom-bar .controls .game-controls .ctrl-btn:hover .invert {
+    display: inline;
+}

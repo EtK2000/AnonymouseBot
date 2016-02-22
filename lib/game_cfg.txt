@@ -1,0 +1,12 @@
+[MainConfigs]
+turns: 1000                  ; Maximum turns in game
+attackradius2: 16            ; Square of the attack radius (so the radius is square root of the number)
+maxpoints: 10                ; The player who reaches this number of points is the winner
+actions_per_turn: 6          ; Number of actions that can be performed in a single turn
+reload_turns: 30             ; Number of turns that pirate can't do anything after attack
+spawn_turns: 1               ; Number of turns that takes pirate to appear in the game again after sinking
+sober_turns: 20              ; Number of turns that takes pirate to be available after being drunk
+defense_expiration_turns: 3  ; Number of turns that the pirate is protected from attacks after defense activation
+defense_reload_turns: 60      ; Number of turns that pirate can't do anything after defending
+treasure_spawn_turns: 2000   ; Number of turns for a treasure to respawn after successfully unloaded
+

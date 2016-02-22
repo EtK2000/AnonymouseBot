@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+-->
+    <title>Treasurez Game</title>
+
+    <link href="../visualizer/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../visualizer/css/site.css" rel="stylesheet">
+
+    <script type="json" id="replayData">
+        ## REPLAY PLACEHOLDER ##
+    </script>
+    <script>
+        window.local_run = true;
+        window.pirates_data_dir = '## PIRATES DATA DIR ##/';
+        window.replayData = document.getElementById('replayData').innerHTML;
+        window.color1 = '1';
+        window.color2 = '2';
+    </script>
+
+    <script src="## BASE JS PATH ##/Util.js"></script>
+    <script src="## BASE JS PATH ##/Pirate.js"></script>
+    <script src="## BASE JS PATH ##/Application.js"></script>
+    <script src="## BASE JS PATH ##/Config.js"></script>
+    <script src="## BASE JS PATH ##/Const.js"></script>
+    <script src="## BASE JS PATH ##/Director.js"></script>
+    <script src="## BASE JS PATH ##/ImageManager.js"></script>
+    <script src="## BASE JS PATH ##/Replay.js"></script>
+
+    <script src="## BASE JS PATH ##/canvas/CanvasElement.js"></script>
+    <script src="## BASE JS PATH ##/canvas/CanvasElementAbstractMap.js"></script>
+    <script src="## BASE JS PATH ##/canvas/CanvasElementMap.js"></script>
+    <script src="## BASE JS PATH ##/canvas/CanvasElementPiratesMap.js"></script>
+    <script src="## BASE JS PATH ##/canvas/CanvasElementFogPattern.js"></script>
+    <script src="## BASE JS PATH ##/canvas/CanvasElementFog.js"></script>
+    <script src="## BASE JS PATH ##/canvas/w.js"></script>
+    <script src="## BASE JS PATH ##/canvas/CanvasElementShiftedMap.js"></script>
+
+    <script src="## BASE JS PATH ##/lib/angular.min.js"></script>
+    <script src="## BASE JS PATH ##/controls.js"></script>
+
+</head>
+<body class="page_game game" ng-app="visualizerApp" ng-controller="VisualizerCtrl">
+## GAME TEMPLATE ##
+</body>
+</html>
