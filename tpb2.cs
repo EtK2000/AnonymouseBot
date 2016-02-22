@@ -8,7 +8,7 @@ namespace ExampleBot
 {
     public class MyBot : Pirates.IPirateBot
     {
-        System.Random rand = new System.Random();
+        System.Random rand = new System.Random(0);
         IPirateGame game;
         PirateSetting[] setting = new PirateSetting[4]
             {
@@ -31,10 +31,10 @@ namespace ExampleBot
                 StopEnemies();
                 ManagePlayZero();
             }
-            catch
+            catch (Exception e)
             {
+                game.Debug(e.ToString());
 
-                
             }
         }
         public void CheckBase()
@@ -42,14 +42,16 @@ namespace ExampleBot
             var arr = game.AllEnemyPirates().Where(item => game.Distance(item.Location, game.AllMyPirates()[2].InitialLocation) < 5).ToList();
             if (arr.Any())
             {
-                foreach (var item in game.MyPirates().Where(item2 => !item2.HasTreasure && game.Distance(item2.Location,arr[0].Location)<=6 && game.Distance(item2.Location,game.AllMyPirates()[2].InitialLocation) <5))
+                foreach (var item in game.MyPirates().Where(item2 => !item2.HasTreasure && game.Distance(item2.Location, arr[0].Location) <= 6 && game.Distance(item2.Location, game.AllMyPirates()[2].InitialLocation) < 5))
                 {
+
                     game.SetSail(item, arr[0].Location);
-                    if(arr.Count() > 0)
+                    if (arr.Count() > 0)
                         turns -= game.Distance(item.Location, arr[0].Location);
                     return;
                 }
             }
+
         }
         void StopEnemies()
         {
@@ -58,16 +60,16 @@ namespace ExampleBot
                     if (setting[ship.Id].Target > -1 && game.GetEnemyPirate(setting[ship.Id].Target).InitialLocation != ship.Location)
                         setting[ship.Id].Target = -1;
             foreach (var ship in game.AllMyPirates())
-                if(setting[ship.Id].Target>-1)
-                if (!game.AllEnemyPirates().First(item => item.Id == setting[ship.Id].Target).HasTreasure)
-                    setting[ship.Id].Target = -1;
+                if (setting[ship.Id].Target > -1)
+                    if (!game.AllEnemyPirates().First(item => item.Id == setting[ship.Id].Target).HasTreasure)
+                        setting[ship.Id].Target = -1;
             var targets = from item in game.EnemyPirates()
                           where item.HasTreasure && !setting.Any(set => set.Target == item.Id)
                           orderby EnemyTurnsToInitial(item)
                           select item;
             foreach (var enemy in targets)
             {
-                var closest = (from ship in game.MyPirates() 
+                var closest = (from ship in game.MyPirates()
                                where !ship.HasTreasure
                                orderby MyTurnsToIntercept(ship, enemy)
                                select ship).FirstOrDefault();
@@ -78,7 +80,7 @@ namespace ExampleBot
             foreach (var ship in game.MyPirates())
                 if (setting[ship.Id].Target > -1)
                     PlayToKill(ship, turns);
-            if(game.AllMyPirates().All(item => setting[item.Id].Target==-1))
+            if (game.AllMyPirates().All(item => setting[item.Id].Target == -1))
             {
                 var avPirates = from pirate in game.MyPirates()
                                 where !pirate.HasTreasure
@@ -138,16 +140,16 @@ namespace ExampleBot
             var free = from worker in game.MyPirates()
                        where setting[worker.Id].Target == -1 && !worker.HasTreasure
                        let closest = closestTreasure(game.Treasures(), worker)
-                       orderby game.Distance((closest == null? worker.Location : closest.Location), worker.Location)
+                       orderby game.Distance((closest == null ? worker.Location : closest.Location), worker.Location)
                        select worker;
-            
+
             foreach (var worker in has_treasure.Concat(free))
                 PlayZero(turns, worker.Id);
         }
 
         bool KillIfPossible(Pirate p)
         {
-            if (p.HasTreasure || p.ReloadTurns>0)
+            if (p.HasTreasure || p.ReloadTurns > 0)
                 return false;
             foreach (var enemy in game.EnemySoberPirates())
             {
@@ -156,7 +158,7 @@ namespace ExampleBot
                     game.Attack(p, enemy);
                     return true;
                 }
-                else if(game.InRange(p,enemy)&&game.Distance(game.AllMyPirates()[2].InitialLocation,enemy.Location)<6)
+                else if (game.InRange(p, enemy) && game.Distance(game.AllMyPirates()[2].InitialLocation, enemy.Location) < 6)
                 {
                     game.Attack(p, enemy);
                     return true;
@@ -197,8 +199,8 @@ namespace ExampleBot
         public Location tempDesWithoutTreasure(Pirate ship, Location des, int numOfSteps)
         {
             var arr = game.GetSailOptions(ship, des, numOfSteps).Where(
-                l => game.GetPirateOn(l) == null 
-                && game.Treasures().All(t =>t.Location.Row != l.Row || t.Location.Col != l.Col)).ToList();
+                l => game.GetPirateOn(l) == null
+                && game.Treasures().All(t => t.Location.Row != l.Row || t.Location.Col != l.Col)).ToList();
             return arr[rand.Next(0, arr.Count)];
         }
 
@@ -213,12 +215,12 @@ namespace ExampleBot
         {
             if (MyPirate.HasTreasure)
                 return -1;
-            return (int)((game.Distance(MyPirate.Location, EnemyPirate.InitialLocation)/(double)MyMoves)+0.999);
+            return (int)((game.Distance(MyPirate.Location, EnemyPirate.InitialLocation) / (double)MyMoves) + 0.999);
         }
 
         public bool ShouldMoveToIntercept(Pirate myPirate, Pirate enemy)
         {
-            if (MyTurnsToIntercept(myPirate, enemy)+ 1 == EnemyTurnsToInitial(enemy) )
+            if (MyTurnsToIntercept(myPirate, enemy) + 1 == EnemyTurnsToInitial(enemy))
                 return true;
             return false;
         }
@@ -233,6 +235,6 @@ namespace ExampleBot
             public bool IsDeployed;
             public int Target;
         }
-        }
-        
-        }
+    }
+
+}
