@@ -5,8 +5,74 @@ using Pirates;
 
 namespace ExampleBot
 {
+	internal class QueuedMotion
+	{
+		private static List<QueuedMotion> queued;
+
+		public static void init()
+		{
+			queued = new List<QueuedMotion>();
+		}
+
+		public static bool contains(Location l)
+		{
+			foreach (QueuedMotion qm in queued)
+			{
+				if (qm.L.Equals(l))
+					return true;
+			}
+			return false;
+		}
+
+		public static bool contains(Pirate p)
+		{
+			foreach (QueuedMotion qm in queued)
+			{
+				if (qm.P.Equals(p))
+					return true;
+			}
+			return false;
+		}
+
+		public static bool isOccupied(Location l, IPirateGame game)
+		{
+			if (contains(l))
+				return true;
+			else
+			{
+				foreach (Pirate p in game.AllMyPirates())
+				{
+					if (!contains(p) && p.TurnsToRevive == 0 && l.Equals(p.Location))
+						return true;
+				}
+			}
+			return false;
+		}
+
+		private Pirate p;
+		private Location l;
+
+		public Pirate P
+		{
+			get { return p; }
+		}
+
+		public Location L
+		{
+			get { return l; }
+		}
+
+		public QueuedMotion(Pirate p, Location l)
+		{
+			this.p = p;
+			this.l = l;
+			queued.Add(this);
+		}
+	}
+
 	public class MyBot : IPirateBot
 	{
+
 		private static bool kamikaze = true;
 		private static Treasure[] ts = new Treasure[4];
 
@@ -14,6 +80,7 @@ namespace ExampleBot
 		{
 			try
 			{
+				QueuedMotion.init();
 				int remaining = 6;
 
 				Pirate[] ps = new Pirate[4];
@@ -24,7 +91,10 @@ namespace ExampleBot
 					ps[i] = game.GetMyPirate(i);
 					ds[i] = int.MaxValue;
 					if (game.Treasures().Contains(ts[i]))
+					{
+						ds[i] = game.Distance(ps[i], ts[i]);
 						continue;
+					}
 					foreach (Treasure t in game.Treasures())
 					{
 						if (game.Distance(ps[i], t) < ds[i])
@@ -35,30 +105,6 @@ namespace ExampleBot
 					}
 				}
 
-
-				// sort the ds into the dss
-				{
-					bool add;
-					do
-					{
-						add = false;
-						int min = -1;
-						for (int i = 0; i < ds.Length; i++)
-						{
-							if (!dss.Contains(i))
-							{
-								if (min == -1 || ds[i] <= ds[min])
-								{
-									min = i;
-									add = true;
-								}
-							}
-						}
-						if (add)
-							dss.Add(min);
-					} while (add);
-				}
-
 				if (kamikaze || game.Treasures().Count == 0)
 				{
 					if (ps[0].InitialLocation.Equals(new Location(23, 1)))
@@ -66,7 +112,7 @@ namespace ExampleBot
 						if (!ps[0].HasTreasure)
 						{
 							ts[0] = new Treasure(19, new Location(24, 30));
-							ds[0] = 0;
+							//ds[0] = 0;
 							foreach (Pirate t in game.EnemyPirates())
 							{
 								if (t.Id == 2)
@@ -76,6 +122,7 @@ namespace ExampleBot
 									break;
 								}
 							}
+							ds[0] = game.Distance(ps[0], ts[0]) * 2;
 						}
 						if (!ps[1].HasTreasure)
 						{
@@ -101,7 +148,7 @@ namespace ExampleBot
 						if (!ps[0].HasTreasure)
 						{
 							ts[0] = new Treasure(19, new Location(24, 2));
-							ds[0] = 0;
+							//ds[0] = 0;
 							foreach (Pirate t in game.EnemyPirates())
 							{
 								if (t.Id == 2)
@@ -111,6 +158,7 @@ namespace ExampleBot
 									break;
 								}
 							}
+							ds[0] = game.Distance(ps[0], ts[0]) * 2;
 						}
 						if (!ps[1].HasTreasure)
 						{
@@ -133,12 +181,33 @@ namespace ExampleBot
 					}
 				}
 
+				// sort the ds into the dss
+				{
+					bool add;
+					do
+					{
+						add = false;
+						int min = -1;
+						for (int i = 0; i < ds.Length; i++)
+						{
+							if (!dss.Contains(i))
+							{
+								if (min == -1 || ds[i] <= ds[min])
+								{
+									min = i;
+									add = true;
+								}
+							}
+						}
+						if (add)
+							dss.Add(min);
+					} while (add);
+				}
 
 				List<Pirate> ltp = game.MyPiratesWithTreasures();
 				remaining -= ltp.Count;
 				foreach (Pirate p in ltp)
 					move(p, p.InitialLocation, 1, game);
-
 
 				Pirate k = null, tar = null;
 				if (game.Treasures().Count == 0 && game.EnemyPiratesWithTreasures().Count > 0)
@@ -159,10 +228,9 @@ namespace ExampleBot
 				for (int j = 0; j < 4; j++)
 				{
 					int i = dss[j];
-					if (!ps[i].HasTreasure)
+					if (ps[i].TurnsToSober == 0 && ps[i].TurnsToRevive == 0 && !ps[i].HasTreasure)
 					{
 						bool attacked = false;
-						if (ps[i].ReloadTurns == 0)
 						{
 							Pirate t = null;
 							foreach (Pirate e in game.EnemySoberPirates())
@@ -183,11 +251,14 @@ namespace ExampleBot
 							}
 							if (t != null)
 							{
-								game.Attack(ps[i], t);
+								if (!t.HasTreasure && ps[i].DefenseExpirationTurns == 0)
+									game.Defend(ps[i]);
+								else if (ps[i].ReloadTurns == 0)
+									game.Attack(ps[i], t);
 								attacked = true;
 							}
 						}
-						if (!attacked && ps[i].TurnsToSober == 0 && ps[i].TurnsToRevive == 0)
+						if (!attacked)
 						{
 							if ((game.Treasures().Count > 0 && move(ps[i], ts[i].Location, remaining, game) || (game.EnemyPiratesWithTreasures().Count > 0 && ps[i] == k && move(ps[i], tar.Location, remaining, game))))
 								remaining = 0;
@@ -205,11 +276,14 @@ namespace ExampleBot
 
 		private static bool move(Pirate p, Location t, int moves, IPirateGame game)
 		{
+			if (moves == 0)
+				return true;
 			foreach (Location l in game.GetSailOptions(p, t, moves))
 			{
-				if (!game.IsOccupied(l) || game.GetPirateOn(l).Owner != p.Owner)
+				if (!QueuedMotion.isOccupied(l, game) || (game.IsOccupied(l) && game.GetPirateOn(l).Owner != p.Owner))
 				{
 					game.SetSail(p, l);
+					new QueuedMotion(p, l);
 					return true;
 				}
 			}

@@ -1,1084 +1,352 @@
-turn   10 bot tpb ignored actions:
-The order: 'o 24 26 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   11 bot [tpb] invalid actions:
-The order: 'o 25 29 nwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   29 bot [tpb] invalid actions:
-The order: 'o 19 23 nwwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   30 bot [tpb] invalid actions:
-The order: 'o 19 23 nnwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   31 bot [tpb] invalid actions:
-The order: 'o 19 23 nnwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   32 bot [tpb] invalid actions:
-The order: 'o 19 23 nnwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   33 bot [tpb] invalid actions:
-The order: 'o 19 23 nnwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   34 bot [tpb] invalid actions:
-The order: 'o 19 23 nnwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   35 bot tpb ignored actions:
-The order: 'o 21 17 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   35 bot [tpb] invalid actions:
-The order: 'o 19 23 nwwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   36 bot [tpb] invalid actions:
-The order: 'o 19 23 nwwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   37 bot [tpb] invalid actions:
-The order: 'o 20 25 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 19 23 nwwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   40 bot [tpb] invalid actions:
-The order: 'o 19 23 wwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   41 bot [tpb] invalid actions:
-The order: 'o 19 23 wwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   42 bot [tpb] invalid actions:
-The order: 'o 19 23 wwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   43 bot [tpb] invalid actions:
-The order: 'o 19 23 wwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   44 bot [tpb] invalid actions:
-The order: 'o 19 23 wwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   45 bot [tpb] invalid actions:
-The order: 'o 19 23 wwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   46 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   47 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   47 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   48 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   48 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   49 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   49 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   50 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   50 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   51 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   51 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   52 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   52 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   53 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   53 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-The order: 'o 21 17 a2' is invalid # The pirate is drunk - can't do anything
-turn   54 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   54 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-The order: 'o 21 17 a2' is invalid # The pirate is drunk - can't do anything
-turn   55 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   55 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   56 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   56 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   57 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   57 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   58 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   58 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   59 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   59 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   60 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   60 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   61 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   61 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   62 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   62 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   63 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   63 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   64 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   64 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   65 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn   65 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   66 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn   66 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   67 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn   67 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   68 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn   68 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   69 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn   69 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   70 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn   70 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   71 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn   71 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   72 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   72 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   73 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   73 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   74 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   74 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   75 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   75 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   76 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
-turn   76 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   77 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   78 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   78 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   79 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   79 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   80 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   80 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   81 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   81 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   82 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   82 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   83 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   83 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   84 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
-turn   84 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   85 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
-turn   85 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   86 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   86 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   87 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   87 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   88 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   88 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   89 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   89 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   90 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   90 bot [tpb] invalid actions:
-The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   91 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   91 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   92 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   92 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   93 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   93 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   94 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   94 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   95 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   95 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   96 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn   96 bot [tpb] invalid actions:
-The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   97 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn   97 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   98 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn   98 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn   99 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn   99 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  100 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn  100 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  101 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  101 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  102 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  102 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  103 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  103 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  104 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  104 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  105 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  105 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  106 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  106 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  107 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
-turn  107 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  108 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  109 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  109 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  110 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  110 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  111 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  111 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  112 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  112 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  113 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  113 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  114 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
-turn  114 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  115 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
-turn  115 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  116 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
-turn  116 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  117 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  117 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  118 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  118 bot [tpb] invalid actions:
-The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  119 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  119 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  120 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  120 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  121 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  121 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  122 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  122 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  123 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  123 bot [tpb] invalid actions:
-The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  124 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  124 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  125 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  125 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  126 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  126 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  127 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  127 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  128 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  128 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  129 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  129 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  130 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  130 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  131 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  131 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  132 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  132 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  133 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  133 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  134 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  134 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  135 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  135 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  136 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  136 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  137 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  137 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  138 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
-turn  138 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  139 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  140 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  140 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  141 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  141 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  142 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  142 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  143 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  143 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  144 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  144 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  145 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  145 bot [tpb] invalid actions:
-The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  146 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  146 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  147 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  147 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  148 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  148 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  149 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  149 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  150 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  150 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  151 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  151 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  152 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  152 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  153 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  153 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  154 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  154 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  155 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  155 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  156 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  156 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  157 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  157 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  158 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  158 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  159 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  159 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  160 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  160 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  161 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  161 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  162 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  162 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  163 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  163 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  164 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  164 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  165 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  165 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  166 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  166 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  167 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  167 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  168 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  168 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  169 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  169 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  170 bot tpb ignored actions:
-The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
-turn  170 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  171 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  171 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  172 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  172 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  173 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  173 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  174 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  174 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  175 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  175 bot [tpb] invalid actions:
-The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  176 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  176 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  177 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  177 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  178 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  178 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  179 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  179 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  180 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  180 bot [tpb] invalid actions:
-The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  181 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  181 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  182 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  182 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  183 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  183 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  184 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  184 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  185 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  185 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  186 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  186 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  187 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  187 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  188 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  188 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  189 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  189 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  190 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  190 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  191 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  191 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  192 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  192 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  193 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  193 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  194 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  194 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  195 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  195 bot [tpb] invalid actions:
-The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  196 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  196 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  197 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  197 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  198 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  198 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  199 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  199 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  200 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  200 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  201 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  202 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  202 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  203 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  203 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  204 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  204 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  205 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
-turn  205 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  206 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  206 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  207 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  207 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  208 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  208 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  209 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  209 bot [tpb] invalid actions:
-The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  210 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  210 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  211 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  211 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  212 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  212 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  213 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  213 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  214 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  214 bot [tpb] invalid actions:
-The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  215 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  215 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  216 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  216 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  217 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  217 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  218 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  218 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  219 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  219 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  220 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  220 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  221 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  221 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  222 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  222 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  223 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  223 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  224 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  224 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  225 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  225 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  226 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  226 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  227 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  227 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  228 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  228 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  229 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  229 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  230 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  230 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  231 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  231 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  232 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  233 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  233 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  234 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  234 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  235 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  235 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  236 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
-turn  236 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  237 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn  237 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  238 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn  238 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  239 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn  239 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  240 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn  240 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  241 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn  241 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  242 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn  242 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  243 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn  243 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  244 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  244 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  245 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  245 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  246 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  246 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  247 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  247 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  248 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  248 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  249 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  249 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  250 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  250 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  251 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  251 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  252 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  252 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  253 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  253 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  254 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  254 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  255 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  255 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  256 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  256 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  257 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  257 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  258 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  258 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnn' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  259 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  259 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  260 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  260 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  261 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  261 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  262 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  262 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  263 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  264 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  264 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  265 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  265 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  266 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  266 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  267 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  267 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  268 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  268 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  269 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  269 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  270 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  270 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  271 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a2' was ignored # Attack ignored - pirate ship is reloading
-turn  271 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  272 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  272 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  273 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  273 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  274 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  274 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  275 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  275 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  276 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  276 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  277 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  277 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  278 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  278 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  279 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  279 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  280 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  280 bot [tpb] invalid actions:
-The order: 'o 19 23 swwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  281 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  281 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  282 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  282 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  283 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn  283 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  284 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn  284 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  285 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn  285 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  286 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn  286 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  287 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn  287 bot [tpb] invalid actions:
-The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  288 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn  288 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  289 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 21 17 a3' was ignored # Attack ignored - pirate ship is reloading
-turn  289 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  290 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  290 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  291 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  291 bot [tpb] invalid actions:
-The order: 'o 19 23 ennwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  292 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  292 bot [tpb] invalid actions:
-The order: 'o 19 23 ennnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  293 bot tpb ignored actions:
-The order: 'o 23 31 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  293 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  294 bot [tpb] invalid actions:
-The order: 'o 19 23 snnnnw' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  295 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  295 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  296 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  296 bot [tpb] invalid actions:
-The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  297 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  297 bot [tpb] invalid actions:
-The order: 'o 19 23 enwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  298 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  298 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  299 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  299 bot [tpb] invalid actions:
-The order: 'o 19 23 snwwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  300 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  300 bot [tpb] invalid actions:
-The order: 'o 19 23 snnwww' is invalid # Cannot move more than 1 step if carrying a treasure
-turn  301 bot tpb ignored actions:
-The order: 'o 23 31 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  301 bot [tpb] invalid actions:
-The order: 'o 19 23 ewwwww' is invalid # Cannot move more than 1 step if carrying a treasure
+turn   37 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   38 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   39 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   40 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   41 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   42 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   43 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   44 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   45 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   46 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   47 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   48 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   49 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   50 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   51 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   52 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   53 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   54 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   55 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   56 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   57 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   58 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   59 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   60 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   61 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   62 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   63 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   64 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   65 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   66 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   67 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   68 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   69 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   70 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   71 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   72 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   73 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   74 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   75 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   76 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   77 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   78 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   79 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   80 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   81 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   82 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   83 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   84 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   85 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   86 bot [tpb2] invalid actions:
+The order: 'o 23 20 a2' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   87 bot [tpb2] invalid actions:
+The order: 'o 23 20 a2' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   88 bot [tpb2] invalid actions:
+The order: 'o 23 20 a2' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   89 bot [tpb2] invalid actions:
+The order: 'o 23 20 a2' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   90 bot [tpb2] invalid actions:
+The order: 'o 23 20 a2' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   91 bot [tpb2] invalid actions:
+The order: 'o 23 20 a2' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   92 bot [tpb2] invalid actions:
+The order: 'o 23 20 a2' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   93 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   94 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   95 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   96 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   97 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   98 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn   99 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  100 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  101 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  102 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  103 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  104 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  105 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  106 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  107 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  108 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  109 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  110 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  111 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  112 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  113 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  114 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  115 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  116 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  117 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  118 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  119 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  120 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  121 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  122 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  123 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  124 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  125 bot [tpb2] invalid actions:
+The order: 'o 23 20 a2' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  126 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  127 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  128 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  129 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  130 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  131 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  132 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  133 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  134 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  135 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  136 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  137 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  138 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  139 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  140 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  141 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  142 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  143 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  144 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  145 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  146 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  147 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  148 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  149 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  150 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  151 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  152 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  153 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  154 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  155 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  156 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  157 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  158 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  159 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  160 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  161 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  162 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  163 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  164 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  165 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  166 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  167 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  168 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  169 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  170 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  171 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  172 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  173 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  174 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  175 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  176 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  177 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  178 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  179 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  180 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  181 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  182 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  183 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  184 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  185 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  186 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  187 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  188 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  189 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  190 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  191 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  192 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  193 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  194 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  195 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  196 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  197 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  198 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  199 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  200 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  201 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  202 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  203 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  204 bot [tpb2] invalid actions:
+The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  205 bot [tpb2] invalid actions:
+The order: 'o 25 26 neea0' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  206 bot [tpb2] invalid actions:
+The order: 'o 25 26 neeeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  207 bot [tpb2] invalid actions:
+The order: 'o 25 26 neeeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+turn  208 bot [tpb2] invalid actions:
+The order: 'o 25 26 neeeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn

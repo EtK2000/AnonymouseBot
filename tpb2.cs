@@ -8,7 +8,7 @@ namespace ExampleBot
 {
     public class MyBot : Pirates.IPirateBot
     {
-        System.Random rand = new System.Random(0);
+        System.Random rand = new System.Random();
         IPirateGame game;
         PirateSetting[] setting = new PirateSetting[4]
             {
