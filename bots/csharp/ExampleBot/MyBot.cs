@@ -9,8 +9,6 @@ namespace ExampleBot
 	{
 		private static bool kamikaze = true;
 		private static Treasure[] ts = new Treasure[4];
-		private static int maxKamiA = new Random().Next(300) + 200;
-		private static int maxKamiB = new Random().Next(200) + 300;
 
 		public void DoTurn(IPirateGame game)
 		{
