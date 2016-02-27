@@ -72,16 +72,15 @@ namespace ExampleBot
 
 	public class MyBot : IPirateBot
 	{
-
 		private static bool kamikaze = true;
 		private static Treasure[] ts = new Treasure[4];
 
 		public void DoTurn(IPirateGame game)
 		{
+			QueuedMotion.init();
+			int remaining = game.GetActionsPerTurn();
 			try
 			{
-				QueuedMotion.init();
-				int remaining = 6;
 
 				Pirate[] ps = new Pirate[4];
 				int[] ds = new int[4];
@@ -272,6 +271,7 @@ namespace ExampleBot
 				game.Debug(e.Message);
 				game.Debug(e.StackTrace);
 			}
+			game.Debug("turn " + game.GetTurn() + ": ran " + (game.GetActionsPerTurn() - remaining) + " motions");
 		}
 
 		private static bool move(Pirate p, Location t, int moves, IPirateGame game)
@@ -287,7 +287,7 @@ namespace ExampleBot
 					return true;
 				}
 			}
-			game.Debug("Failed to find a move for " + p.Id);
+			game.Debug("Failed to find a move for " + p.Id + " to " + t);
 			return false;
 		}
 	}

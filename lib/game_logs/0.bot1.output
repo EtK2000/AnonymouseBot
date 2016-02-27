@@ -1,528 +1,729 @@
 # turn 1
-o 23 31 nnnwww
+o 23 31 nnnnnw
 # turn 2
-o 20 28 wwwwww
+o 18 30 nwwwww
 # turn 3
-o 20 22 nnnnnw
+o 17 25 nnwwww
 # turn 4
-o 15 21 s
-o 24 30 nnnnn
+o 15 21 e
+o 24 30 nnwww
 # turn 5
-o 16 21 s
-o 19 30 w
-o 25 29 wwww
+o 15 22 s
+o 22 27 a1
+o 25 29 a1
 o 26 28 a1
 # turn 6
-o 17 21 s
-o 19 29 n
-o 26 28 nwww
+o 16 22 e
+The order: 'o 22 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 29 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
 # turn 7
-o 18 21 s
-o 18 29 nwwww
+o 16 23 s
+o 22 27 nnwww
 # turn 8
-o 19 21 e
-o 17 25 wwwww
+o 17 23 e
+o 20 24 wwwww
 # turn 9
-o 19 22 s
-o 17 20 w
+o 17 24 s
+o 20 19 nnn
 # turn 10
-o 20 22 e
-o 17 19 s
-o 25 25 nnww
+o 18 24 e
+o 17 19 e
+o 25 29 nnnn
 # turn 11
-o 20 23 s
-o 18 19 e
-o 25 29 wwww
+o 18 25 s
+o 17 20 s
+o 21 29 nwww
 # turn 12
-o 21 23 e
+o 19 25 e
 o 18 20 e
-o 23 23 nnww
+o 20 26 nwww
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
 # turn 13
-o 21 24 s
-o 18 21 s
-o 21 21 nwww
+o 19 26 s
+o 18 21 e
+o 19 23 wwww
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
 # turn 14
-o 22 24 e
-o 19 21 s
-o 20 18 nww
-# turn 15
-o 22 25 s
-o 20 21 e
-o 19 16 s
-# turn 16
-o 23 25 e
-o 20 22 s
-o 20 16 e
-# turn 17
-o 23 26 e
-o 21 22 s
-o 20 17 e
-# turn 18
-o 23 27 e
-o 22 22 e
-o 25 29 www
-o 20 18 e
-# turn 19
-o 23 28 e
-o 22 23 e
-o 20 19 s
-# turn 20
-o 23 29 e
-o 22 24 e
-o 21 19 s
-# turn 21
-o 23 30 e
-o 22 25 s
-o 22 19 e
-# turn 22
-o 23 31 wwww
-o 23 25 e
-o 22 20 e
-# turn 23
-o 23 27 nnww
-o 23 26 s
-o 22 21 s
-# turn 24
-o 21 25 ssssww
-# turn 25
-o 25 23 swwwww
-# turn 26
-o 26 18 wwwwww
-# turn 27
-o 26 12 wwwwww
-# turn 28
-o 24 26 e
-# turn 29
-o 23 31 sswwww
-# turn 30
-o 24 27 e
-o 25 29 ww
-# turn 31
-o 23 31 wwwww
-o 24 28 e
-# turn 32
-o 23 26 nnnnw
-o 24 29 e
-# turn 33
-o 19 25 wwwwww
-# turn 34
+o 20 26 s
+o 18 22 e
 o 19 19 www
-# turn 35
-o 25 27 wwwwww
-# turn 36
-o 24 30 swwww
-o 25 21 w
-# turn 37
-o 25 20 www
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 38
-o 25 17 www
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 39
-o 25 14 www
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 40
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+# turn 15
+o 21 26 e
+o 18 23 e
 o 19 16 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 41
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+# turn 16
+o 21 27 e
+o 18 24 s
 o 19 17 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 42
-o 19 18 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 43
-o 19 19 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 44
-o 20 19 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 45
-o 21 19 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 46
-o 22 19 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 47
-o 22 20 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 48
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 49
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 50
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 51
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 52
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 53
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 54
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 55
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 56
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 57
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 58
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 59
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 60
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 61
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 62
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 63
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 64
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 65
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 66
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 67
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 68
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 69
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 70
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 71
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 72
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 73
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 74
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 75
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 76
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 77
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 78
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 79
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 80
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 81
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 82
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 83
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 84
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 85
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 86
-The order: 'o 23 20 a2' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 87
-The order: 'o 23 20 a2' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 88
-The order: 'o 23 20 a2' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 89
-The order: 'o 23 20 a2' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 90
-The order: 'o 23 20 a2' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 91
-The order: 'o 23 20 a2' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 92
-The order: 'o 23 20 a2' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 93
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 94
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 95
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 96
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 97
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 98
-o 23 20 www
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 99
-o 23 17 nnn
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 100
-o 20 17 nw
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 101
-o 19 16 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 102
-o 20 16 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 103
-o 21 16 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 104
-o 21 17 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 105
-o 22 17 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 106
-o 23 17 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 107
-o 23 18 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 108
-o 23 19 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 109
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 110
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 111
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 112
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 113
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 114
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 115
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 116
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 117
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 118
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 119
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 120
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 121
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 122
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 123
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 124
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 125
-The order: 'o 23 20 a2' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 126
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 127
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 128
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 129
-o 23 20 nww
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 130
-o 22 18 nnw
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 131
-o 20 17 nw
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 132
-o 19 16 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 133
-o 19 17 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 134
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+# turn 17
+o 21 28 s
+o 19 24 s
 o 19 18 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 135
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+# turn 18
+o 22 28 e
+o 20 24 e
 o 20 18 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 136
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+# turn 19
+o 20 25 e
 o 21 18 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 137
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+# turn 20
+o 20 26 e
+o 22 18 s
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+# turn 21
+o 20 27 e
+o 23 18 s
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+# turn 22
+o 20 28 e
+o 24 18 e
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+# turn 23
+o 20 29 e
+o 24 19 s
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+# turn 24
+o 20 30 s
+o 25 19 e
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+# turn 25
+o 21 30 s
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 a0' is invalid # The pirate is drunk - can't do anything
+# turn 26
+o 22 30 s
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 27
+o 23 30 s
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 28
+The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 29
+The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 30
+The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 31
+The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 32
+The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 a0' is invalid # You tried to move a pirate but dont have one at this location
+# turn 33
+The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 a0' is invalid # You tried to move a pirate but dont have one at this location
+# turn 34
+The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 a0' is invalid # You tried to move a pirate but dont have one at this location
+# turn 35
+The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 a0' is invalid # You tried to move a pirate but dont have one at this location
+# turn 36
+o 24 30 a1
+o 26 28 a1
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 a0' is invalid # You tried to move a pirate but dont have one at this location
+# turn 37
+The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 26 28 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 38
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 30 a1' is invalid # You tried to move a pirate but dont have one at this location
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 39
+o 22 29 a1
+o 24 30 a1
+The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 40
+o 22 29 nnnnnn
+# turn 41
+o 16 29 wwwwww
+# turn 42
+o 16 23 nww
+# turn 43
+o 15 21 e
+o 24 30 nnnww
+# turn 44
+o 15 22 e
+o 21 28 nwwww
+# turn 45
+o 15 23 s
+o 20 24 wwwww
+# turn 46
+o 16 23 s
+o 20 19 nwww
+# turn 47
+o 17 23 s
+o 19 16 s
+The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 48
+o 18 23 s
+o 20 16 e
+o 26 28 nnnw
+The order: 'o 25 20 a0' is invalid # You tried to move a pirate but dont have one at this location
+# turn 49
+o 19 23 s
+o 20 17 s
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 50
+o 20 23 s
+o 21 17 e
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 51
+o 21 23 e
+o 21 18 s
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 52
+o 21 24 s
 o 22 18 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 138
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 53
+o 22 24 s
 o 22 19 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 139
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 54
+o 23 24 e
 o 22 20 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 140
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 141
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 142
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 143
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 144
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 145
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 146
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 147
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 148
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 149
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 150
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 151
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 152
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 153
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 154
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 155
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 156
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 157
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 158
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 159
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 160
-o 23 20 nww
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 161
-o 22 18 a2
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 162
-o 22 18 nnw
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 163
-o 20 17 nw
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 164
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 55
+o 23 25 e
+o 23 20 s
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 56
+o 24 20 e
+The order: 'o 25 20 nnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 57
+o 24 21 e
+The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 58
+o 24 22 e
+The order: 'o 25 20 nnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 59
+o 24 23 e
+The order: 'o 25 20 nnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 60
+o 24 24 e
+The order: 'o 25 20 nnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 61
+o 24 25 e
+The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 62
+o 24 26 e
+The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnne' is invalid # You tried to move a pirate but dont have one at this location
+# turn 63
+The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 64
+The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 65
+The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 66
+The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 67
+o 23 27 a0
+The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 68
+The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 69
+The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 70
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 71
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 72
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 73
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 74
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 75
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 76
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 77
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 78
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 79
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 80
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 81
+o 23 26 a1
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 a2' is invalid # You tried to move a pirate but dont have one at this location
+# turn 82
+o 23 26 nnnnww
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 a2' is invalid # You tried to move a pirate but dont have one at this location
+# turn 83
+o 19 24 nnnnww
+o 24 27 a0
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 a2' is invalid # You tried to move a pirate but dont have one at this location
+# turn 84
+o 15 22 w
+The order: 'o 25 20 a2' is invalid # You tried to move a pirate but dont have one at this location
+# turn 85
+o 15 21 e
+o 24 27 nnnnw
+The order: 'o 25 20 a2' is invalid # You tried to move a pirate but dont have one at this location
+# turn 86
+o 15 22 s
+o 20 26 nwwww
+The order: 'o 25 20 a2' is invalid # You tried to move a pirate but dont have one at this location
+# turn 87
+o 16 22 s
+o 19 22 wwwww
+# turn 88
+o 17 22 s
+o 19 17 w
+# turn 89
+o 18 22 s
 o 19 16 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 165
-o 19 17 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 166
-o 20 17 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 167
+The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
+# turn 90
+o 19 22 e
+o 19 17 e
+The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 91
+o 19 23 e
+o 19 18 s
+The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
+# turn 92
+o 19 24 e
 o 20 18 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 168
+The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
+# turn 93
+o 19 25 e
 o 21 18 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 169
+The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
+# turn 94
+o 19 26 e
 o 22 18 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
+# turn 95
+o 19 27 s
+o 22 19 s
+The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
+# turn 96
+o 20 27 s
+o 23 19 s
+The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 97
+o 21 27 s
+o 24 19 e
+The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
+# turn 98
+o 24 20 e
+The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
+# turn 99
+o 22 27 e
+o 24 21 e
+The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
+# turn 100
+o 22 28 e
+o 24 22 e
+The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
+# turn 101
+o 22 29 e
+o 24 23 e
+The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
+# turn 102
+o 22 30 s
+o 24 24 e
+o 23 27 a1
+The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 103
+o 24 25 e
+The order: 'o 25 20 nnnne' is invalid # You tried to move a pirate but dont have one at this location
+# turn 104
+o 24 26 e
+The order: 'o 23 30 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 105
+The order: 'o 23 30 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 106
+The order: 'o 23 30 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 107
+The order: 'o 23 30 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 108
+The order: 'o 23 30 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 109
+The order: 'o 23 30 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 110
+The order: 'o 23 30 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 111
+The order: 'o 23 30 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 112
+The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 113
+The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 114
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 115
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 116
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 117
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 118
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 119
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 120
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 a2' is invalid # You tried to move a pirate but dont have one at this location
+# turn 121
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 122
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 123
+o 23 30 a0
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 124
+The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 125
+o 24 27 a1
+The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 126
+The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 127
+The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 128
+The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 129
+The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 130
+The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 131
+The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 132
+The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 133
+o 23 27 a1
+The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 24 27 a1' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 134
+o 23 30 nwwwww
+# turn 135
+o 22 25 nnnwww
+# turn 136
+o 19 22 nnnnw
+# turn 137
+o 15 21 s
+o 24 27 wwwww
+# turn 138
+o 16 21 s
+o 24 22 wwwww
+# turn 139
+o 17 21 s
+o 24 17 nnnnw
+# turn 140
+o 18 21 e
+o 20 16 n
+# turn 141
+o 18 22 s
+o 19 16 s
+The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
+# turn 142
+o 19 22 e
+o 20 16 s
+The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 143
+o 19 23 s
+o 21 16 e
+The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 144
+o 20 23 e
+o 21 17 e
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
+# turn 145
+o 20 24 e
+o 21 18 e
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
+# turn 146
+o 20 25 s
+o 21 19 e
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 147
+o 21 25 e
+o 21 20 e
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
+# turn 148
+o 21 26 s
+o 21 21 e
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 149
+o 22 26 s
+o 21 22 e
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
+# turn 150
+o 21 23 s
+The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
+# turn 151
+o 22 23 s
+The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
+# turn 152
+o 23 23 s
+The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 153
+o 24 23 e
+The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
+# turn 154
+o 24 24 e
+The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
+# turn 155
+o 24 25 e
+The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 156
+o 24 26 e
+The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
+# turn 157
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 158
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 a2' is invalid # You tried to move a pirate but dont have one at this location
+# turn 159
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nwwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 160
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnn' is invalid # You tried to move a pirate but dont have one at this location
+# turn 161
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 162
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 163
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 164
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 165
+o 23 27 a0
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 166
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
+# turn 167
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnwww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 168
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+# turn 169
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
 # turn 170
-o 22 19 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 171
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 172
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 173
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 174
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 175
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 176
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 177
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 178
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 179
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 180
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 181
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 182
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 183
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 184
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 185
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 186
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 187
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 188
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 189
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 190
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 191
-o 22 20 nne
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 192
-o 20 21 nnn
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 193
-o 17 21 nne
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 194
-o 15 22 nnn
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 195
-o 12 22 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 196
-o 12 23 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 197
-o 13 23 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 198
-o 13 24 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 199
-o 13 25 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 200
-o 13 26 s
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 201
-o 14 26 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 202
-o 14 27 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 203
-o 14 28 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 204
-o 14 29 e
-The order: 'o 25 26 eeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 205
-o 14 30 e
-The order: 'o 25 26 neea0' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 206
-o 14 31 s
-The order: 'o 25 26 neeeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 207
-o 15 31 s
-The order: 'o 25 26 neeeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
-# turn 208
-o 16 31 s
-The order: 'o 25 26 neeeea1' is invalid # Attacking ship cannot defend, move or attack more than once in the same turn
+The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
+The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
