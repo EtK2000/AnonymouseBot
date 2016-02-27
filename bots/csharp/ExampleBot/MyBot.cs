@@ -5,6 +5,8 @@ using Pirates;
 
 namespace ExampleBot
 {
+	// this class allows for assumption of this turns moves
+	// and allows for motion based off of them
 	internal class QueuedMotion
 	{
 		private static List<QueuedMotion> queued;
@@ -70,11 +72,15 @@ namespace ExampleBot
 		}
 	}
 
+	// this is the actual AI
 	public class MyBot : IPirateBot
 	{
+		// should we kamikaze?
 		private static bool kamikaze = true;
+		// index the targets for each of our Pirates
 		private static Treasure[] ts = new Treasure[4];
 
+		// this is the actual turn
 		public void DoTurn(IPirateGame game)
 		{
 			QueuedMotion.init();
@@ -274,6 +280,8 @@ namespace ExampleBot
 			game.Debug("turn " + game.GetTurn() + ": ran " + (game.GetActionsPerTurn() - remaining) + " motions");
 		}
 
+		// can we move the given Pirate to the given Location according to the number of moves?
+		// if so --> move it!
 		private static bool move(Pirate p, Location t, int moves, IPirateGame game)
 		{
 			if (moves == 0)
