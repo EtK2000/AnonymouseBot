@@ -1,611 +1,228 @@
-turn    6 bot tpb ignored actions:
-The order: 'o 22 27 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 25 29 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   12 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   13 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   14 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   15 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   16 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   17 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   18 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   19 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   19 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-turn   20 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   20 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-turn   21 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   21 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-turn   22 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   22 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-turn   23 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   23 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-turn   24 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   24 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-turn   25 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   25 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 a0' is invalid # The pirate is drunk - can't do anything
-turn   26 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   26 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn   27 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   27 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn   28 bot tpb ignored actions:
-The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   28 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   29 bot tpb ignored actions:
-The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   29 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn   30 bot tpb ignored actions:
-The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   30 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn   31 bot tpb ignored actions:
-The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   31 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn   32 bot tpb ignored actions:
-The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   32 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 a0' is invalid # You tried to move a pirate but dont have one at this location
-turn   33 bot tpb ignored actions:
-The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   33 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 a0' is invalid # You tried to move a pirate but dont have one at this location
-turn   34 bot tpb ignored actions:
-The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   34 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 a0' is invalid # You tried to move a pirate but dont have one at this location
-turn   35 bot tpb ignored actions:
-The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   35 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 a0' is invalid # You tried to move a pirate but dont have one at this location
-turn   36 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 a0' is invalid # You tried to move a pirate but dont have one at this location
-turn   37 bot tpb ignored actions:
-The order: 'o 24 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 26 28 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   37 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   38 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   38 bot [tpb] invalid actions:
-The order: 'o 22 29 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 30 a1' is invalid # You tried to move a pirate but dont have one at this location
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn   39 bot tpb ignored actions:
-The order: 'o 26 28 a1' was ignored # Attack ignored - pirate ship is reloading
-turn   39 bot [tpb] invalid actions:
-The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   47 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn   48 bot [tpb] invalid actions:
-The order: 'o 25 20 a0' is invalid # You tried to move a pirate but dont have one at this location
-turn   49 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   49 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn   50 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   50 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn   51 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   51 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn   52 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   52 bot [tpb] invalid actions:
-The order: 'o 25 20 nnww' is invalid # You tried to move a pirate but dont have one at this location
-turn   53 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   53 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn   54 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   54 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn   55 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   55 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn   56 bot [tpb] invalid actions:
-The order: 'o 25 20 nnww' is invalid # You tried to move a pirate but dont have one at this location
-turn   57 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn   58 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn   59 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn   60 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn   61 bot tpb ignored actions:
-The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   61 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn   62 bot tpb ignored actions:
-The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   62 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnne' is invalid # You tried to move a pirate but dont have one at this location
-turn   63 bot tpb ignored actions:
-The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   63 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn   64 bot tpb ignored actions:
-The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   64 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn   65 bot tpb ignored actions:
-The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   65 bot [tpb] invalid actions:
-The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   66 bot tpb ignored actions:
-The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   66 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn   67 bot tpb ignored actions:
-The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   67 bot [tpb] invalid actions:
-The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   68 bot tpb ignored actions:
-The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   68 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn   69 bot tpb ignored actions:
-The order: 'o 23 26 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   69 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn   70 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   70 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+turn    1 bot [FarBotV2] invalid actions:
+The order: 'o 23 31 -' is invalid # invalid directions
+The order: 'o 24 30 -' is invalid # invalid directions
+The order: 'o 25 29 -' is invalid # invalid directions
+turn    2 bot [FarBotV2] invalid actions:
+The order: 'o 23 31 -' is invalid # invalid directions
+The order: 'o 24 30 -' is invalid # invalid directions
+The order: 'o 25 29 -' is invalid # invalid directions
+turn    3 bot [FarBotV2] invalid actions:
+The order: 'o 23 31 -' is invalid # invalid directions
+The order: 'o 24 30 -' is invalid # invalid directions
+The order: 'o 25 29 -' is invalid # invalid directions
+turn    4 bot [FarBotV2] invalid actions:
+The order: 'o 23 31 -' is invalid # invalid directions
+The order: 'o 24 30 -' is invalid # invalid directions
+The order: 'o 25 29 -' is invalid # invalid directions
+turn    5 bot [FarBotV2] invalid actions:
+The order: 'o 23 31 -' is invalid # invalid directions
+The order: 'o 24 30 -' is invalid # invalid directions
+turn    6 bot [FarBotV2] invalid actions:
+The order: 'o 23 31 -' is invalid # invalid directions
+The order: 'o 24 30 -' is invalid # invalid directions
+turn    8 bot [FarBotV2] invalid actions:
+The order: 'o 24 30 -' is invalid # invalid directions
+turn    9 bot [FarBotV2] invalid actions:
+The order: 'o 24 30 -' is invalid # invalid directions
+turn   10 bot [FarBotV2] invalid actions:
+The order: 'o 24 30 -' is invalid # invalid directions
+turn   11 bot [FarBotV2] invalid actions:
+The order: 'o 24 30 -' is invalid # invalid directions
+turn   12 bot [FarBotV2] invalid actions:
+The order: 'o 24 30 -' is invalid # invalid directions
+turn   24 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 nnnn' is invalid # You tried to move a pirate but dont have one at this location
+turn   37 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn   38 bot [FarBotV2] invalid actions:
+The order: 'o 16 11 a2' is invalid # The pirate is drunk - can't do anything
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn   39 bot [FarBotV2] invalid actions:
+The order: 'o 16 11 a2' is invalid # The pirate is drunk - can't do anything
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn   40 bot [FarBotV2] invalid actions:
+The order: 'o 16 11 a2' is invalid # The pirate is drunk - can't do anything
+turn   41 bot [FarBotV2] invalid actions:
+The order: 'o 16 11 a2' is invalid # The pirate is drunk - can't do anything
+turn   42 bot [FarBotV2] invalid actions:
+The order: 'o 16 11 a2' is invalid # The pirate is drunk - can't do anything
+turn   54 bot [FarBotV2] invalid actions:
+The order: 'o 16 11 a3' is invalid # The pirate is drunk - can't do anything
+turn   59 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn   60 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn   61 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn   62 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn   63 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn   64 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn   65 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn   66 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn   67 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn   68 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn   69 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn   70 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn   71 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn   72 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn   73 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn   74 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
 The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn   71 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   71 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+turn   75 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
 The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   72 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   72 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+turn   76 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
 The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn   73 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   73 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+turn   77 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
 The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn   74 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   74 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+turn   78 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
 The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn   75 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   75 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
+turn   79 bot [FarBotV2] invalid actions:
 The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn   76 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   76 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn   77 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   77 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn   78 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   78 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn   79 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   79 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn   80 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   80 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnwww' is invalid # You tried to move a pirate but dont have one at this location
-turn   81 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   81 bot [tpb] invalid actions:
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 a2' is invalid # You tried to move a pirate but dont have one at this location
-turn   82 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   82 bot [tpb] invalid actions:
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 a2' is invalid # You tried to move a pirate but dont have one at this location
-turn   83 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn   83 bot [tpb] invalid actions:
-The order: 'o 25 20 a2' is invalid # You tried to move a pirate but dont have one at this location
-turn   84 bot [tpb] invalid actions:
-The order: 'o 25 20 a2' is invalid # You tried to move a pirate but dont have one at this location
-turn   85 bot [tpb] invalid actions:
-The order: 'o 25 20 a2' is invalid # You tried to move a pirate but dont have one at this location
-turn   86 bot [tpb] invalid actions:
-The order: 'o 25 20 a2' is invalid # You tried to move a pirate but dont have one at this location
-turn   89 bot [tpb] invalid actions:
-The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
-turn   90 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn   91 bot [tpb] invalid actions:
-The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
-turn   92 bot [tpb] invalid actions:
-The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
-turn   93 bot [tpb] invalid actions:
-The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
-turn   94 bot [tpb] invalid actions:
-The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
-turn   95 bot [tpb] invalid actions:
-The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
-turn   96 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn   97 bot [tpb] invalid actions:
-The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
-turn   98 bot [tpb] invalid actions:
-The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
-turn   99 bot [tpb] invalid actions:
-The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
-turn  100 bot [tpb] invalid actions:
-The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
-turn  101 bot [tpb] invalid actions:
-The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
-turn  102 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  103 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnne' is invalid # You tried to move a pirate but dont have one at this location
-turn  104 bot tpb ignored actions:
-The order: 'o 23 30 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  104 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  105 bot tpb ignored actions:
-The order: 'o 23 30 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  105 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn  106 bot tpb ignored actions:
-The order: 'o 23 30 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  106 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn  107 bot tpb ignored actions:
-The order: 'o 23 30 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  107 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnwww' is invalid # You tried to move a pirate but dont have one at this location
-turn  108 bot tpb ignored actions:
-The order: 'o 23 30 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  108 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  109 bot tpb ignored actions:
-The order: 'o 23 30 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  109 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn  110 bot tpb ignored actions:
-The order: 'o 23 30 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  110 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn  111 bot tpb ignored actions:
-The order: 'o 23 30 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  111 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  112 bot tpb ignored actions:
-The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  112 bot [tpb] invalid actions:
-The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
-turn  113 bot tpb ignored actions:
-The order: 'o 24 27 a0' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  113 bot [tpb] invalid actions:
-The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
-turn  114 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  114 bot [tpb] invalid actions:
-The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  115 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  115 bot [tpb] invalid actions:
-The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn  116 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  116 bot [tpb] invalid actions:
-The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn  117 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  117 bot [tpb] invalid actions:
-The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn  118 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  118 bot [tpb] invalid actions:
-The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn  119 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  119 bot [tpb] invalid actions:
-The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn  120 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  120 bot [tpb] invalid actions:
-The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 a2' is invalid # You tried to move a pirate but dont have one at this location
-turn  121 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  121 bot [tpb] invalid actions:
-The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn  122 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  122 bot [tpb] invalid actions:
-The order: 'o 23 30 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn  123 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  123 bot [tpb] invalid actions:
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  124 bot tpb ignored actions:
-The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  124 bot [tpb] invalid actions:
+turn   80 bot [FarBotV2] invalid actions:
 The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn  125 bot tpb ignored actions:
-The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  125 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  126 bot tpb ignored actions:
-The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  126 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn  127 bot tpb ignored actions:
-The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  127 bot [tpb] invalid actions:
-The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
-turn  128 bot tpb ignored actions:
-The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  128 bot [tpb] invalid actions:
-The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
-turn  129 bot tpb ignored actions:
-The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  129 bot [tpb] invalid actions:
-The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
-turn  130 bot tpb ignored actions:
-The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  130 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  131 bot tpb ignored actions:
-The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  131 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn  132 bot tpb ignored actions:
-The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 23 27 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  132 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn  133 bot tpb ignored actions:
-The order: 'o 23 30 a1' was ignored # Attack ignored - pirate ship is reloading
-The order: 'o 24 27 a1' was ignored # Attack ignored - pirate ship is reloading
-turn  133 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  141 bot [tpb] invalid actions:
-The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
-turn  142 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  143 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  144 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  144 bot [tpb] invalid actions:
-The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
-turn  145 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  145 bot [tpb] invalid actions:
-The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
-turn  146 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  146 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  147 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  147 bot [tpb] invalid actions:
-The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
-turn  148 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  148 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  149 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  149 bot [tpb] invalid actions:
-The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
-turn  150 bot [tpb] invalid actions:
-The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
-turn  151 bot [tpb] invalid actions:
-The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
-turn  152 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  153 bot [tpb] invalid actions:
-The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
-turn  154 bot [tpb] invalid actions:
-The order: 'o 25 20 nnne' is invalid # You tried to move a pirate but dont have one at this location
-turn  155 bot [tpb] invalid actions:
-The order: 'o 25 20 nnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  156 bot [tpb] invalid actions:
-The order: 'o 25 20 nnee' is invalid # You tried to move a pirate but dont have one at this location
-turn  157 bot [tpb] invalid actions:
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  158 bot [tpb] invalid actions:
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 a2' is invalid # You tried to move a pirate but dont have one at this location
-turn  159 bot [tpb] invalid actions:
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nwwww' is invalid # You tried to move a pirate but dont have one at this location
-turn  160 bot [tpb] invalid actions:
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnn' is invalid # You tried to move a pirate but dont have one at this location
-turn  161 bot [tpb] invalid actions:
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn  162 bot [tpb] invalid actions:
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnwww' is invalid # You tried to move a pirate but dont have one at this location
-turn  163 bot [tpb] invalid actions:
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn  164 bot [tpb] invalid actions:
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnwww' is invalid # You tried to move a pirate but dont have one at this location
-turn  165 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn  166 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  166 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnnw' is invalid # You tried to move a pirate but dont have one at this location
-turn  167 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  167 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnwww' is invalid # You tried to move a pirate but dont have one at this location
-turn  168 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  168 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
-turn  169 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  169 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnwwww' is invalid # You tried to move a pirate but dont have one at this location
-turn  170 bot tpb ignored actions:
-The order: 'o 23 27 a0' was ignored # Attack ignored - pirate ship is reloading
-turn  170 bot [tpb] invalid actions:
-The order: 'o 23 26 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 25 20 nnnnww' is invalid # You tried to move a pirate but dont have one at this location
+turn   81 bot [FarBotV2] invalid actions:
+The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
+turn   82 bot [FarBotV2] invalid actions:
+The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
+turn   83 bot [FarBotV2] invalid actions:
+The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
+turn   84 bot [FarBotV2] invalid actions:
+The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
+turn   85 bot [FarBotV2] invalid actions:
+The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
+turn   86 bot [FarBotV2] invalid actions:
+The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
+turn   87 bot [FarBotV2] invalid actions:
+The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
+turn   88 bot [FarBotV2] invalid actions:
+The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
+turn   89 bot [FarBotV2] invalid actions:
+The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
+turn   90 bot [FarBotV2] invalid actions:
+The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
+turn   91 bot [FarBotV2] invalid actions:
+The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
+turn   92 bot [FarBotV2] invalid actions:
+The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
+turn   93 bot [FarBotV2] invalid actions:
+The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
+turn   99 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn  100 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn  101 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn  103 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn  104 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn  105 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn  106 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn  128 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 a3' is invalid # You tried to move a pirate but dont have one at this location
+turn  129 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 a3' is invalid # You tried to move a pirate but dont have one at this location
+turn  130 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 a3' is invalid # You tried to move a pirate but dont have one at this location
+turn  131 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 a3' is invalid # You tried to move a pirate but dont have one at this location
+turn  136 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn  137 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn  138 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn  139 bot [FarBotV2] invalid actions:
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn  141 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn  142 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn  143 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn  144 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
+turn  145 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn  146 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn  147 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn  148 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn  149 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn  150 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+turn  151 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
+turn  152 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
+turn  153 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
+turn  154 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
+turn  155 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
+turn  156 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
+turn  157 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
+turn  158 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
+turn  159 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
+The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
+turn  160 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 26 28 a1' is invalid # The pirate is drunk - can't do anything
+The order: 'o 24 30 a1' is invalid # You tried to move a pirate but dont have one at this location
+turn  161 bot [FarBotV2] invalid actions:
+The order: 'o 26 28 a1' is invalid # The pirate is drunk - can't do anything
+turn  162 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 -' is invalid # invalid directions
+The order: 'o 26 28 a1' is invalid # The pirate is drunk - can't do anything
+turn  163 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 -' is invalid # invalid directions
+The order: 'o 26 28 a1' is invalid # The pirate is drunk - can't do anything
+turn  164 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 -' is invalid # invalid directions
+The order: 'o 26 28 a1' is invalid # The pirate is drunk - can't do anything
+turn  165 bot [FarBotV2] invalid actions:
+The order: 'o 23 27 -' is invalid # invalid directions
+The order: 'o 26 28 a1' is invalid # The pirate is drunk - can't do anything

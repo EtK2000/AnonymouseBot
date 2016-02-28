@@ -1,44 +1,5 @@
-C:\Users\harely\Desktop\starter_kit\bots\csharp\ExampleBot\bin\Debug\ExampleBot.pdb
-C:\Users\harely\Desktop\starter_kit\bots\csharp\ExampleBot\bin\Debug\IPirateGame.dll
-C:\Users\harely\Desktop\starter_kit\bots\csharp\ExampleBot\obj\Debug\ExampleBot.csprojResolveAssemblyReference.cache
-C:\Users\harely\Desktop\starter_kit\bots\csharp\ExampleBot\obj\Debug\ExampleBot.pdb
-C:\Users\harely\Desktop\starter_kit\bots\csharp\ExampleBot\bin\Debug\ExampleBot.dll
-C:\Users\harely\Desktop\starter_kit\bots\csharp\ExampleBot\obj\Debug\ExampleBot.dll
-E:\Piratez\starter_kit\bots\csharp\ExampleBot\bin\Debug\ExampleBot.dll
-E:\Piratez\starter_kit\bots\csharp\ExampleBot\bin\Debug\ExampleBot.pdb
-E:\Piratez\starter_kit\bots\csharp\ExampleBot\bin\Debug\IPirateGame.dll
-E:\Piratez\starter_kit\bots\csharp\ExampleBot\obj\Debug\ExampleBot.csprojResolveAssemblyReference.cache
-E:\Piratez\starter_kit\bots\csharp\ExampleBot\obj\Debug\ExampleBot.dll
-E:\Piratez\starter_kit\bots\csharp\ExampleBot\obj\Debug\ExampleBot.pdb
-C:\Users\anon\Documents\Visual Studio 2013\Projects\starter_kit\bots\csharp\ExampleBot\bin\Debug\ExampleBot.dll
-C:\Users\anon\Documents\Visual Studio 2013\Projects\starter_kit\bots\csharp\ExampleBot\bin\Debug\ExampleBot.pdb
-C:\Users\anon\Documents\Visual Studio 2013\Projects\starter_kit\bots\csharp\ExampleBot\bin\Debug\IPirateGame.dll
-C:\Users\anon\Documents\Visual Studio 2013\Projects\starter_kit\bots\csharp\ExampleBot\bin\Debug\mscorlib.dll
-C:\Users\anon\Documents\Visual Studio 2013\Projects\starter_kit\bots\csharp\ExampleBot\bin\Debug\he\mscorlib.resources.dll
-C:\Users\anon\Documents\Visual Studio 2013\Projects\starter_kit\bots\csharp\ExampleBot\bin\Debug\normidna.nlp
-C:\Users\anon\Documents\Visual Studio 2013\Projects\starter_kit\bots\csharp\ExampleBot\bin\Debug\normnfc.nlp
-C:\Users\anon\Documents\Visual Studio 2013\Projects\starter_kit\bots\csharp\ExampleBot\bin\Debug\normnfd.nlp
-C:\Users\anon\Documents\Visual Studio 2013\Projects\starter_kit\bots\csharp\ExampleBot\bin\Debug\normnfkc.nlp
-C:\Users\anon\Documents\Visual Studio 2013\Projects\starter_kit\bots\csharp\ExampleBot\bin\Debug\normnfkd.nlp
-C:\Users\anon\Documents\Visual Studio 2013\Projects\starter_kit\bots\csharp\ExampleBot\obj\Debug\ExampleBot.csprojResolveAssemblyReference.cache
-C:\Users\anon\Documents\Visual Studio 2013\Projects\starter_kit\bots\csharp\ExampleBot\obj\Debug\ExampleBot.dll
-C:\Users\anon\Documents\Visual Studio 2013\Projects\starter_kit\bots\csharp\ExampleBot\obj\Debug\ExampleBot.pdb
-C:\Users\anon\Source\Repos\AnonymouseBot2\bots\csharp\ExampleBot\bin\Debug\ExampleBot.dll
-C:\Users\anon\Source\Repos\AnonymouseBot2\bots\csharp\ExampleBot\bin\Debug\ExampleBot.pdb
-C:\Users\anon\Source\Repos\AnonymouseBot2\bots\csharp\ExampleBot\bin\Debug\IPirateGame.dll
-C:\Users\anon\Source\Repos\AnonymouseBot2\bots\csharp\ExampleBot\bin\Debug\mscorlib.dll
-C:\Users\anon\Source\Repos\AnonymouseBot2\bots\csharp\ExampleBot\bin\Debug\he\mscorlib.resources.dll
-C:\Users\anon\Source\Repos\AnonymouseBot2\bots\csharp\ExampleBot\bin\Debug\normidna.nlp
-C:\Users\anon\Source\Repos\AnonymouseBot2\bots\csharp\ExampleBot\bin\Debug\normnfc.nlp
-C:\Users\anon\Source\Repos\AnonymouseBot2\bots\csharp\ExampleBot\bin\Debug\normnfd.nlp
-C:\Users\anon\Source\Repos\AnonymouseBot2\bots\csharp\ExampleBot\bin\Debug\normnfkc.nlp
-C:\Users\anon\Source\Repos\AnonymouseBot2\bots\csharp\ExampleBot\bin\Debug\normnfkd.nlp
-C:\Users\anon\Source\Repos\AnonymouseBot2\bots\csharp\ExampleBot\obj\Debug\ExampleBot.csprojResolveAssemblyReference.cache
-C:\Users\anon\Source\Repos\AnonymouseBot2\bots\csharp\ExampleBot\obj\Debug\ExampleBot.dll
-C:\Users\anon\Source\Repos\AnonymouseBot2\bots\csharp\ExampleBot\obj\Debug\ExampleBot.pdb
-C:\Users\anon\Source\Repos\AnonymouseBot\bots\csharp\ExampleBot\obj\Debug\ExampleBot.csprojResolveAssemblyReference.cache
-C:\Users\anon\Source\Repos\AnonymouseBot\bots\csharp\ExampleBot\obj\Debug\ExampleBot.dll
 C:\Users\anon\Source\Repos\AnonymouseBot\bots\csharp\ExampleBot\bin\Debug\ExampleBot.dll
 C:\Users\anon\Source\Repos\AnonymouseBot\bots\csharp\ExampleBot\bin\Debug\ExampleBot.pdb
 C:\Users\anon\Source\Repos\AnonymouseBot\bots\csharp\ExampleBot\bin\Debug\IPirateGame.dll
+C:\Users\anon\Source\Repos\AnonymouseBot\bots\csharp\ExampleBot\obj\Debug\ExampleBot.dll
 C:\Users\anon\Source\Repos\AnonymouseBot\bots\csharp\ExampleBot\obj\Debug\ExampleBot.pdb
