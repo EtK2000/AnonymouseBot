@@ -49,6 +49,7 @@
     <Compile Include="MyBot.cs" />
     <Compile Include="MyBotV1.cs" />
     <Compile Include="MyBotV2.cs" />
+    <Compile Include="MyBotV3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

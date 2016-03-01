@@ -2,4 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+/bots/csharp/ExampleBot/bin
+/bots/csharp/ExampleBot/obj
+/bots/csharp/ExampleBot/Properties
 /lib/game_logs
