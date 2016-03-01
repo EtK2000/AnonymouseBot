@@ -19,6 +19,9 @@ namespace Main
 		{
 			InitializeComponent();
 
+			Left = 0;
+			Top = (System.Windows.SystemParameters.PrimaryScreenHeight - Height) / 2;
+
 			// get the working directory
 			dir = Directory.GetCurrentDirectory();
 			dir = dir.Substring(0, dir.Length - 26);
@@ -48,7 +51,7 @@ namespace Main
 				StartInfo = new ProcessStartInfo
 				{
 					FileName = "cmd.exe",
-					Arguments = "/c C:\\python27\\python.exe \"lib\\playgame.py\"  --nolaunch --loadtime 10000 -e -E -d -O --debug_in_replay --log_dir lib\\game_logs --html=replay.html --map_file \"maps\\" + map.SelectedItem + "\" \"bots\\" + first.SelectedItem + "\" \"bots\\" + second.SelectedItem + "\" ",
+					Arguments = "/c C:\\python27\\python.exe \"lib\\playgame.py\" --nolaunch --loadtime 10000 -e -E -d -O --debug_in_replay --log_dir lib\\game_logs --html=replay.html --map_file \"maps\\" + map.SelectedItem + "\" \"bots\\" + first.SelectedItem + "\" \"bots\\" + second.SelectedItem + "\" ",
 					UseShellExecute = false,
 					RedirectStandardOutput = false,
 					CreateNoWindow = false,
@@ -61,7 +64,7 @@ namespace Main
 			if (players > 3)
 				proc.StartInfo.Arguments += "\"bots\\" + fourth.SelectedItem + "\" ";
 
-			proc.StartInfo.Arguments += "&& echo. && pause";
+			proc.StartInfo.Arguments += " && echo. && pause";
 			proc.Start();
 			proc.WaitForExit();
 
@@ -144,18 +147,44 @@ namespace Main
 		{
 			if (map.SelectedIndex >= 0)
 			{
+				MapPreview.Map m = new MapPreview.Map();
+				int y = 0;
+				int r = 0, c = 0;
 				string line;
 				StreamReader sr = new StreamReader(dir + "maps\\" + map.SelectedValue);
 				while ((line = sr.ReadLine()) != null)
 				{
-					if (line.StartsWith("players "))
+					if (line.StartsWith("cols "))
+						c = int.Parse(line.Substring(5));
+					else if (line.StartsWith("rows "))
+						r = int.Parse(line.Substring(5));
+					else if (line.StartsWith("players "))
 					{
 						players = int.Parse(line.Substring(8));
-						break;
+						for (int i = 0; i < players; i++)
+							m.starts.Add(new List<Point>(players));
+					}
+					else if (line.StartsWith("m "))
+					{
+						string l = line.Substring(2);
+						for (int i = 0; i < l.Length; i++)
+						{
+							if (l[i] == '$')
+								m.treasures.Add(new Point(i, y));
+							else if (l[i] >= 'a' && l[i] <= 'z')
+								m.starts[l[i] - 'a'].Add(new Point(i, y));
+						}
+						y++;
 					}
 				}
 				sr.Close();
+
+				MapPreview mp = new MapPreview(r, c, m);
+				mp.Show();
+				mp.Owner = this;
 			}
+
+			Activate();
 		}
 
 		// recursively get all the files in the given directory

@@ -25,7 +25,7 @@ namespace ExampleBot
         {
 			if (game.GetTurn() == 1)
 			{
-				int s = DateTime.Now.Millisecond;
+				int s = 574;//DateTime.Now.Millisecond;
 				rand = new Random(s);
 				game.Debug("seed: " + s);
 			}

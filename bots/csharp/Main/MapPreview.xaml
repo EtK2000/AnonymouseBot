@@ -1,0 +1,12 @@
+﻿<Window x:Class="Main.MapPreview"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MapPreview" Height="400" Width="400" ResizeMode="NoResize" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="pack://application:,,,/background.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid x:Name="grid" HorizontalAlignment="Center" Height="300" Margin="0,0,0,0" VerticalAlignment="Center" Width="320"/>
+
+    </Grid>
+</Window>

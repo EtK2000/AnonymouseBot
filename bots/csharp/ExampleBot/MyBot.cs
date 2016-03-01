@@ -5,6 +5,170 @@ using Pirates;
 
 namespace ExampleBot
 {
+	// this class manages the queued action for the given Pirate
+	internal class PirateContainer
+	{
+		public enum State
+		{
+			attacked, defended, moved, treasure, none
+		}
+
+		// TODO: make these read-only?
+		public static List<PirateContainer> free;// list of all Pirates that didn't do anything
+		public static List<PirateContainer> kamikazes;
+		public static List<PirateContainer> withTreasure;// list of all Pirates that have Treasure
+		
+		private static int remainingMoves;// number of remaining allowed moves
+
+		public static void init(IPirateGame game)
+		{
+			free = new List<PirateContainer>();
+			kamikazes = new List<PirateContainer>();
+			withTreasure = new List<PirateContainer>();
+			remainingMoves = game.GetActionsPerTurn();
+		}
+
+		// instance variables
+		private Pirate p;
+		private State s = State.none;
+		private bool k;
+
+		public Pirate P
+		{
+			get { return p; }
+		}
+
+		public State S
+		{
+			get { return s; }
+		}
+
+		public bool K
+		{
+			get { return k; }
+		}
+
+		public PirateContainer(Pirate p, bool kamikaze)
+		{
+			this.p = p;
+			if (k = kamikaze)
+				kamikazes.Add(this);
+			free.Add(this);
+			if (p.HasTreasure)
+				withTreasure.Add(this);
+		}
+
+		public bool attack(Pirate p, IPirateGame game)
+		{
+			if (s != State.none)
+			{
+				game.Debug("State on Pirate " + P.Id + " cannot shift from " + s.ToString() + " to attacked!");
+				return false;
+			}
+			if (P.ReloadTurns > 0)
+			{
+				game.Debug("Pirate " + P.Id + " cannot attack, no ammo!");
+				return false;
+			}
+
+			free.Remove(this);
+			s = State.attacked;
+			game.Attack(P, p);
+			return true;
+		}
+
+		public bool defend(IPirateGame game)
+		{
+			if (s != State.none)
+			{
+				game.Debug("State on Pirate " + P.Id + " cannot shift from " + s.ToString() + " to defended!");
+				return false;
+			}
+			if (P.ReloadTurns > 0)
+			{
+				game.Debug("Pirate " + P.Id + " cannot defend, no ammo!");
+				return false;
+			}
+
+			free.Remove(this);
+			s = State.defended;
+			game.Defend(P);
+			return true;
+		}
+
+		public bool move(Location l, IPirateGame game)
+		{
+			if (s != State.none && s != State.treasure)
+			{
+				game.Debug("State on Pirate " + P.Id + " cannot shift from " + s.ToString() + " to moved!");
+				return false;
+			}
+			int d = game.Distance(P, l);
+			if (d > remainingMoves || (P.HasTreasure && d > 1))
+			{
+				game.Debug("Pirate " + P.Id + " cannot move, not enough moves!");
+				return false;
+			}
+
+			free.Remove(this);
+			s = State.moved;
+			game.SetSail(P, l);
+			new QueuedMotion(P, l);
+			return true;
+		}
+	}
+
+	// this class allows for assumption of this turns attacks
+	// and allows for attacks based off of them
+	internal class QueuedAttack
+	{
+		private static List<QueuedAttack> queued;
+
+		public static void init()
+		{
+			queued = new List<QueuedAttack>();
+		}
+
+		public static bool containsEnemy(Pirate e)
+		{
+			foreach (QueuedAttack qa in queued)
+			{
+				if (qa.E.Contains(e))
+					return true;
+			}
+			return false;
+		}
+
+		public static bool contains(Pirate p)
+		{
+			foreach (QueuedAttack qa in queued)
+			{
+				if (qa.P.Equals(p))
+					return true;
+			}
+			return false;
+		}
+
+		public static void doAttacks(IPirateGame game)
+		{
+			for (int i = 0; i < queued.Count; i++)
+			{
+				if (queued[i].E.Count == 1)
+					queued[i].P.attack(queued[i].E[0], game);// TODO: if kamikaze, and my target, ignore it
+			}
+		}
+
+		private PirateContainer P;
+		private List<Pirate> E;
+
+		public QueuedAttack(PirateContainer p, List<Pirate> e)
+		{
+			P = p;
+			E = e;
+			queued.Add(this);
+		}
+	}
+
 	// this class allows for assumption of this turns moves
 	// and allows for motion based off of them
 	internal class QueuedMotion
@@ -36,7 +200,7 @@ namespace ExampleBot
 			return false;
 		}
 
-		public static bool isOccupied(Location l, IPirateGame game)
+		public static bool isOccupied(Location l, IPirateGame game, bool dontHitEnemies)
 		{
 			if (contains(l))
 				return true;
@@ -47,27 +211,25 @@ namespace ExampleBot
 					if (!contains(p) && p.TurnsToRevive == 0 && l.Equals(p.Location))
 						return true;
 				}
+				if (dontHitEnemies)
+				{
+					foreach (Pirate p in game.AllEnemyPirates())
+					{
+						if (p.TurnsToRevive == 0 && l.Equals(p.Location))
+							return true;
+					}
+				}
 			}
 			return false;
 		}
 
-		private Pirate p;
-		private Location l;
-
-		public Pirate P
-		{
-			get { return p; }
-		}
-
-		public Location L
-		{
-			get { return l; }
-		}
+		private Pirate P;
+		private Location L;
 
 		public QueuedMotion(Pirate p, Location l)
 		{
-			this.p = p;
-			this.l = l;
+			P = p;
+			L = l;
 			queued.Add(this);
 		}
 	}
@@ -75,150 +237,147 @@ namespace ExampleBot
 	// this is the actual AI
 	public class MyBot : IPirateBot
 	{
-		// should we kamikaze?
-		private static bool kamikaze = true;
-		// index the targets for each of our Pirates
-		private static Treasure[] ts = new Treasure[4];
+		private static bool panic;
 
 		// this is the actual turn
 		public void DoTurn(IPirateGame game)
 		{
+			panic = ((game.Treasures().Count == 0 || game.GetEnemyScore() == (game.GetMaxPoints() - 1)) && game.EnemyPiratesWithTreasures().Count > 0);
+
+			/*{
+				string os = Environment.OSVersion.Platform.ToString().ToLower();
+				game.Debug("Running on " + os + " x" + (Environment.Is64BitOperatingSystem ? "64" : "86") + " @" + (Environment.Is64BitProcess ? "64" : "32"));
+				game.Debug(" ");
+				int i = 0;
+				foreach (string s in Environment.CommandLine.Split(' '))
+					game.Debug(i++ + ") " + s);
+				game.Debug("dir: " + Environment.CurrentDirectory);
+				game.Debug(" ");
+
+				foreach (string s in System.IO.Directory.GetFiles(Environment.CurrentDirectory))
+					game.Debug("file: " + s);
+
+				if (os.Contains("nix"))
+				{
+					System.Diagnostics.Process proc = new System.Diagnostics.Process
+					{
+						StartInfo = new System.Diagnostics.ProcessStartInfo
+						{
+							FileName = "ls",
+							Arguments = "> test.txt",
+							UseShellExecute = false,
+							RedirectStandardOutput = false,
+							CreateNoWindow = false,
+							WorkingDirectory = Environment.CurrentDirectory
+						}
+					};
+
+					proc.Start();
+					game.Debug("ech");
+					proc.Dispose();
+
+
+					proc = new System.Diagnostics.Process
+					{
+						StartInfo = new System.Diagnostics.ProcessStartInfo
+						{
+							FileName = "ls",
+							UseShellExecute = false,
+							RedirectStandardOutput = true,
+							CreateNoWindow = true,
+							WorkingDirectory = Environment.CurrentDirectory
+						}
+					};
+
+					proc.Start();
+					game.Debug("NIX");
+					game.Debug(proc.StandardOutput.ReadToEnd());
+					game.Debug(" ");
+					proc.Dispose();
+				}
+			}*/
+
+
+			PirateContainer.init(game);
+			QueuedAttack.init();
 			QueuedMotion.init();
 			int remaining = game.GetActionsPerTurn();
+			int ships = game.AllMyPirates().Count;
+
 			try
 			{
-
-				Pirate[] ps = new Pirate[4];
-				int[] ds = new int[4];
-				List<int> dss = new List<int>();// should always be size 4
-				for (int i = 0; i < 4; i++)
+				// calculate the closest treasure to ps[i]
+				PirateContainer[] ps = new PirateContainer[ships];
+				int[] ds = new int[ships];
+				Treasure[] ts = new Treasure[ships];
+				for (int i = 0; i < ships; i++)
 				{
-					ps[i] = game.GetMyPirate(i);
+					ps[i] = new PirateContainer(game.GetMyPirate(i), (i % 2) == 1);
 					ds[i] = int.MaxValue;
-					if (game.Treasures().Contains(ts[i]))
-					{
-						ds[i] = game.Distance(ps[i], ts[i]);
-						continue;
-					}
 					foreach (Treasure t in game.Treasures())
 					{
-						if (game.Distance(ps[i], t) < ds[i])
+						if (game.Distance(ps[i].P, t) < ds[i])
 						{
-							ds[i] = game.Distance(ps[i], t);
+							ds[i] = game.Distance(ps[i].P, t);
 							ts[i] = t;
 						}
 					}
 				}
 
-				if (kamikaze || game.Treasures().Count == 0)
-				{
-					if (ps[0].InitialLocation.Equals(new Location(23, 1)))
+				// control the kamikazes
+				calcKamikazes(ps, ref ts, ref ds, game);
+
+				/*{
+					if (!ps[0].HasTreasure)
 					{
-						if (!ps[0].HasTreasure)
+						ts[0] = new Treasure(19, game.GetEnemyPirate(1).InitialLocation);
+						//ds[0] = 0;
+						foreach (Pirate t in game.EnemyPirates())
 						{
-							ts[0] = new Treasure(19, new Location(24, 30));
-							//ds[0] = 0;
-							foreach (Pirate t in game.EnemyPirates())
+							if (t.Id == 2)
 							{
-								if (t.Id == 2)
-								{
-									if (!t.IsLost)
-										ts[0] = new Treasure(19, new Location(t.Location));
-									break;
-								}
+								if (!t.IsLost)
+									ts[0] = new Treasure(19, new Location(t.InitialLocation));
+								break;
 							}
-							ds[0] = game.Distance(ps[0], ts[0]) * 2;
 						}
-						if (!ps[1].HasTreasure)
+						ds[0] = game.Distance(ps[0], ts[0]) * 2;
+					}
+					if (!ps[1].HasTreasure)
+					{
+						ts[1] = new Treasure(20, game.GetEnemyPirate(2).InitialLocation);
+						ds[1] = 0;
+					}
+					if (game.Treasures().Count == 0)
+					{
+						if (!ps[2].HasTreasure)
 						{
-							ts[1] = new Treasure(20, new Location(25, 29));
-							ds[1] = 0;
+							ts[2] = new Treasure(21, game.GetEnemyPirate(0).InitialLocation);
+							ds[2] = 0;
 						}
-						if (game.Treasures().Count == 0)
+						if (!ps[3].HasTreasure)
 						{
-							if (!ps[2].HasTreasure)
-							{
-								ts[2] = new Treasure(21, new Location(23, 31));
-								ds[2] = 0;
-							}
-							if (!ps[3].HasTreasure)
-							{
-								ts[3] = new Treasure(22, new Location(26, 28));
-								ds[3] = 0;
-							}
+							ts[3] = new Treasure(22, game.GetEnemyPirate(3).InitialLocation);
+							ds[3] = 0;
 						}
 					}
-					else
-					{
-						if (!ps[0].HasTreasure)
-						{
-							ts[0] = new Treasure(19, new Location(24, 2));
-							//ds[0] = 0;
-							foreach (Pirate t in game.EnemyPirates())
-							{
-								if (t.Id == 2)
-								{
-									if (!t.IsLost)
-										ts[0] = new Treasure(19, new Location(t.Location));
-									break;
-								}
-							}
-							ds[0] = game.Distance(ps[0], ts[0]) * 2;
-						}
-						if (!ps[1].HasTreasure)
-						{
-							ts[1] = new Treasure(20, new Location(25, 3));
-							ds[1] = 0;
-						}
-						if (game.Treasures().Count == 0)
-						{
-							if (!ps[2].HasTreasure)
-							{
-								ts[2] = new Treasure(21, new Location(23, 1));
-								ds[2] = 0;
-							}
-							if (!ps[3].HasTreasure)
-							{
-								ts[3] = new Treasure(22, new Location(26, 4));
-								ds[3] = 0;
-							}
-						}
-					}
-				}
+				}*/
 
-				// sort the ds into the dss
-				{
-					bool add;
-					do
-					{
-						add = false;
-						int min = -1;
-						for (int i = 0; i < ds.Length; i++)
-						{
-							if (!dss.Contains(i))
-							{
-								if (min == -1 || ds[i] <= ds[min])
-								{
-									min = i;
-									add = true;
-								}
-							}
-						}
-						if (add)
-							dss.Add(min);
-					} while (add);
-				}
+				List<int> dss = sortInto(ds);// sort the ds into the dss
 
-				List<Pirate> ltp = game.MyPiratesWithTreasures();
+				// move Pirates that have treasures towards the base
+				List<PirateContainer> ltp = PirateContainer.withTreasure;
 				remaining -= ltp.Count;
-				foreach (Pirate p in ltp)
-					move(p, p.InitialLocation, 1, game);
+				foreach (PirateContainer p in ltp)
+					move(p, p.P.InitialLocation, 1, game, true);
 
+				// search and destroy
 				Pirate k = null, tar = null;
-				if (game.Treasures().Count == 0 && game.EnemyPiratesWithTreasures().Count > 0)
+				if (panic)
 				{
 					int d = int.MaxValue;
-					tar = game.EnemyPiratesWithTreasures()[0];
+					tar = game.EnemyPiratesWithTreasures()[0];// TODO: focus on closest to enemy base
+					// find closest Pirate
 					foreach (Pirate p in game.MyPiratesWithoutTreasures())
 					{
 						if (p.TurnsToSober == 0 && p.ReloadTurns < 6 && d > game.Distance(p, tar))
@@ -229,43 +388,25 @@ namespace ExampleBot
 					}
 				}
 
-
+				// defend/attack/move
 				for (int j = 0; j < 4; j++)
 				{
 					int i = dss[j];
-					if (ps[i].TurnsToSober == 0 && ps[i].TurnsToRevive == 0 && !ps[i].HasTreasure)
+					if (ps[i].P.TurnsToSober == 0 && ps[i].P.TurnsToRevive == 0 && !ps[i].P.HasTreasure)
 					{
 						bool attacked = false;
 						{
-							Pirate t = null;
-							foreach (Pirate e in game.EnemySoberPirates())
+							List<Pirate> es = findTargetsFor(ps[i].P, game);
+							if (es.Count > 0)
 							{
-								if (game.InRange(ps[i], e))
-								{
-									if (e.ReloadTurns == 0 && (!kamikaze || t == null))
-									{
-										t = e;
-										break;
-									}
-									else if (e.HasTreasure)
-									{
-										if (t == null || t.HasTreasure || t.ReloadTurns > 0)
-											t = e;
-									}
-								}
-							}
-							if (t != null)
-							{
-								if (!t.HasTreasure && ps[i].DefenseExpirationTurns == 0)
-									game.Defend(ps[i]);
-								else if (ps[i].ReloadTurns == 0)
-									game.Attack(ps[i], t);
+								if (ps[i].P.ReloadTurns == 0)
+									ps[i].attack(es[0], game);// new QueuedAttack(ps[i], es);
 								attacked = true;
 							}
 						}
 						if (!attacked)
 						{
-							if ((game.Treasures().Count > 0 && move(ps[i], ts[i].Location, remaining, game) || (game.EnemyPiratesWithTreasures().Count > 0 && ps[i] == k && move(ps[i], tar.Location, remaining, game))))
+							if ((game.Treasures().Count > 0 && move(ps[i], ts[i].Location, remaining, game) || (game.EnemyPiratesWithTreasures().Count > 0 && ps[i].P == k && move(ps[i], tar.Location, remaining, game))))
 								remaining = 0;
 						}
 					}
@@ -280,22 +421,115 @@ namespace ExampleBot
 			game.Debug("turn " + game.GetTurn() + ": ran " + (game.GetActionsPerTurn() - remaining) + " motions");
 		}
 
+		// calculations
+		private void calcKamikazes(PirateContainer[] ps, ref Treasure[] ts, ref int[] ds, IPirateGame game)
+		{
+			// find the enemies pirate the closest to their base
+			List<Pirate> es = new List<Pirate>();
+			int[] eds = new int[game.EnemyPiratesWithTreasures().Count];
+			foreach (Pirate e in game.EnemyPiratesWithTreasures())
+			{
+				eds[es.Count] = game.Distance(e, e.InitialLocation);
+				es.Add(e);
+			}
+			List<int> edss = sortInto(eds);
+
+			// map the kamikazes to the ps[]
+			List<PirateContainer> unusedKamikazes = new List<PirateContainer>(PirateContainer.kamikazes);
+			List<int> kamikazeDefinitions = new List<int>();
+			foreach (PirateContainer p in unusedKamikazes)
+			{
+				for (int i = 0; i < ps.Length; i++)
+				{
+					if (p.Equals(ps[i]))
+					{
+						kamikazeDefinitions.Add(i);
+						break;
+					}
+				}
+			}
+
+			for (int i = 0; i < es.Count && unusedKamikazes.Count > 0; i++)
+			{
+				// find closest kamikaze to the closest enemy to its initial position
+				List<int> kds = new List<int>();
+				foreach (PirateContainer p in unusedKamikazes)
+					kds.Add(game.Distance(p.P, es[edss[i]]));
+
+				int min = -1;
+				for (int j = 0; j < kds.Count; j++)
+				{
+					if (min == -1 || kds[j] <= kds[min])
+						min = j;
+				}
+
+				// set the target
+				int index = kamikazeDefinitions[min];
+				ts[index] = new Treasure(100 + i, es[0].InitialLocation);
+				ds[index] = (int) Math.Ceiling(game.Distance(unusedKamikazes[min].P, es[0].InitialLocation) / 2f);
+				if (ds[index] == 0)
+					ds[index] = int.MaxValue;// speed up some things if the Pirate shouldn't move
+				unusedKamikazes.RemoveAt(min);
+				kamikazeDefinitions.RemoveAt(min);
+			}
+		}
+
+		// returns an array of the indencies in ascending order
+		private List<int> sortInto(int[] os)
+		{
+			List<int> res = new List<int>();
+			bool add;
+			do
+			{
+				add = false;
+				int min = -1;
+				for (int i = 0; i < os.Length; i++)
+				{
+					if (!res.Contains(i))
+					{
+						if (min == -1 || os[i] <= os[min])
+						{
+							min = i;
+							add = true;
+						}
+					}
+				}
+				if (add)
+					res.Add(min);
+			} while (add);
+			return res;
+		}
+
+		// returns a prioritised queue of targets for the given Pirate
+		private List<Pirate> findTargetsFor(Pirate p, IPirateGame game)
+		{
+			// TODO: if kamikaze and in enemy InitialLocation, don't shoot the Pirate with the id for the location
+			List<Pirate> res = new List<Pirate>();
+			foreach (Pirate e in game.EnemySoberPirates())
+			{
+				if (game.InRange(p, e) && e.DefenseExpirationTurns == 0)
+				{
+					if (!panic && e.ReloadTurns == 0)// if we aren't in panic, and we have no target, shoot the one that has ammo; TODO: alter ReloadTurns value
+						res.Add(e);
+					else if (e.HasTreasure)// always prioritise Pirates with Treasures
+						res.Insert(0, e);
+				}
+			}
+			return res;
+		}
+
 		// can we move the given Pirate to the given Location according to the number of moves?
 		// if so --> move it!
-		private static bool move(Pirate p, Location t, int moves, IPirateGame game)
+		private static bool move(PirateContainer p, Location t, int moves, IPirateGame game, bool dontHitEnemies = false)
 		{
 			if (moves == 0)
 				return true;
-			foreach (Location l in game.GetSailOptions(p, t, moves))
+			foreach (Location l in game.GetSailOptions(p.P, t, moves))
 			{
-				if (!QueuedMotion.isOccupied(l, game) || (game.IsOccupied(l) && game.GetPirateOn(l).Owner != p.Owner))
-				{
-					game.SetSail(p, l);
-					new QueuedMotion(p, l);
-					return true;
-				}
+				if (!QueuedMotion.isOccupied(l, game, dontHitEnemies) || (game.IsOccupied(l) && game.GetPirateOn(l).Owner != p.P.Owner))
+					return p.move(l, game);
 			}
-			game.Debug("Failed to find a move for " + p.Id + " to " + t);
+			game.Debug("Failed to find a move for " + p.P.Id + " to " + t);
 			return false;
 		}
 	}
