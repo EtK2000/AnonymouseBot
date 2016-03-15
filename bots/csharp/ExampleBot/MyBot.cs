@@ -266,59 +266,6 @@ namespace ExampleBot
 			panic = ((game.Treasures().Count == 0 || game.GetEnemyScore() == (game.GetMaxPoints() - 1)) && game.EnemyPiratesWithTreasures().Count > 0);
 			if (panic)
 				game.Debug("ACTIVATING PANIC MODE!!!");
-			/*{
-				string os = Environment.OSVersion.Platform.ToString().ToLower();
-				game.Debug("Running on " + os + " x" + (Environment.Is64BitOperatingSystem ? "64" : "86") + " @" + (Environment.Is64BitProcess ? "64" : "32"));
-				game.Debug(" ");
-				int i = 0;
-				foreach (string s in Environment.CommandLine.Split(' '))
-					game.Debug(i++ + ") " + s);
-				game.Debug("dir: " + Environment.CurrentDirectory);
-				game.Debug(" ");
-
-				foreach (string s in System.IO.Directory.GetFiles(Environment.CurrentDirectory))
-					game.Debug("file: " + s);
-
-				if (os.Contains("nix"))
-				{
-					System.Diagnostics.Process proc = new System.Diagnostics.Process
-					{
-						StartInfo = new System.Diagnostics.ProcessStartInfo
-						{
-							FileName = "ls",
-							Arguments = "> test.txt",
-							UseShellExecute = false,
-							RedirectStandardOutput = false,
-							CreateNoWindow = false,
-							WorkingDirectory = Environment.CurrentDirectory
-						}
-					};
-
-					proc.Start();
-					game.Debug("ech");
-					proc.Dispose();
-
-
-					proc = new System.Diagnostics.Process
-					{
-						StartInfo = new System.Diagnostics.ProcessStartInfo
-						{
-							FileName = "ls",
-							UseShellExecute = false,
-							RedirectStandardOutput = true,
-							CreateNoWindow = true,
-							WorkingDirectory = Environment.CurrentDirectory
-						}
-					};
-
-					proc.Start();
-					game.Debug("NIX");
-					game.Debug(proc.StandardOutput.ReadToEnd());
-					game.Debug(" ");
-					proc.Dispose();
-				}
-			}*/
-
 
 			PirateContainer.init(game);
 			QueuedAttack.init();
