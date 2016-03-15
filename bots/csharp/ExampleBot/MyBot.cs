@@ -61,7 +61,10 @@ namespace ExampleBot
 				kamikazes.Add(this);
 			free.Add(this);
 			if (p.HasTreasure)
+			{
 				withTreasure.Add(this);
+				s = State.treasure;
+			}
 		}
 
 		public bool attack(Pirate p, IPirateGame game)
@@ -385,21 +388,21 @@ namespace ExampleBot
 				// move Pirates that have treasures towards the base
 				{
 					List<PirateContainer> ltp = PirateContainer.withTreasure;
-					remaining -= ltp.Count;
 					foreach (PirateContainer p in ltp)
-						move(p, p.P.InitialLocation, 1, game, true);
+						remaining -= move(p, p.P.InitialLocation, 1, game, true);
 				}
 
 				// search and destroy, TODO: prioritise this!!!
 				Pirate k = null, tar = null;
 				if (panic)
 				{
+					int mx = (game.GetRows() + game.GetCols() - game.GetAttackRadius()) / game.GetActionsPerTurn();// turns it takes to get from a corner to its opposing corner
 					int d = int.MaxValue;
 					tar = game.EnemyPiratesWithTreasures()[0];// TODO: focus on closest to enemy base
 					// find closest Pirate
 					foreach (PirateContainer p in PirateContainer.free)// notice all pirates with Treasure already moved, see: ltp
 					{
-						if (p.AVALIBLE && p.P.ReloadTurns < 6 && d > game.Distance(p.P, tar))// TODO: make the "6" generic to board size
+						if (p.AVALIBLE && p.P.ReloadTurns < mx && d > game.Distance(p.P, tar))
 						{
 							d = game.Distance(p.P, tar);
 							k = p.P;
@@ -426,13 +429,9 @@ namespace ExampleBot
 					PirateContainer p = PirateContainer.free[--i];
 					if (p.P.ReloadTurns == 0 && !p.P.HasTreasure && p.AVALIBLE)
 					{
-
 						List<Pirate> es = findTargetsFor(p.P, game);
 						if (es.Count > 0)
-						{
-							if (p.P.ReloadTurns == 0)
-								new QueuedAttack(p, es);
-						}
+							new QueuedAttack(p, es);
 					}
 				}
 				QueuedAttack.doAttacks(game);
@@ -443,11 +442,17 @@ namespace ExampleBot
 					int i = dss[j];
 					if (ps[i].S == PirateContainer.State.none && ps[i].AVALIBLE && !ps[i].P.HasTreasure)
 					{
-						if ((game.Treasures().Count > 0 && move(ps[i], ts[i].Location, remaining, game) || (game.EnemyPiratesWithTreasures().Count > 0 && ps[i].P == k && move(ps[i], tar.Location, remaining, game))))
+						if (game.Treasures().Count > 0)// use typical motion
 						{
-							remaining = 0;
-							break;
+							int mv = move(ps[i], ts[i].Location, remaining, game);
+							if (mv > 0)
+							{
+								remaining -= mv;
+								continue;
+							}
 						}
+						if (game.EnemyPiratesWithTreasures().Count > 0 && ps[i].P == k)// activate search and destroy
+							remaining -= move(ps[i], tar.Location, remaining, game);
 					}
 				}
 			}
@@ -564,22 +569,20 @@ namespace ExampleBot
 
 		// can we move the given Pirate to the given Location according to the number of moves?
 		// if so --> move it!
-		private static bool move(PirateContainer p, Location t, int moves, IPirateGame game, bool dontHitEnemies = false)
+		private static int move(PirateContainer p, Location t, int moves, IPirateGame game, bool dontHitEnemies = false)
 		{
-			if (moves == 0)
-				return true;
-			if (!p.AVALIBLE || p.P.Location.Equals(t))
-				return false;
+			if (moves == 0 || !p.AVALIBLE || p.P.Location.Equals(t))
+				return 0;
 
 			// calculate the best route
 			foreach (Location l in game.GetSailOptions(p.P, t, moves))
 			{
-				if (!QueuedMotion.isOccupied(l, game, dontHitEnemies))
-					return p.move(l, game);
+				if (!QueuedMotion.isOccupied(l, game, dontHitEnemies) && p.move(l, game))
+					return game.Distance(p.P, l);
 			}
 
 			game.Debug("Failed to find a move for " + p.P.Id + " to " + t);
-			return false;
+			return 0;
 		}
 	}
 }

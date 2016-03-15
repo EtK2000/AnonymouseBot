@@ -129,6 +129,7 @@ namespace Main
 							break;
 						case "map":
 							map.SelectedValue = line.Substring(line.IndexOf('=') + 1);
+							map_SelectionChanged(null, null);// load the selected map
 							break;
 						case "second":
 							second.SelectedValue = line.Substring(line.IndexOf('=') + 1);
