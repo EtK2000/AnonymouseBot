@@ -131,11 +131,13 @@ namespace ExampleBot
 	// and allows for attacks based off of them
 	internal class QueuedAttack
 	{
+		private static Dictionary<Pirate, List<PirateContainer>> targetMap;
 		private static List<QueuedAttack> queued;
 		private static List<Pirate> shot;
 
 		public static void init()
 		{
+			targetMap = new Dictionary<Pirate, List<PirateContainer>>();
 			queued = new List<QueuedAttack>();
 			shot = null;
 		}
@@ -160,7 +162,7 @@ namespace ExampleBot
 			return false;
 		}
 
-		public static void doAttacks(IPirateGame game)
+		public static void doAttacks(IPirateGame game, bool deadMap)
 		{
 			if (shot != null)
 			{
@@ -169,14 +171,38 @@ namespace ExampleBot
 			}
 			shot = new List<Pirate>();
 
-			for (int i = 0; i < queued.Count; i++)
+			foreach (Pirate p in targetMap.Keys)
+			{
+				foreach (PirateContainer c in targetMap[p])
+					game.Debug(p.Id + " --> " + c.P.Id);
+			}
+
+			for (int i = 1; i <= game.AllMyPirates().Count && targetMap.Keys.Count > 0; i++)
+			{
+				List<Pirate> removed = new List<Pirate>();
+				foreach (Pirate p in targetMap.Keys)
+				{
+					if (targetMap[p].Count == i && p.DefenseExpirationTurns == 0 && (!deadMap || p.HasTreasure))
+					{
+						PirateContainer pc = targetMap[p][0];
+						pc.attack(p, game);
+						removed.Add(p);
+						foreach (Pirate k in targetMap.Keys)
+							targetMap[k].Remove(pc);
+					}
+				}
+				foreach (Pirate p in removed)
+					targetMap.Remove(p);
+			}
+
+			/*for (int i = 0; i < queued.Count; i++)
 			{
 				if (queued[i].E.Count == 1 && !shot.Contains(queued[i].E[0]))
 				{
 					queued[i].P.attack(queued[i].E[0], game);// TODO: if kamikaze, and my target, ignore it
 					shot.Add(queued[i].E[0]);
 				}
-			}
+			}*/
 		}
 
 		private PirateContainer P;
@@ -187,6 +213,13 @@ namespace ExampleBot
 			P = p;
 			E = e;
 			queued.Add(this);
+
+			foreach (Pirate t in e)
+			{
+				if (!targetMap.ContainsKey(t))
+					targetMap.Add(t, new List<PirateContainer>());
+				targetMap[t].Add(p);
+			}
 		}
 	}
 
@@ -258,12 +291,35 @@ namespace ExampleBot
 	// this is the actual AI
 	public class MyBot : IPirateBot
 	{
-		private static bool panic;
+		private static bool panic, nowhere;// TODO: make nowhere mode do something...
+
+		private static bool deadMap = false;
 
 		// this is the actual turn
 		public void DoTurn(IPirateGame game)
 		{
-			panic = ((game.Treasures().Count == 0 || game.GetEnemyScore() == (game.GetMaxPoints() - 1)) && game.EnemyPiratesWithTreasures().Count > 0);
+			if (game.GetTurn() == 1)
+			{
+				Location l = new Location(1, 1);
+				foreach (Treasure t in game.Treasures())
+				{
+					if (t.Location.Equals(l))
+					{
+						deadMap = true;
+						break;
+					}
+				}
+
+				game.Debug((deadMap ? "DEADMAP!!!" : "NIE!"));
+				if (!deadMap)
+					return;// this stops some fighting over treasures
+			}
+
+			nowhere = (game.GetEnemyScore() == game.GetMyScore() && game.GetTurn() == (game.GetMaxTurns() / 3));
+			if (nowhere)
+				game.Debug("ACTIVATING NOWHERE MODE!!!");
+
+			panic = (((game.Treasures().Count == 0 || game.GetEnemyScore() >= (game.GetMaxPoints() - 2))) && game.EnemyPiratesWithTreasures().Count > 0);
 			if (panic)
 				game.Debug("ACTIVATING PANIC MODE!!!");
 
@@ -295,42 +351,6 @@ namespace ExampleBot
 
 				// control the kamikazes
 				calcKamikazes(ps, ref ts, ref ds, game);
-
-				/*{
-					if (!ps[0].HasTreasure)
-					{
-						ts[0] = new Treasure(19, game.GetEnemyPirate(1).InitialLocation);
-						//ds[0] = 0;
-						foreach (Pirate t in game.EnemyPirates())
-						{
-							if (t.Id == 2)
-							{
-								if (!t.IsLost)
-									ts[0] = new Treasure(19, new Location(t.InitialLocation));
-								break;
-							}
-						}
-						ds[0] = game.Distance(ps[0], ts[0]) * 2;
-					}
-					if (!ps[1].HasTreasure)
-					{
-						ts[1] = new Treasure(20, game.GetEnemyPirate(2).InitialLocation);
-						ds[1] = 0;
-					}
-					if (game.Treasures().Count == 0)
-					{
-						if (!ps[2].HasTreasure)
-						{
-							ts[2] = new Treasure(21, game.GetEnemyPirate(0).InitialLocation);
-							ds[2] = 0;
-						}
-						if (!ps[3].HasTreasure)
-						{
-							ts[3] = new Treasure(22, game.GetEnemyPirate(3).InitialLocation);
-							ds[3] = 0;
-						}
-					}
-				}*/
 
 				// move Pirates that have treasures towards the base
 				{
@@ -381,7 +401,7 @@ namespace ExampleBot
 							new QueuedAttack(p, es);
 					}
 				}
-				QueuedAttack.doAttacks(game);
+				QueuedAttack.doAttacks(game, deadMap);
 
 				// move
 				for (int j = 0; j < ships; j++)
