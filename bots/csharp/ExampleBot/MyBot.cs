@@ -461,7 +461,7 @@ namespace ExampleBot
 
 				// set the target
 				int index = kamikazeDefinitions[min];
-				ts[index] = new Treasure(100 + i, es[i].InitialLocation);
+				ts[index] = new Treasure(100 + i, es[i].InitialLocation, 0);
 				ds[index] = (int)Math.Ceiling(game.Distance(unusedKamikazes[min].P, es[i].InitialLocation) / 2f);
 				if (ds[index] == 0)
 					ds[index] = int.MaxValue;// speed up some things if the Pirate shouldn't move

@@ -3,3 +3,4 @@ C:\Users\anon\Source\Repos\AnonymouseBot\bots\csharp\ExampleBot\bin\Debug\Exampl
 C:\Users\anon\Source\Repos\AnonymouseBot\bots\csharp\ExampleBot\bin\Debug\IPirateGame.dll
 C:\Users\anon\Source\Repos\AnonymouseBot\bots\csharp\ExampleBot\obj\Debug\ExampleBot.dll
 C:\Users\anon\Source\Repos\AnonymouseBot\bots\csharp\ExampleBot\obj\Debug\ExampleBot.pdb
+C:\Users\anon\Source\Repos\AnonymouseBot\bots\csharp\ExampleBot\obj\Debug\ExampleBot.csprojResolveAssemblyReference.cache
