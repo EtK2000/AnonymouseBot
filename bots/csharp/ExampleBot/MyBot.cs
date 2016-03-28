@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Pirates;
 
 namespace ExampleBot
@@ -25,6 +26,11 @@ namespace ExampleBot
 			kamikazes = new List<PirateContainer>();
 			withTreasure = new List<PirateContainer>();
 			remainingMoves = game.GetActionsPerTurn();
+		}
+
+		public static int GetRemainingMoves()
+		{
+			return remainingMoves;
 		}
 
 		// instance variables
@@ -88,7 +94,7 @@ namespace ExampleBot
 
 		public bool defend(IPirateGame game)
 		{
-			if (s != State.none)
+			if (s != State.none && s != State.treasure)
 			{
 				game.Debug("State on Pirate " + P.Id + " cannot shift from " + s.ToString() + " to defended!");
 				return false;
@@ -99,6 +105,7 @@ namespace ExampleBot
 				return false;
 			}
 
+			game.Debug("def");
 			free.Remove(this);
 			s = State.defended;
 			game.Defend(P);
@@ -123,6 +130,26 @@ namespace ExampleBot
 			s = State.moved;
 			game.SetSail(P, l);
 			new QueuedMotion(P, l);
+			return true;
+		}
+		public bool move1(Location l, IPirateGame game)
+		{
+			if (s != State.none && s != State.treasure && s != State.moved)
+			{
+				game.Debug("State on Pirate " + P.Id + " cannot shift from " + s.ToString() + " to moved!");
+				return false;
+			}
+			int d = game.Distance(P, l);
+			if (d > remainingMoves || (P.HasTreasure && d > 1))
+			{
+				game.Debug("Pirate " + P.Id + " cannot move, not enough moves!");
+				return false;
+			}
+
+			//  free.Remove(this);
+			s = State.moved;
+			/*game.SetSail(P, l);
+			new QueuedMotion(P, l);*/
 			return true;
 		}
 	}
@@ -295,23 +322,22 @@ namespace ExampleBot
 
 		private static bool deadMap = false;
 
+		private static Random rand;
+
 		// this is the actual turn
 		public void DoTurn(IPirateGame game)
 		{
 			if (game.GetTurn() == 1)
 			{
+				rand = new Random(42934837); //,,79409223
+				if (game.AllEnemyPirates().Count > game.AllMyPirates().Count)
+					rand = new Random(31400000);
 				Location l = new Location(1, 1);
-				foreach (Treasure t in game.Treasures())
-				{
-					if (t.Location.Equals(l))
-					{
-						deadMap = true;
-						break;
-					}
-				}
+				if (game.Treasures().Count == 1 && game.AllMyPirates().Count == game.AllEnemyPirates().Count)
+					deadMap = true;
 
 				game.Debug((deadMap ? "DEADMAP!!!" : "NIE!"));
-				if (!deadMap)
+				if (deadMap)
 					return;// this stops some fighting over treasures
 			}
 
@@ -356,7 +382,13 @@ namespace ExampleBot
 				{
 					List<PirateContainer> ltp = PirateContainer.withTreasure;
 					foreach (PirateContainer p in ltp)
-						remaining -= move(p, p.P.InitialLocation, 1, game, true);
+					{
+						List<Pirate> es = findEnemiesFor(p.P, game);
+						if (es.Count > 0 && p.P.ReloadTurns == 0)
+							p.defend(game);
+						else
+							remaining -= move(p, p.P.InitialLocation, 1, game, true);
+					}
 				}
 
 				// search and destroy, TODO: prioritise this!!!
@@ -534,6 +566,18 @@ namespace ExampleBot
 			return res;
 		}
 
+		// returns a list of all the enemies who can shoot the given Pirate
+		private List<Pirate> findEnemiesFor(Pirate p, IPirateGame game)
+		{
+			List<Pirate> res = new List<Pirate>();
+			foreach (Pirate e in game.EnemySoberPirates())
+			{
+				if (e.ReloadTurns == 0 && game.InRange(e, p))
+					res.Add(e);
+			}
+			return res;
+		}
+
 		// can we move the given Pirate to the given Location according to the number of moves?
 		// if so --> move it!
 		private static int move(PirateContainer p, Location t, int moves, IPirateGame game, bool dontHitEnemies = false)
@@ -542,10 +586,33 @@ namespace ExampleBot
 				return 0;
 
 			// calculate the best route
-			foreach (Location l in game.GetSailOptions(p.P, t, moves))
+			/*foreach (Location l in game.GetSailOptions(p.P, t, moves))
 			{
 				if (!QueuedMotion.isOccupied(l, game, dontHitEnemies) && p.move(l, game))
 					return game.Distance(p.P, l);
+			}*/
+			var X = from l in game.GetSailOptions(p.P, t, moves)
+					where (!QueuedMotion.isOccupied(l, game, dontHitEnemies) && p.move1(l, game))
+					select l;
+
+			if (X.Count() > 0)
+			{
+				PirateContainer.free.Remove(p);
+
+				Location loc = X.ElementAt(rand.Next(X.Count()));
+
+				game.SetSail(p.P, loc);
+				new QueuedMotion(p.P, loc);
+				return game.Distance(p.P, loc);
+			}
+
+			else if (X.Count() == 0)
+			{
+				if (PirateContainer.GetRemainingMoves() > 2)
+				{
+					Location loc = p.P.Location;
+					p.move(loc, game);
+				}
 			}
 
 			game.Debug("Failed to find a move for " + p.P.Id + " to " + t);

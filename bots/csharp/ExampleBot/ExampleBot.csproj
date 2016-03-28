@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="FarBotV2.cs" />
     <Compile Include="MyBot.cs" />
+    <Compile Include="MyBotV4.cs" />
     <Compile Include="MyBotV1.cs" />
     <Compile Include="MyBotV2.cs" />
     <Compile Include="MyBotV3.cs" />
