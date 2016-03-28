@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
         .menu li a {
             color: #fff;
             line-height: 35px;
-            padding: 2px 16px;
+            padding: 2px 15px;
             display: block;
         }
 
@@ -977,6 +977,7 @@ h1, h2, h3, h4, h5, h6 {
 
         .page_game .container-fluid > .row > .col-sm-3 {
             width: 21%;
+            direction: ltr;
         }
 
         .page_game .container-fluid > .row > .col-sm-6 {
@@ -1060,7 +1061,6 @@ h1, h2, h3, h4, h5, h6 {
         text-align: left;
         z-index: 1;
         position: relative;
-        direction: ltr;
     }
 
     .page_game .avatar {

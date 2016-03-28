@@ -39,11 +39,12 @@ class TestPiratesBot(unittest.TestCase):
     def setUp(self):
         self.myBot = "myBot.py"
 
-    def myBot_vs_Other(self, bots_dir, myBotName, otherBotName):
+    def myBot_vs_Other(self, bots_dir, myBotName, otherBotName, maps_dir, map):
         # test my bot against demo bot
         cmd =  os.getcwd() + '\\run.bat'
         myBot = bots_dir + myBotName
         otherBot = bots_dir + otherBotName
+        map_path = maps_dir + map
 
         folder = os.getcwd() + "\\scripts\\logs\\"
         if not os.path.exists(folder):
@@ -54,10 +55,10 @@ class TestPiratesBot(unittest.TestCase):
         f_err_name = ".\\scripts\\logs\\" + filename + "_err.txt"
         f_out = open(f_out_name, 'w')
         f_err = open(f_err_name, 'w')
-        map = ".\\maps\\default_map.map"
+        #map = ".\\maps\\default_map.map"
         flags = "--nolaunch"
 
-        params = [cmd, myBot, otherBot, map, flags]
+        params = [cmd, myBot, otherBot, map_path, flags]
 
         with open(f_out_name, 'w') as outfile:
             with open(f_err_name, 'w') as errfile:
@@ -85,16 +86,20 @@ class TestPiratesBot(unittest.TestCase):
         # files += [".\\java\\ChallengeBots\\src\\bots\\" + file for file in os.listdir(".\\bots\\java\\ChallengeBots\\src\\bots\\") if file.endswith(".java")]
         #files.append("Demo1.pyc")
 
+        maps_dir = ".\\maps\\"
+        maps = [map_file for map_file in os.listdir(maps_dir)]
+        overall = []
         candidates = []
         for candidate in files:
             print "\nCandidate {0}\n*****************".format(candidate)
             wins = 0
             for opponent in files:
                 if opponent == candidate: continue
-                win = self.myBot_vs_Other(bots_dir, candidate, opponent)
-                print "Candidate {0} vs {1} - {2}".format(candidate, opponent, win)
-                wins += win
-            candidates.append((candidate, wins))
+                for map in maps:
+                    win = self.myBot_vs_Other(bots_dir, candidate, opponent, maps_dir, map)
+                    print "On map {0}, Candidate {1} vs {2} - {3}".format(map, candidate, opponent, win)
+                    wins += win
+            candidates.append([candidate, wins])
             print candidate + " got " + str(wins) + " wins"
 
         candidates.sort(key=lambda (candidate, wins): wins, reverse=True)

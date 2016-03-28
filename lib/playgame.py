@@ -210,6 +210,9 @@ def main(argv):
     game_group.add_option("--maxpoints", dest="maxpoints",
                           default=def_opts['maxpoints'], type="int",
                           help="Points to reach to end game")
+    game_group.add_option("--randomize_sail_options", dest="randomize_sail_options",
+                          default=0, type="int",
+                          help="Do we want to randomize sail options")
     game_group.add_option("--actions_per_turn", dest="actions_per_turn",
                           default=def_opts['actions_per_turn'], type="int",
                           help="How many actions can be performed by player in one turn")
@@ -382,6 +385,7 @@ def run_rounds(opts,args):
         "cutoff_percent": opts.cutoff_percent,
         "scenario": opts.scenario,
         "maxpoints" : opts.maxpoints,
+        "randomize_sail_options" : opts.randomize_sail_options,
         "actions_per_turn" : opts.actions_per_turn,
         "reload_turns" : opts.reload_turns,
         "defense_reload_turns" : opts.defense_reload_turns,

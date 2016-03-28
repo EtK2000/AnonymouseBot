@@ -566,6 +566,8 @@ def get_java_path():
         javas += [os.path.join("C:\\Program Files\\java",i) for i in os.listdir("C:\\Program Files\\java")]
     if os.path.exists("C:\\Program Files (x86)\\java"):
         javas += [os.path.join("C:\\Program Files (x86)\\java",i) for i in os.listdir("C:\\Program Files (x86)\\java")]
+    if os.path.exists("C:\\Java"):
+        javas += [os.path.join("C:\\Java",i) for i in os.listdir("C:\\Java")]
     javas.reverse() # this will make us pick the higher version
     for java in javas:
         if 'jdk' in java.lower() and any([ver in java for ver in ['1.6','1.7','1.8']]):

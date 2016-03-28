@@ -9,6 +9,8 @@ from math import sqrt
 import os
 import imp
 
+
+
 DEFAULT_BOT_FILE = 'my_bot.py'
 
 ME = 0
@@ -49,7 +51,8 @@ class Pirates():
         self.ghost_cooldown = 0
         self.max_turns = 0
         self.max_points = 0
-        self.actions_per_turn = 0
+        self.randomize_sail_options = 0 # don't randomize
+        self.actions_per_turn = []
         self.reload_turns = 0
         self.defense_reload_turns = 0
         self.defense_expiration_turns = 0
@@ -105,6 +108,8 @@ class Pirates():
                     self.max_turns = int(tokens[1])
                 elif key == 'maxpoints':
                     self.max_points = int(tokens[1])
+                elif key == 'randomize_sail_options':
+                    self.randomize_sail_options = int(tokens[1])
                 elif key == 'actions_per_turn':
                     self.actions_per_turn = int(tokens[1])
                 elif key == 'reload_turns':
@@ -121,6 +126,7 @@ class Pirates():
                     self.num_players = int(tokens[1])
                     self._scores = [0] * self.num_players
                     self._last_turn_points = [0] * self.num_players
+                    self._actions_per_turn = [0] * self.num_players
                 elif key == 'bot_names':
                     self._bot_names = tokens[2:]
                 elif key == 'recover_errors':
@@ -138,12 +144,12 @@ class Pirates():
         self.vision = None
         self.all_pirates = []
         self.all_treasures = []
+        self.all_powerups = []
         self._loc2pirate = {}
         self._sorted_my_pirates = []
         self._sorted_enemy_pirates = []
         self._orders = {}
         self.turn += 1
-
         # update map and create new pirate/treasure lists
         for line in data.split('\n'):
             line = line.strip().lower()
@@ -158,13 +164,16 @@ class Pirates():
                         self._scores = [int(s) for s in tokens[2:]]
                     elif tokens[1] == 'p':
                         self._last_turn_points = [int(p) for p in tokens[2:]]
+                    elif tokens[1] == 'm':
+                        self._actions_per_turn = [int(m) for m in tokens[2:]]
                 elif tokens[0] == 't':
                     # format for treasure is:
                     # t <id> <row> <col>
                     id = int(tokens[1])
                     y = row = int(tokens[2])
                     x = col = int(tokens[3])
-                    self.all_treasures.append(Treasure(id, (row,col)))
+                    value = int(tokens[4])
+                    self.all_treasures.append(Treasure(id, (row,col), value))
                 elif tokens[0] == 'u':
                     # format for unload area is:
                     # u <row> <col> <owner>
@@ -172,6 +181,28 @@ class Pirates():
                     col = int(tokens[2])
                     owner = int(tokens[3])
                     self.unload_areas.append(UnloadArea((row,col), owner))
+                elif tokens[0] == 'p':
+                    # format for powerup is:
+                    # p <id> <type> <row> <col> <active_turns> <end_turn> ?<powerup_value>
+                    #print(tokens[0], tokens[1], tokens[2])
+                    id = int(tokens[1])
+                    row = int(tokens[3])
+                    col = int(tokens[4])
+                    active_turns = int(tokens[5])
+                    end_turn = int(tokens[6])
+                    if tokens[2] == "robpowerup":
+                        powerup = RobPowerup(id, (row,col), active_turns, end_turn)
+                        self.all_powerups.append(powerup)
+                    if tokens[2] == "movepowerup":
+                        powerup = MovePowerup(id, (row,col), active_turns, end_turn, int(tokens[7]))
+                        self.all_powerups.append(powerup)
+                    if tokens[2] == "speedpowerup":
+                        powerup = SpeedPowerup(id, (row,col), active_turns, end_turn, int(tokens[7]))
+                        self.all_powerups.append(powerup)
+                    if tokens[2] == "attackpowerup":
+                        powerup = AttackPowerup(id, (row,col), active_turns, end_turn, int(tokens[7]))
+                        self.all_powerups.append(powerup)
+
                 else:
                     if len(tokens) >= 4:
                         # format for pirate is:
@@ -187,7 +218,7 @@ class Pirates():
                             owner = int(tokens[4])
                         if tokens[0] == 'a' or tokens[0] == 'k' or tokens[0] == "d":
                             initial_loc = (int(tokens[5]), int(tokens[6]))
-                            pirate = Pirate(id, (row,col), owner, initial_loc)
+                            pirate = Pirate(id, (row,col), owner, initial_loc, self.attackradius2)
                             self._orders[(row, col)] = []
                             if tokens[0] == 'k':
                                 # dead pirates revive info
@@ -197,10 +228,14 @@ class Pirates():
                             else:
                                 self._loc2pirate[(row,col)] = pirate
                                 pirate.turns_to_sober = int(tokens[7])
-                                pirate.has_treasure = bool(int(tokens[8]))
+                                pirate.treasure_value = int(tokens[8])
                                 pirate.reload_turns = int(tokens[9])
                                 pirate.defense_reload_turns = int(tokens[10])
                                 pirate.defense_expiration_turns = int(tokens[11])
+                                pirate.carry_treasure_speed = int(tokens[12])
+                                pirate.attack_radius = int(tokens[13])
+                                pirate.powerups = tokens[14:]
+                                pirate.has_treasure = True if pirate.treasure_value > 0 else False
                             self.all_pirates.append(pirate)
 
         # create main helper members which are lists sorted by IDs
@@ -209,8 +244,64 @@ class Pirates():
         self._sorted_enemy_pirates = sort_by_id([pirate for pirate in self.all_pirates
                                             if pirate.owner != ME])
 
-    ''' Treasure related API '''
+    def __get_directions(self, loc1, loc2):
+        '''
+            Determine the fastest (closest) directions to reach a location of actions size
+            This method will work for locations or instances with location members
+        '''
+        row1, col1 = self.get_location(loc1)
+        row2, col2 = self.get_location(loc2)
+        height2 = self.rows//2
+        width2 = self.cols//2
+        dist = self.distance(loc1, loc2)
 
+        if row1 == row2 and col1 == col2:
+            # return a single move of 'do nothing'
+            return ['-']
+
+        d = []
+        for i in range(dist):
+            if row1 < row2:
+                if row2 - row1 >= height2 and self.cyclic:
+                    d.append('n')
+                    row1 = row1 - 1
+                    continue
+                if row2 - row1 <= height2 or not self.cyclic:
+                    d.append('s')
+                    row1 = row1 + 1
+                    continue
+            if row2 < row1:
+                if row1 - row2 >= height2 and self.cyclic:
+                    d.append('s')
+                    row1 = row1 + 1
+                    continue
+                if row1 - row2 <= height2 or not self.cyclic:
+                    d.append('n')
+                    row1 = row1 - 1
+                    continue
+            if col1 < col2:
+                if col2 - col1 >= width2 and self.cyclic:
+                    d.append('w')
+                    col1 = col1 - 1
+                    continue
+                if col2 - col1 <= width2 or not self.cyclic:
+                    d.append('e')
+                    col1 = col1 + 1
+                    continue
+            if col2 < col1:
+                if col1 - col2 >= width2 and self.cyclic:
+                    d.append('e')
+                    col1 = col1 + 1
+                    continue
+                if col1 - col2 <= width2 or not self.cyclic:
+                    d.append('w')
+                    col1 = col1 - 1
+                    continue
+        #random.shuffle(d)
+        return d
+
+
+    ''' Treasure related API '''
     def treasures(self):
         return [treasure for treasure in self.all_treasures]
 
@@ -299,6 +390,11 @@ class Pirates():
         ''' returns a list of locations for unloading treasures '''
         return [ua.location for ua in self.unload_areas if ua.owner != self.ME]
 
+    ''' Powerup API '''
+
+    def powerups(self):
+        ''' returns a list of powerups '''
+        return self.all_powerups
 
     ''' Action API '''
 
@@ -307,7 +403,7 @@ class Pirates():
         assert(moves >= 0), error_string
         if pirate.location == destination:
             return [pirate.location]
-        directions = self.get_directions(pirate.location, self.get_location(destination))
+        directions = self.__get_directions(pirate.location, self.get_location(destination))
 
         set_of_directions = []
         for d in directions:
@@ -321,13 +417,22 @@ class Pirates():
         opt_dir = directions[first_dist:second_dist]
 
         if len(opt_dir) < moves:
-            return [self.destination(pirate, opt_dir)]
+            ret = [self.destination(pirate, opt_dir)]
         else:
-            return [self.destination(pirate, opt_dir[i:moves+i]) for i in xrange(len(opt_dir) - moves + 1)]
+            ret = [self.destination(pirate, opt_dir[i:moves+i]) for i in xrange(len(opt_dir) - moves + 1)]
+
+        if self.randomize_sail_options:
+            random.shuffle(ret)
+
+        return ret
+
 
     def set_sail(self, pirate, destination):
-
-        directions = self.get_directions(pirate.location, destination)
+        # already in destination
+        if pirate.location == destination:
+            self.debug("WARNING: Pirate %d tried to set sail to its current location.", pirate.id)
+            return
+        directions = self.__get_directions(pirate.location, destination)
         loc = self.get_location(pirate)
         self._orders[loc].extend(directions)
 
@@ -345,61 +450,6 @@ class Pirates():
         self._orders[(row, col)].append('d')
 
     ''' Primary helper API '''
-    def get_directions(self, loc1, loc2):
-        '''
-            Determine the fastest (closest) directions to reach a location of actions size
-            This method will work for locations or instances with location members
-        '''
-        row1, col1 = self.get_location(loc1)
-        row2, col2 = self.get_location(loc2)
-        height2 = self.rows//2
-        width2 = self.cols//2
-        dist = self.distance(loc1, loc2)
-        
-        if row1 == row2 and col1 == col2:
-            # return a single move of 'do nothing'
-            return ['-']
-
-        d = []
-        for i in range(dist):
-            if row1 < row2:
-                if row2 - row1 >= height2 and self.cyclic:
-                    d.append('n')
-                    row1 = row1 - 1
-                    continue
-                if row2 - row1 <= height2 or not self.cyclic:
-                    d.append('s')
-                    row1 = row1 + 1
-                    continue
-            if row2 < row1:
-                if row1 - row2 >= height2 and self.cyclic:
-                    d.append('s')
-                    row1 = row1 + 1
-                    continue
-                if row1 - row2 <= height2 or not self.cyclic:
-                    d.append('n')
-                    row1 = row1 - 1
-                    continue
-            if col1 < col2:
-                if col2 - col1 >= width2 and self.cyclic:
-                    d.append('w')
-                    col1 = col1 - 1
-                    continue
-                if col2 - col1 <= width2 or not self.cyclic:
-                    d.append('e')
-                    col1 = col1 + 1
-                    continue
-            if col2 < col1:
-                if col1 - col2 >= width2 and self.cyclic:
-                    d.append('e')
-                    col1 = col1 + 1
-                    continue
-                if col1 - col2 <= width2 or not self.cyclic:
-                    d.append('w')
-                    col1 = col1 - 1
-                    continue
-        #random.shuffle(d)
-        return d
 
     def distance(self, loc1, loc2):
         'calculate the closest distance between two locations'
@@ -489,7 +539,7 @@ class Pirates():
         return self.defense_reload_turns
 
     def get_actions_per_turn(self):
-        return self.actions_per_turn
+        return self._actions_per_turn[self.ME]
 
     def get_spawn_turns(self):
         return self.spawn_turns
@@ -507,11 +557,6 @@ class Pirates():
         return self._bot_names[-1]
 
     ''' Terrain API '''
-    def is_passable(self, loc):
-        'true if not enemy zone and in map. negative numbers are wrapped'
-        row, col = loc
-        return row < self.rows and col < self.cols  and row >= 0 and col >= 0 and self.map[row][col] != ZONE
-
     def is_occupied(self, loc):
         'true if no pirates are at the location'
         return loc in [pirate.location for pirate in self.all_pirates if not pirate.is_lost]
@@ -681,7 +726,7 @@ class Pirates():
 
 
 class Pirate():
-    def __init__(self, id, location, owner, initial_loc):
+    def __init__(self, id, location, owner, initial_loc, attack_radius):
         self.location = location
         self.id = id
         self.owner = owner
@@ -692,7 +737,13 @@ class Pirate():
         self.defense_reload_turns = 0
         self.defense_expiration_turns = 0
         self.turns_to_sober = 0
+        self.treasure_value = 0
         self.has_treasure = False
+
+        #powerups
+        self.attack_radius = attack_radius
+        self.carry_treasure_speed = 1
+        self.powerups = []
 
     def __eq__(self, other):
         if isinstance(other, self.__class__):
@@ -707,13 +758,44 @@ class Pirate():
         return self.id * 10 + self.owner
 
 
-class Treasure():
-    def __init__(self, id, location):
+class Powerup():
+    def __init__(self, id, type, location, active_turns, end_turn):
         self.id = id
+        self.type = type
         self.location = location
+        self.active_turns = active_turns
+        self.end_turn = end_turn
 
     def __repr__(self):
-        return "<Treasure Loc:(%d, %d)>" % (self.location[0], self.location[1])
+        return "<Powerup Loc:(%d, %d)>" % (self.location[0], self.location[1])
+
+class RobPowerup(Powerup):
+    def __init__(self, id, location, end_turn, active_turns):
+        Powerup.__init__(self, id, "Rob", location, end_turn, active_turns)
+
+class MovePowerup(Powerup):
+    def __init__(self, id, location, end_turn, active_turns, moves_per_turn):
+        Powerup.__init__(self, id, "Move", location, end_turn, active_turns)
+        self.moves_per_turn = moves_per_turn
+
+class SpeedPowerup(Powerup):
+    def __init__(self, id, location, end_turn, active_turns, carry_treasure_speed):
+        Powerup.__init__(self, id, "Speed", location, end_turn, active_turns)
+        self.carry_treasure_speed = carry_treasure_speed
+
+class AttackPowerup(Powerup):
+    def __init__(self, id, location, end_turn, active_turns, attack_radius):
+        Powerup.__init__(self, id, "Attack", location, end_turn, active_turns)
+        self.attack_radius = attack_radius
+
+class Treasure():
+    def __init__(self, id, location, value):
+        self.id = id
+        self.location = location
+        self.value = value
+
+    def __repr__(self):
+        return "<Treasure Loc:(%d, %d), Val(%d)>" % (self.location[0], self.location[1], self.value)
 
 class UnloadArea():
     def __init__(self, loc, owner):
@@ -726,16 +808,25 @@ class UnloadArea():
 class BotController:
     ''' Wrapper class for bot. May accept either a file or a directory and will add correct folder to path '''
     def __init__(self, botpath):
-        # define class level variables, will be remembered between turns
+        # with io.open(botpath,'r',encoding='utf-8',errors='ignore') as infile, \
+        #      io.open('abcdefg.py','w',encoding='ascii',errors='ignore') as outfile:
+        #     for line in infile:
+        #         print(unicode(line), file=outfile)
+        # # define class level variables, will be remembered between turns
         if botpath.endswith('.py'):
-            self.bot = imp.load_source("bot", botpath)
+            #self.bot = imp.load_source("bot", 'abcdefg.py')
+            with open(botpath, 'r') as bot_file:
+                bot_code=bot_file.read()
+            bot_module = imp.new_module('bot_module')
+            exec bot_code in bot_module.__dict__
+            self.bot = bot_module
         else:
             self.bot = imp.load_compiled("bot", botpath)
 
     def do_turn(self, game):
         self.bot.do_turn(game)
         # Make sure no self collisions
-        game.cancel_collisions()
+        #game.cancel_collisions()
 
 
 if __name__ == '__main__':

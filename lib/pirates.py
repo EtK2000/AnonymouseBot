@@ -11,6 +11,7 @@ import operator
 import itertools
 from game import Game
 from copy import deepcopy
+import datetime
 
 MAX_RAND = 2147483647
 
@@ -55,6 +56,8 @@ class Pirates(Game):
                 options[key] = val
         self.bot_names = options['bot_names']
         self.max_turns = int(options['turns'])
+        self.maxpoints = int(options['maxpoints'])
+        self.randomize_sail_options = int(options['randomize_sail_options'])
         self.loadtime = int(options['loadtime'])
         self.turntime = int(options['turntime'])
         self.recover_errors = int(options['recover_errors'])
@@ -77,6 +80,7 @@ class Pirates(Game):
         }.get(options.get('attack'))
 
         self.maxpoints = int(options.get('maxpoints'))
+        self.randomize_sail_options = int(options.get('randomize_sail_options'))
         self.actions_per_turn = int(options.get('actions_per_turn'))
         self.reload_turns = int(options.get('reload_turns'))
         self.defense_reload_turns = int(options.get('defense_reload_turns'))
@@ -105,7 +109,7 @@ class Pirates(Game):
 
         self.treasures = []
         self.unload_areas = []
-        self.items = []
+        self.powerups = []
         self.zones = dict([(player, []) for player in range(self.num_players)])
         self.lighthouses = set(map_data['lighthouses'])
         self.enemy_zones = dict([(player, []) for player in range(self.num_players)])
@@ -138,21 +142,26 @@ class Pirates(Game):
         # cache used by neighbourhood_offsets() to determine nearby squares
         self.offsets_cache = {}
 
-        for id, loc in enumerate(map_data['treasures']):
-            treasure = Treasure(id, loc)
+        for id, (loc, value) in enumerate(map_data['treasures']):
+            treasure = Treasure(id, loc, value)
             self.treasures.append(treasure)
 
-        # initialize items
-        for id, item_data in enumerate(map_data['items']):
-            if item_data[0] == 'a':
-                AttackItem(id, (item_data[1], item_data[2]), item_data[3], item_data[4], item_data[5])
-                self.items.append(AttackItem)
-            elif item_data[0] == 'd':
-                DefenseItem(id, (item_data[1], item_data[2]), item_data[3], item_data[4], item_data[5])
-                self.items.append(DefenseItem)
-            elif item_data[0] == 'm':
-                ActionItem(id, (item_data[1], item_data[2]), item_data[3], item_data[4], item_data[5])
-                self.items.append(ActionItem)
+        # initialize powerups
+        for id, powerup_data in enumerate(map_data['powerups']):
+            if powerup_data[0] == 'a':
+                powerup = AttackPowerup(id, (powerup_data[1], powerup_data[2]), powerup_data[3], powerup_data[4], powerup_data[5], powerup_data[6])
+            elif powerup_data[0] == 'd':
+                powerup = DefensePowerup(id, (powerup_data[1], powerup_data[2]), powerup_data[3], powerup_data[4], powerup_data[5], powerup_data[6])
+            elif powerup_data[0] == 'm':
+                powerup = MovePowerup(id, (powerup_data[1], powerup_data[2]), powerup_data[3], powerup_data[4], powerup_data[5], powerup_data[6])
+            elif powerup_data[0] == 'r':
+                powerup = RobPowerup(id, (powerup_data[1], powerup_data[2]), powerup_data[3], powerup_data[4], powerup_data[5])
+            elif powerup_data[0] == 's':
+                powerup = SpeedPowerup(id, (powerup_data[1], powerup_data[2]), powerup_data[3], powerup_data[4], powerup_data[5], powerup_data[6])
+            self.powerups.append(powerup)
+
+        # move powerup
+        self.moves_per_player = [self.actions_per_turn]*self.num_players
 
 
         # initialize pirates
@@ -223,6 +232,7 @@ class Pirates(Game):
         pirate_list = None
         unload_area_player_list = None
         zone_data = []
+        treasures_data = []
         width = height = None
         water = []
         food = []
@@ -234,7 +244,7 @@ class Pirates(Game):
         score = None
         num_players = None
         params = {}
-        items = []
+        powerups = []
 
         for line in map_text.split('\n'):
             line = line.strip()
@@ -252,10 +262,15 @@ class Pirates(Game):
             elif key == 'players':
                 num_players = int(value)
                 if num_players < 2 or num_players > 10:
-                    raise Exception("map",
-                                    "player count must be between 2 and 10")
+                    raise Exception("map","player count must be between 2 and 10")
             elif key == 'score':
                 score = list(map(int, value.split()))
+            elif key == 'treasure':
+                treasure_params = value.split()
+                #if len(treasure_params) < 2:
+                    # TODO - switch this 20 with capture turns
+                #   island_params += [1, 20]
+                treasures_data.append(treasure_params[1])
             elif key == 'zone':
                 zone_data.append(value.split())
             elif key == 'm':
@@ -277,7 +292,10 @@ class Pirates(Game):
                     elif c in unload_area_player_list:
                         unload_areas[unload_area_player_list.index(c)].append((row,col))
                     elif c == MAP_OBJECT[TREASURE]:
-                        treasures.append((row, col))
+                        treasure_value = 1
+                        if treasures_data:
+                            treasure_value = treasures_data.pop(0)
+                        treasures.append(((row, col), treasure_value))
                     elif c == MAP_OBJECT[FOOD]:
                         food.append((row,col))
                     elif c == MAP_OBJECT[WATER]:
@@ -285,11 +303,12 @@ class Pirates(Game):
                     elif c == MAP_OBJECT[LIGHTHOUSE]:
                         lighthouses.append((row, col))
                     elif c != MAP_OBJECT[LAND]:
-                        raise Exception("map",
-                                        "Invalid character in map: %s" % c)
+                        raise Exception("map","Invalid character in map: %s" % c)
                 row += 1
-            elif key == 'item':
-                items.append(value.split())
+            elif key == 'powerup':
+                powerup = value.split()
+                powerup = [powerup[0]] + map(int, powerup[1:])
+                powerups.append(powerup)
             else:
                 # default collect all other parameters
                 params[key] = value
@@ -307,7 +326,7 @@ class Pirates(Game):
             'size':         (height, width),
             'num_players':  num_players,
             'treasures':    treasures,
-            'items':        items,
+            'powerups':     powerups,
             'lighthouses':  lighthouses,
             'pirates':      pirates,
             'unload_areas': unload_areas,
@@ -504,8 +523,10 @@ class Pirates(Game):
         visible_updates.append(['g','s'] + self.order_for_player(player, self.score))
         visible_updates.append(['g','c'] + self.order_for_player(player, self.ghost_cooldowns))
         visible_updates.append(['g','p'] + self.order_for_player(player, self.get_last_turn_points()))
+        visible_updates.append(['g','m'] + self.order_for_player(player, self.moves_per_player))
         visible_updates.append([]) # newline
         return '\n'.join(' '.join(map(str,s)) for s in visible_updates)
+
 
     def get_state_changes(self):
         """ Return a list of all transient objects on the map.
@@ -516,19 +537,23 @@ class Pirates(Game):
 
         changes = []
         changes.extend(sorted(
-            ['t', treasure.id, treasure.initial_loc[0], treasure.initial_loc[1]]
+            ['t', treasure.id, treasure.initial_loc[0], treasure.initial_loc[1], treasure.value]
             for treasure in self.treasures if treasure.is_available
         ))
 
         # current pirates
         changes.extend(sorted(
-            ['a', pirate.id, pirate.loc[0], pirate.loc[1], pirate.owner, pirate.initial_loc[0], pirate.initial_loc[1], int(pirate.sober_turns), int(pirate.treasure is not None), pirate.reload_turns, pirate.defense_reload_turns, pirate.defense_expiration_turns_counter]
+            ['a', pirate.id, pirate.loc[0], pirate.loc[1], pirate.owner, pirate.initial_loc[0], pirate.initial_loc[1],
+             int(pirate.sober_turns), int(pirate.treasure.value if pirate.treasure else 0),
+             pirate.reload_turns, pirate.defense_reload_turns, pirate.defense_expiration_turns_counter, pirate.carry_treasure_speed, pirate.attack_radius]
+            + [pup for pup in pirate.powerups]
             for pirate in self.current_pirates.values()
         ))
 
         # killed pirates
         changes.extend(sorted(
-            ['k', pirate.id, pirate.loc[0], pirate.loc[1], pirate.owner, pirate.initial_loc[0], pirate.initial_loc[1], self.turns_till_revive(pirate)]
+            ['k', pirate.id, pirate.loc[0], pirate.loc[1], pirate.owner, pirate.initial_loc[0], pirate.initial_loc[1],
+                self.turns_till_revive(pirate)]
             for pirate in self.dead_pirates
         ))
 
@@ -536,6 +561,12 @@ class Pirates(Game):
         changes.extend(sorted(
             ['u', unload_area.loc[0], unload_area.loc[1], unload_area.owner]
             for unload_area in self.unload_areas
+        ))
+
+        # powerups
+        changes.extend(sorted(
+            ['p', pup.id, pup.__class__.__name__, pup.location[0], pup.location[1], pup.active_turns, pup.end_turn, pup.get_value()]
+            for pup in self.powerups if self.turn >= pup.start_turn and self.turn < pup.end_turn
         ))
 
         return changes
@@ -681,9 +712,9 @@ class Pirates(Game):
 
             action_counter += len(only_direction_letters) # only movement!
 
-            if action_counter > self.actions_per_turn:
+            if action_counter > self.moves_per_player[player]:
 
-                invalid.append((line,'total actions per turn (%s) exceeded allowed maximum (%s)' % (action_counter, self.actions_per_turn)))
+                invalid.append((line,'total actions per turn (%s) exceeded allowed maximum (%s)' % (action_counter, self.moves_per_player[player])))
                 orders = []
                 valid = []
                 break
@@ -748,9 +779,13 @@ class Pirates(Game):
             if 'a' in only_actions_letters and len(only_actions_letters) > 1:
                 invalid.append((line, 'Attacking ship cannot defend, move or attack more than once in the same turn'))
                 continue
-            if 'd' in only_actions_letters and len(only_actions_letters) > 1:
-                invalid.append((line, 'Defending ship cannot attack, move or defend more than once in the same turn'))
-                continue
+            if 'd' in only_actions_letters:
+                #d = datetime.date(year=2016, month=03, day=22)
+                #if datetime.datetime.now().date() < d:
+                #    raise Exception('Not supported')
+                if len(only_actions_letters) > 1:
+                    invalid.append((line, 'Defending ship cannot attack, move or defend more than once in the same turn'))
+                    continue
 
             #validate that ship cannot attack if it's reloading
             if 'a' in only_actions_letters and self.current_pirates[loc].reload_turns > 0:
@@ -762,7 +797,7 @@ class Pirates(Game):
                 ignored.append((line, 'Defense ignored - pirate ship is reloading'))
                 continue
 
-            if p.treasure is not None and len(only_direction_letters) > 1:
+            if p.treasure is not None and len(only_direction_letters) > p.carry_treasure_speed:
                 invalid.append((line, 'Cannot move more than 1 step if carrying a treasure'))
                 continue
 
@@ -810,6 +845,7 @@ class Pirates(Game):
             All pirates are moved to their new positions.
             Any pirates which occupy the same square are killed.
         """
+
         # set old pirate locations to land
         for pirate in self.current_pirates.values():
             row, col = pirate.loc
@@ -895,7 +931,8 @@ class Pirates(Game):
     def do_sober(self):
         # handles the drunk pirates
         pirates_to_sober = []
-        for pirate in self.all_pirates:
+        #for pirate in self.all_pirates:
+        for pirate in self.current_pirates.values():
             if pirate in self.drunk_pirates:
                 pirate.drink_history.append(True)
                 # if pirate.drink_turns[-1] == self.turn: #meaning that this is the first turn for being drunk
@@ -914,12 +951,18 @@ class Pirates(Game):
     def do_spawn(self):
         # handles the reviving of dead pirates
         pirates_to_revive = []
+        pirates_to_collide = []
         for pirate in self.dead_pirates:
-
+            if pirate.move_powerup_active_turns > 0:
+                self.moves_per_player[pirate.owner] = self.actions_per_turn
             # calculate if the turn has come to revive
             if self.turn - pirate.die_turn >= self.spawn_turns:
                 # verify no one standing in the pirate's location
-                if pirate.initial_loc not in self.current_pirates:
+                #if pirate.initial_loc not in self.current_pirates:
+                occupier = next((p for p in self.current_pirates.values() if p.loc == pirate.initial_loc), None)
+                if occupier:
+                    self.kill_pirate(occupier)
+                else:
                     pirates_to_revive.append(pirate)
 
         # remove pirate from dead list and make new one in the alive
@@ -932,6 +975,7 @@ class Pirates(Game):
             self.map[row][col] = owner
             self.all_pirates.append(new_pirate)
             self.current_pirates[loc] = new_pirate
+
 
     def get_last_turn_points(self):
         """ Get points achieved on last turns """
@@ -973,10 +1017,10 @@ class Pirates(Game):
         """
         
         # if the drunk pirate holds treasure
-        if pirate.treasure:
-            #release it
-            pirate.treasure.is_available = True
-            pirate.treasure = None
+        # if pirate.treasure:
+        #     #release it
+        #     pirate.treasure.is_available = True
+        #     pirate.treasure = None
 
         self.drunk_pirates.append(pirate)
         pirate.drink_turns.append(self.turn+1)
@@ -1057,19 +1101,34 @@ class Pirates(Game):
         # map pirates (to be killed) to the enemies that kill it
         pirates_to_drunk = set()
         for pirate in self.get_physical_pirates():
+            pirate.attack_radius_history.append(pirate.attack_radius)
 
             if pirate.attack_turns[-2] != self.turn: # [-2] is the last turn attack was made. [-1] is the attack target
 
                 if pirate.reload_turns > 0:
                     pirate.reload_turns -= 1
                 continue
-            pirate.reload_turns = self.reload_turns
+
+            #attack happened this turn
+            if pirate.attack_powerup_active_turns == 0:
+                pirate.reload_turns = self.reload_turns
 
             # attack turn
+            robbers = []
             target_pirate = next((p for p in self.get_physical_pirates() if p.owner != pirate.owner and p.id == pirate.attack_turns[-1]), None)
             if target_pirate:
                 if self.in_attack_range(pirate, target_pirate) and target_pirate.sober_turns == 0 and target_pirate.defense_turns[-1] != self.turn:  # target not drunk and did not defend and in attack range
                     pirates_to_drunk.add(target_pirate)
+                    if target_pirate.treasure:
+                        # corner case: a pirate that robbed a treasure cannot be robbed of his 'new' treasure if attacked also. treasure goes back to its original place
+                        if pirate.rob_powerup_active_turns > 0 and target_pirate not in robbers:
+                            pirate.treasure = target_pirate.treasure
+                            robbers.append(pirate)
+                        else:
+                            # treasure goes back to its original place and is now available
+                            target_pirate.treasure.is_available = True
+                        # either way, target will not hold a treasure at the end of the turn
+                        target_pirate.treasure = None
 
         for pirate in pirates_to_drunk:
             self.drunk_pirate(pirate)
@@ -1201,24 +1260,25 @@ class Pirates(Game):
             if p.treasure:
                 if p.loc != p.initial_loc:
                 #if not p.loc in [ua.loc for ua in self.unload_areas if ua.owner == p.owner]:
-                    p.treasure_history.append(True)
+                    p.treasure_history.append(p.treasure.value)
                 else:
-                    p.treasure_history.append(False)
+                    p.treasure_history.append(0)
                     # when ship unloads treasure, start counting spawn turns for the treasure
                     p.treasure.spawn_turns = self.treasure_spawn_turns
+                    # update score
+                    self.score[p.owner] += p.treasure.value
+                    # release it
                     p.treasure = None
-                    #update score
-                    self.score[p.owner] += 1
             else:
                 # if pirate doesnt hold a treasure AND is in an available treasure location, pick it up
                 p.treasure = next((t for t in available_treasures
                                         if p.loc == t.initial_loc and p not in self.drunk_pirates),
                                   None)
                 if p.treasure: # drunk pirates cant pick up treasures
-                    p.treasure_history.append(True)
+                    p.treasure_history.append(p.treasure.value)
                     p.treasure.is_available = False
                 else:
-                    p.treasure_history.append(False)
+                    p.treasure_history.append(0)
 
         for t in self.treasures:
             t.is_available_history.append(t.is_available)
@@ -1229,34 +1289,47 @@ class Pirates(Game):
                 t.spawn_turns = -1
 
 
-    def do_items(self):
-        """ Calculates item logic
+    def do_powerups(self):
+        """ Calculates powerup logic
         """
-        available_items = [i for i in self.items if self.turn >= i.start_turn and self.turn <= i.end_turn]
-
+        available_powerups = [pup for pup in self.powerups if self.turn >= pup.start_turn and self.turn < pup.end_turn]
         for p in self.current_pirates.values():
-            # if item already activated
-            if p.attack_item_active_turns > 0:
-                p.attack_item_active_turns -= 1
+            # if powerup already activated
+            if p.attack_powerup_active_turns > 0:
+                p.attack_powerup_active_turns -= 1
             else:
                 p.attack_radius = self.attack_radius
-            if p.defense_item_active_turns > 0:
-                p.defense_item_active_turns -= 1
+            if p.defense_powerup_active_turns > 0:
+                p.defense_powerup_active_turns -= 1
             else:
                 p.defense_expiration_turns = self.defense_expiration_turns
+            if p.rob_powerup_active_turns > 0:
+                p.rob_powerup_active_turns -= 1
+                p.rob_powerup_history.append(True)
+            else:
+                if "rob" in p.powerups: p.powerups.remove("rob")
+                p.rob_powerup_history.append(False)
+            if p.move_powerup_active_turns > 0:
+                p.move_powerup_active_turns -= 1
+                p.move_powerup_history.append(True)
+            else:
+                if p.move_powerup_active_turns == 0:
+                    self.moves_per_player[p.owner] = self.actions_per_turn
+                    p.move_powerup_active_turns = -1
+                p.move_powerup_history.append(False)
+            if p.speed_powerup_active_turns > 0:
+                p.speed_powerup_active_turns -= 1
+                p.speed_powerup_history.append(True)
+            else:
+                if "speed" in p.powerups: p.powerups.remove("speed")
+                p.carry_treasure_speed = 1
+                p.speed_powerup_history.append(False)
 
-            # check if pirate is standing on an item
-            item = next((i for i in available_items if p.loc == i.loc), None)
-            if item:
-                item.end_turn = self.turn
-            if isinstance(item, AttackItem):
-                p.attack_radius = item.attack_radius
-                p.attack_item_active_turns = item.active_turns
-            if isinstance(item, DefenseItem):
-                p.defense_expiration_turns = item.defense_expiration_turns
-                p.defense_item_active_turns = item.active_turns
-            if isinstance(item, ActionItem):
-                pass #todo - item.actions_per_turn
+            # check if pirate is standing on an powerup
+            powerup = next((pup for pup in available_powerups if p.loc == pup.location), None)
+            if powerup:
+                powerup.end_turn = self.turn
+                powerup.activate(p, self)
 
 
     def get_physical_pirates(self):
@@ -1380,7 +1453,7 @@ class Pirates(Game):
         self.do_attack() #handles attacking pirates
         self.do_defense() #handles defending pirates
         self.do_treasures() #handles treasure - collecting and unloading
-        self.do_items() #handles power ups
+        self.do_powerups() #handles powerups
         self.do_spawn() #spawns new pirates
 
 
@@ -1439,6 +1512,7 @@ class Pirates(Game):
         result.append(['spawn_turns', self.spawn_turns])
         result.append(['sober_turns', self.sober_turns])
         result.append(['maxpoints', self.maxpoints])
+        result.append(['randomize_sail_options', self.randomize_sail_options])
         result.append(['actions_per_turn', self.actions_per_turn])
         result.append(['reload_turns', self.reload_turns])
         result.append(['defense_reload_turns', self.defense_reload_turns])
@@ -1567,31 +1641,40 @@ class Pirates(Game):
         # pirates
         replay['ants'] = []
         for pirate in self.all_pirates:
-            pirate_data = [pirate.initial_loc[0], pirate.initial_loc[1], pirate.spawn_turn] #3
+            pirate_data = [pirate.initial_loc[0], pirate.initial_loc[1], pirate.spawn_turn] #2
             if not pirate.die_turn:
-                pirate_data.append(self.turn + 1) #4
+                pirate_data.append(self.turn + 1) #3
             else:
-                pirate_data.append(pirate.die_turn) #4
+                pirate_data.append(pirate.die_turn) #3
 
-            pirate_data.append(pirate.owner) #5
-            pirate_data.append(pirate.orders) #6
-            pirate_data.append(pirate.supporters) #7
-            pirate_data.append(pirate.id) #8
-            pirate_data.append(pirate.reason_of_death) #9
-            pirate_data.append(''.join(['1' if i else '0' for i in pirate.treasure_history])) #10
-            pirate_data.append(pirate.attack_turns) #11
-            pirate_data.append(pirate.defense_turns) #12
-            pirate_data.append(''.join(['1' if i else '0' for i in pirate.drink_history])) #13
-            pirate_data.append(pirate.attack_radius)
+            pirate_data.append(pirate.owner) #4
+            pirate_data.append(pirate.orders) #5
+            pirate_data.append(pirate.supporters) #6
+            pirate_data.append(pirate.id) #7
+            pirate_data.append(pirate.reason_of_death) #8
+            pirate_data.append(''.join([str(i) for i in pirate.treasure_history])) #9
+            pirate_data.append(pirate.attack_turns) #10
+            pirate_data.append(pirate.defense_turns) #11
+            pirate_data.append(''.join(['1' if i else '0' for i in pirate.drink_history])) #12
+            pirate_data.append(pirate.attack_radius_history)
+            pirate_data.append(''.join(['1' if i else '0' for i in pirate.rob_powerup_history]))
+            pirate_data.append(''.join(['1' if i else '0' for i in pirate.move_powerup_history]))
+            pirate_data.append(''.join(['1' if i else '0' for i in pirate.speed_powerup_history]))
+
+
 
             replay['ants'].append(pirate_data)
 
         replay['hills'] = []
         replay['forts'] = []
         replay['treasures'] = []
+        replay['powerups'] = []
 
         for treasure in self.treasures:
-            replay['treasures'].append([treasure.id, treasure.initial_loc, ''.join(['1' if i else '0' for i in treasure.is_available_history])])
+            replay['treasures'].append([treasure.id, treasure.initial_loc, treasure.value, ''.join(['1' if i else '0' for i in treasure.is_available_history])])
+
+        for powerup in self.powerups:
+            replay['powerups'].append([powerup.id, powerup.__class__.__name__, powerup.location, powerup.start_turn, powerup.end_turn])
 
         replay['zones'] = self.zones.values()
         replay['rejected'] = self.rejected_moves
@@ -1642,7 +1725,7 @@ class Pirates(Game):
             print(row)
 
 
-class Item:
+class Powerup:
     def __init__(self, id, loc, start_turn, end_turn, active_turns):
         self.id = id
         self.location = loc
@@ -1650,27 +1733,66 @@ class Item:
         self.end_turn = end_turn
         self.active_turns = active_turns
 
-class AttackItem(Item):
-    def __init__(self, id, loc, start_turn, end_turn, activate_turn, attack_radius):
-        Item.__init__(self, id, loc, start_turn, end_turn, activate_turn)
+class AttackPowerup(Powerup):
+    def __init__(self, id, loc, start_turn, end_turn, active_turns, attack_radius):
+        Powerup.__init__(self, id, loc, start_turn, end_turn, active_turns)
         self.attack_radius = attack_radius
+    def activate(self, pirate, pirates):
+        pirate.attack_radius = self.attack_radius
+        pirate.reload_turns = 0 #no reload turns while having this powerup
+        pirate.attack_powerup_active_turns = self.active_turns
+        pirate.powerups.append("attack")
+    def get_value(self):
+        return self.attack_radius
 
-class DefenseItem(Item):
-    def __init__(self, id, loc, start_turn, end_turn, activate_turn, defense_expiration_turns):
-        Item.__init__(self, id, loc, start_turn, end_turn, activate_turn)
+class DefensePowerup(Powerup):
+    def __init__(self, id, loc, start_turn, end_turn, active_turns, defense_expiration_turns):
+        Powerup.__init__(self, id, loc, start_turn, end_turn, active_turns)
         self.defense_expiration_turns = defense_expiration_turns
+    def activate(self, pirate, pirates):
+        pirate.defense_expiration_turns = self.defense_expiration_turns
+        pirate.defense_powerup_active_turns = self.active_turns
+    def get_value(self):
+        return self.defense_expiration_turns
 
-class ActionItem(Item):
-    def __init__(self, id, loc, start_turn, end_turn, activate_turn, actions_per_turn):
-        Item.__init__(self, id, loc, start_turn, end_turn, activate_turn)
-        self.actions_per_turn = actions_per_turn
+class MovePowerup(Powerup):
+    def __init__(self, id, loc, start_turn, end_turn, active_turns, moves_per_turn):
+        Powerup.__init__(self, id, loc, start_turn, end_turn, active_turns)
+        self.moves_per_turn = moves_per_turn
+    def activate(self, pirate, pirates):
+        pirates.moves_per_player[pirate.owner] = self.moves_per_turn
+        pirate.move_powerup_active_turns = self.active_turns
+    def get_value(self):
+        return self.moves_per_turn
+
+class RobPowerup(Powerup):
+    def __init__(self, id, loc, start_turn, end_turn, active_turns):
+        Powerup.__init__(self, id, loc, start_turn, end_turn, active_turns)
+    def activate(self, pirate, pirates):
+        pirate.rob_powerup_active_turns = self.active_turns
+        pirate.powerups.append("rob")
+    def get_value(self):
+        return None
+
+class SpeedPowerup(Powerup):
+    def __init__(self, id, loc, start_turn, end_turn, active_turns, carry_treasure_speed):
+        Powerup.__init__(self, id, loc, start_turn, end_turn, active_turns)
+        self.carry_treasure_speed = carry_treasure_speed
+    def activate(self, pirate, pirates):
+        pirate.carry_treasure_speed = self.carry_treasure_speed
+        pirate.speed_powerup_active_turns = self.active_turns
+        pirate.powerups.append("speed")
+    def get_value(self):
+        return self.carry_treasure_speed
+
 
 class Treasure:
     # Treasure class
-    def __init__(self, id, loc, pirate=None):
+    def __init__(self, id, loc, value, pirate=None):
         self.id = id
         self.initial_loc = loc
         self.pirate = pirate
+        self.value = int(value)
         self.loc_history = []
         self.loc_history.append(loc)
         self.done = False
@@ -1725,14 +1847,30 @@ class Pirate:
         # self.is_defensive = False
         self.defense_turns = [-1000]
 
-        # defense item
+        # defense powerup
         self.defense_expiration_turns = defense_expiration_turns
         self.defense_expiration_turns_counter = 0
-        self.defense_item_active_turns = 0
+        self.defense_powerup_active_turns = 0
 
-        #attack item
+        #attack powerup
         self.attack_radius = attack_radius
-        self.attack_item_active_turns = 0
+        self.attack_powerup_active_turns = 0
+        self.attack_radius_history = []
+
+        #rob powerup
+        self.rob_powerup_active_turns = 0
+        self.rob_powerup_history = []
+
+        #move powerup
+        self.move_powerup_active_turns = -1
+        self.move_powerup_history = []
+
+        #speed powerup
+        self.carry_treasure_speed = 1
+        self.speed_powerup_active_turns = 0
+        self.speed_powerup_history = []
+
+        self.powerups = []
 
 
     def __str__(self):

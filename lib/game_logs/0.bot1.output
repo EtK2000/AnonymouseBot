@@ -1,632 +1,231 @@
 # turn 1
-o 26 28 nnnnnn
-The order: 'o 23 31 -' is invalid # invalid directions
-The order: 'o 24 30 -' is invalid # invalid directions
-The order: 'o 25 29 -' is invalid # invalid directions
 # turn 2
-o 20 28 nnnnnn
-The order: 'o 23 31 -' is invalid # invalid directions
-The order: 'o 24 30 -' is invalid # invalid directions
-The order: 'o 25 29 -' is invalid # invalid directions
-# turn 3
-o 14 28 nnnnnn
-The order: 'o 23 31 -' is invalid # invalid directions
-The order: 'o 24 30 -' is invalid # invalid directions
-The order: 'o 25 29 -' is invalid # invalid directions
-# turn 4
-o 8 28 nnnnnw
-The order: 'o 23 31 -' is invalid # invalid directions
-The order: 'o 24 30 -' is invalid # invalid directions
-The order: 'o 25 29 -' is invalid # invalid directions
-# turn 5
-o 25 29 a1
-o 3 27 wwwwww
-The order: 'o 23 31 -' is invalid # invalid directions
-The order: 'o 24 30 -' is invalid # invalid directions
-# turn 6
-o 25 29 nnnnn
-o 3 21 s
-The order: 'o 23 31 -' is invalid # invalid directions
-The order: 'o 24 30 -' is invalid # invalid directions
-# turn 7
-o 23 31 a1
-o 24 30 a1
-o 20 29 nnnnn
-o 4 21 s
-# turn 8
-o 15 29 nnnnn
-o 5 21 s
-The order: 'o 24 30 -' is invalid # invalid directions
-# turn 9
-o 10 29 nnnnn
-o 6 21 s
-The order: 'o 24 30 -' is invalid # invalid directions
-# turn 10
-o 5 29 nnwww
-o 7 21 s
-The order: 'o 24 30 -' is invalid # invalid directions
-# turn 11
-o 3 26 wwwww
-o 8 21 s
-The order: 'o 24 30 -' is invalid # invalid directions
-# turn 12
-o 3 21 wwwww
-o 9 21 s
-The order: 'o 24 30 -' is invalid # invalid directions
-# turn 13
-o 24 30 nnnn
-o 3 16 s
-o 10 21 s
-# turn 14
-o 20 30 nnnn
-o 4 16 s
-o 11 21 s
-# turn 15
-o 16 30 nnnn
-o 5 16 s
-o 12 21 s
-# turn 16
-o 12 30 nnnn
-o 6 16 s
-o 13 21 s
-# turn 17
-o 8 30 nnnn
-o 7 16 s
-o 14 21 s
-# turn 18
-o 4 30 nwww
-o 8 16 s
-o 15 21 s
-# turn 19
-o 3 27 wwww
-o 9 16 s
-o 16 21 s
-# turn 20
-o 3 23 wwww
-o 10 16 s
-o 17 21 s
-# turn 21
-o 3 19 wwww
-o 11 16 s
-o 18 21 s
-# turn 22
-o 3 15 wwww
-o 19 21 s
-# turn 23
-o 3 11 s
-o 20 21 s
-# turn 24
-o 4 11 s
-o 21 21 s
-The order: 'o 12 16 nnnn' is invalid # You tried to move a pirate but dont have one at this location
-# turn 25
-o 5 11 s
-o 22 21 s
-# turn 26
-o 6 11 s
-o 23 21 s
-# turn 27
-o 7 11 s
-o 24 21 s
-# turn 28
-o 23 31 nnnn
-o 8 11 s
-o 25 21 s
-# turn 29
-o 19 31 nnnn
-o 9 11 s
-o 26 21 e
-# turn 30
-o 15 31 nnnn
-o 10 11 s
-o 26 22 e
-# turn 31
-o 11 31 nnnn
-o 11 11 s
-o 26 23 e
-# turn 32
-o 7 31 nnww
-o 12 11 s
-o 26 24 e
-# turn 33
-o 5 29 wwww
-o 13 11 s
-o 26 25 e
-# turn 34
-o 5 25 wwww
-o 14 11 s
-o 26 26 e
-# turn 35
-o 5 21 s
-o 15 11 s
-o 26 27 e
-# turn 36
-o 6 21 s
-o 26 28 a1
-# turn 37
-o 7 21 s
-o 26 28 nnnnn
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 38
-o 8 21 s
-o 21 28 nnnnn
-The order: 'o 16 11 a2' is invalid # The pirate is drunk - can't do anything
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 39
-o 9 21 s
-o 16 28 nnnnn
-The order: 'o 16 11 a2' is invalid # The pirate is drunk - can't do anything
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 40
-o 10 21 s
-o 11 28 nnnnn
-The order: 'o 16 11 a2' is invalid # The pirate is drunk - can't do anything
-# turn 41
-o 11 21 s
-o 6 28 nwwww
-The order: 'o 16 11 a2' is invalid # The pirate is drunk - can't do anything
-# turn 42
-o 12 21 s
-o 5 24 wwwww
-The order: 'o 16 11 a2' is invalid # The pirate is drunk - can't do anything
-# turn 43
-o 13 21 s
-o 5 19 wwwww
-# turn 44
-o 14 21 s
-o 5 14 www
-# turn 45
-o 15 21 s
-o 5 11 s
-# turn 46
-o 16 21 s
-o 6 11 s
-# turn 47
-o 17 21 s
-o 7 11 s
-# turn 48
-o 18 21 s
-o 8 11 s
-# turn 49
-o 19 21 s
-o 9 11 s
-# turn 50
-o 20 21 s
-o 10 11 s
-# turn 51
-o 21 21 s
-o 11 11 s
-# turn 52
-o 22 21 s
-o 12 11 s
-# turn 53
-o 23 21 e
-o 13 11 s
-# turn 54
-o 23 22 e
-o 14 11 s
-The order: 'o 16 11 a3' is invalid # The pirate is drunk - can't do anything
-# turn 55
-o 23 23 e
-# turn 56
-o 23 24 e
-o 16 11 neee
-o 15 11 s
-# turn 57
-o 23 25 e
-o 15 14 eeee
-o 16 11 s
-# turn 58
-o 23 26 e
-o 15 18 eee
-o 17 11 s
-# turn 59
-o 15 21 s
-o 18 11 s
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 60
-o 16 21 s
-o 19 11 s
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 61
-o 17 21 s
-o 20 11 s
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 62
-o 18 21 s
-o 21 11 s
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 63
-o 19 21 s
-o 22 11 s
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 64
-o 20 21 s
-o 23 11 s
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 65
-o 21 21 s
-o 24 11 s
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 66
-o 22 21 s
-o 25 11 s
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 67
-o 23 21 s
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 68
-o 24 21 e
-o 26 28 a0
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 69
-o 24 22 e
-o 26 28 nnnnn
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 70
-o 24 23 e
-o 21 28 nnnnn
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 71
-o 24 24 e
-o 16 28 nnnnn
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 72
-o 24 25 e
-o 11 28 nnnnn
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 73
-o 24 26 e
-o 6 28 nwwww
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 74
-o 5 24 www
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 75
-o 5 21 s
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 76
-o 6 21 s
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 77
-o 7 21 s
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 78
-o 8 21 s
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 79
-o 23 27 a0
-o 9 21 s
-The order: 'o 24 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 80
-o 23 27 nnnnn
-o 10 21 s
-The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
-# turn 81
-o 18 27 nnnnn
-o 11 21 s
-The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
-# turn 82
-o 13 27 nnnnn
-o 12 21 s
-The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
-# turn 83
-o 8 27 nnnnn
-o 13 21 s
-The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
-# turn 84
-o 3 27 wwwww
-o 14 21 s
-The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
-# turn 85
-o 3 22 wwwww
-o 15 21 s
-The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
-# turn 86
-o 3 17 wwwww
-o 16 21 s
-The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
-# turn 87
-o 3 12 w
-o 17 21 s
-The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
-# turn 88
-o 3 11 s
-o 18 21 s
-The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
-# turn 89
-o 4 11 s
-o 19 21 s
-The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
-# turn 90
-o 5 11 s
-o 20 21 s
-The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
-# turn 91
-o 6 11 s
-o 21 21 s
-The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
-# turn 92
-o 7 11 s
-o 22 21 s
-The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
-# turn 93
-o 8 11 s
-o 23 21 s
-The order: 'o 24 27 a1' is invalid # The pirate is drunk - can't do anything
-# turn 94
-o 9 11 s
-o 24 27 a1
-o 24 21 s
-# turn 95
-o 10 11 s
-o 25 21 s
-# turn 96
-o 11 11 s
-o 26 21 e
-# turn 97
-o 12 11 s
-o 26 22 e
-# turn 98
-o 13 11 s
-o 26 23 e
-# turn 99
-o 14 11 s
-o 26 24 e
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 100
-o 15 11 s
-o 26 25 e
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 101
-o 16 11 s
-o 26 26 e
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 102
-o 17 11 s
-o 26 27 e
-# turn 103
-o 26 28 a0
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 104
 o 26 28 nnnnnn
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 105
-o 20 28 nnnnnn
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 106
-o 14 28 nnnnnn
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 107
-o 8 28 nnnnnw
-# turn 108
-o 3 27 wwwwww
-# turn 109
-o 3 21 wwwwww
-# turn 110
-o 3 15 wwww
-# turn 111
-o 3 11 s
-# turn 112
-o 4 11 s
-# turn 113
-o 5 11 s
-# turn 114
-o 6 11 s
-# turn 115
-o 24 27 nnnnn
-o 7 11 s
-# turn 116
-o 19 27 nnnnn
-o 8 11 s
-# turn 117
-o 14 27 nnnnn
-o 9 11 s
-# turn 118
-o 9 27 nnnnw
-o 10 11 s
-# turn 119
-o 5 26 wwwww
-o 11 11 s
-# turn 120
-o 5 21 wwwww
-o 12 11 s
-# turn 121
-o 5 16 wwwww
-o 13 11 s
-# turn 122
-o 5 11 s
-o 14 11 s
-# turn 123
-o 18 11 nnne
-o 6 11 s
-o 15 11 s
-# turn 124
-o 15 12 eeee
-o 7 11 s
-o 16 11 s
-# turn 125
-o 15 16 eeee
-o 8 11 s
-o 17 11 s
-# turn 126
-o 15 20 e
-o 9 11 s
-o 18 11 s
-# turn 127
-o 15 21 s
-o 10 11 s
-o 19 11 s
-# turn 128
-o 16 21 s
-o 11 11 s
-o 20 11 s
-The order: 'o 12 16 a3' is invalid # You tried to move a pirate but dont have one at this location
-# turn 129
-o 17 21 s
-o 12 11 s
-o 21 11 s
-The order: 'o 12 16 a3' is invalid # You tried to move a pirate but dont have one at this location
-# turn 130
-o 18 21 s
-o 13 11 s
-o 22 11 s
-The order: 'o 12 16 a3' is invalid # You tried to move a pirate but dont have one at this location
-# turn 131
-o 19 21 s
-o 14 11 s
-o 23 11 s
-The order: 'o 12 16 a3' is invalid # You tried to move a pirate but dont have one at this location
-# turn 132
-o 20 21 s
-o 15 11 s
-o 24 11 s
-# turn 133
-o 21 21 s
-o 16 11 s
-o 25 11 s
-# turn 134
-o 22 21 s
-o 17 11 s
-o 26 11 e
-# turn 135
+# turn 3
+o 20 28 nnwwww
+# turn 4
+o 18 24 wwwwww
+# turn 5
+o 18 18 s
+# turn 6
+o 19 18 s
+# turn 7
+o 20 18 s
+# turn 8
+o 21 18 s
+# turn 9
+o 22 18 s
+# turn 10
+o 23 31 nnnnnw
+# turn 11
+o 18 30 wwwwww
+# turn 12
+o 18 24 swwwww
+# turn 13
+o 19 19 a1
+# turn 14
+o 19 19 nw
+# turn 15
+# turn 16
+o 23 31 nnnnnw
+# turn 17
+o 18 30 wwwwww
+# turn 18
+o 18 24 wwwwww
+# turn 19
+o 18 18 s
+# turn 20
+# turn 21
+# turn 22
+# turn 23
+# turn 24
+# turn 25
+# turn 26
+# turn 27
+# turn 28
+# turn 29
+# turn 30
+o 23 18 nnwwww
+# turn 31
+o 21 14 a0
+# turn 32
+o 21 14 nnneee
+# turn 33
+o 18 17 e
+# turn 34
+o 18 18 e
+# turn 35
+o 18 19 s
+# turn 36
+o 19 19 s
+# turn 37
+# turn 38
+# turn 39
+# turn 40
+o 19 18 a1
+# turn 41
+o 19 18 n
+# turn 42
+o 18 18 s
+# turn 43
+o 19 18 s
+# turn 44
+o 20 18 s
+# turn 45
+o 21 18 s
+# turn 46
+o 22 18 s
+# turn 47
+o 23 18 e
+# turn 48
+o 23 19 e
+# turn 49
+o 23 20 e
+# turn 50
 o 23 21 e
-o 18 11 s
-o 26 12 e
-# turn 136
+# turn 51
 o 23 22 e
-o 19 11 s
-o 26 13 e
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 137
+# turn 52
 o 23 23 e
-o 20 11 s
-o 26 14 e
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 138
+# turn 53
 o 23 24 e
-o 21 11 s
-o 26 15 e
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 139
+# turn 54
 o 23 25 e
-o 22 11 s
-o 26 16 e
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 140
-o 23 26 e
-o 23 11 s
-o 26 17 e
-# turn 141
-o 24 11 e
+# turn 55
+# turn 56
+# turn 57
+o 20 19 nnw
+# turn 58
+o 18 18 s
+# turn 59
+o 19 18 s
+# turn 60
+o 20 18 s
+# turn 61
+o 21 18 w
+# turn 62
+o 21 17 a0
+# turn 63
+o 21 17 nnne
+# turn 64
+# turn 65
+o 26 28 nnnnnn
+# turn 66
+o 20 28 nnwwww
+# turn 67
+o 18 24 wwwwww
+# turn 68
+o 18 18 s
+# turn 69
+# turn 70
+# turn 71
+# turn 72
+# turn 73
+# turn 74
+# turn 75
+o 23 26 nnnnww
+# turn 76
+o 19 24 swwwww
+# turn 77
+o 20 19 swwwww
+# turn 78
+o 21 14 a1
+# turn 79
+o 21 14 nnneee
+# turn 80
+o 18 17 e
+# turn 81
+o 18 18 e
+# turn 82
+o 18 19 s
+# turn 83
+o 19 19 s
+# turn 84
+o 20 19 s
+# turn 85
+o 21 19 s
+# turn 86
+# turn 87
+# turn 88
+# turn 89
+o 19 18 a0
+# turn 90
+o 19 18 n
+# turn 91
+o 18 18 s
+# turn 92
+o 19 18 s
+# turn 93
+o 20 18 s
+# turn 94
+o 21 18 s
+# turn 95
+o 22 18 s
+# turn 96
+o 23 18 s
+# turn 97
+o 24 18 s
+# turn 98
+o 25 18 s
+# turn 99
 o 26 18 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 142
-o 24 12 e
+# turn 100
 o 26 19 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 143
-o 24 13 e
-o 26 20 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 144
-o 24 14 e
-o 26 21 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 12 16 a2' is invalid # You tried to move a pirate but dont have one at this location
-# turn 145
-o 24 15 e
-o 26 22 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 146
-o 24 16 e
-o 26 23 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 147
-o 24 17 e
-o 26 24 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 148
-o 24 18 e
-o 26 25 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 149
-o 24 19 e
-o 26 26 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 150
-o 24 20 e
-o 26 27 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-# turn 151
-o 24 21 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
-# turn 152
-o 24 22 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
-# turn 153
-o 24 23 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
-# turn 154
-o 24 24 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
-# turn 155
-o 24 25 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
-# turn 156
-o 24 26 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
-# turn 157
-o 24 27 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
-# turn 158
-o 24 28 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
-# turn 159
-o 24 29 e
-The order: 'o 23 27 a0' is invalid # The pirate is drunk - can't do anything
-The order: 'o 26 28 a0' is invalid # The pirate is drunk - can't do anything
-# turn 160
-The order: 'o 23 27 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 26 28 a1' is invalid # The pirate is drunk - can't do anything
-The order: 'o 24 30 a1' is invalid # You tried to move a pirate but dont have one at this location
-# turn 161
-o 23 27 a1
-o 24 30 a1
-The order: 'o 26 28 a1' is invalid # The pirate is drunk - can't do anything
-# turn 162
-o 24 30 nnnnnn
-The order: 'o 23 27 -' is invalid # invalid directions
-The order: 'o 26 28 a1' is invalid # The pirate is drunk - can't do anything
-# turn 163
-o 18 30 nnnnnn
-The order: 'o 23 27 -' is invalid # invalid directions
-The order: 'o 26 28 a1' is invalid # The pirate is drunk - can't do anything
-# turn 164
-o 12 30 nnnnnn
-The order: 'o 23 27 -' is invalid # invalid directions
-The order: 'o 26 28 a1' is invalid # The pirate is drunk - can't do anything
-# turn 165
-o 6 30 nnnnnw
-The order: 'o 23 27 -' is invalid # invalid directions
-The order: 'o 26 28 a1' is invalid # The pirate is drunk - can't do anything
+# turn 101
+# turn 102
+# turn 103
+# turn 104
+# turn 105
+# turn 106
+o 22 19 nnnwww
+# turn 107
+o 19 16 s
+# turn 108
+o 20 16 s
+# turn 109
+o 21 16 a1
+# turn 110
+o 21 16 nnnee
+# turn 111
+# turn 112
+o 23 31 nnnnnw
+# turn 113
+o 18 30 wwwwww
+# turn 114
+o 18 24 wwwwww
+# turn 115
+o 18 18 s
+# turn 116
+o 19 18 s
+# turn 117
+o 20 18 s
+# turn 118
+o 21 18 s
+# turn 119
+o 22 18 s
+# turn 120
+o 23 18 e
+# turn 121
+o 23 19 e
+# turn 122
+o 23 20 e
+# turn 123
+o 23 21 e
+# turn 124
+o 23 22 e
+# turn 125
+o 23 23 e
+# turn 126
+o 23 24 e
+# turn 127
+o 23 25 e
+# turn 128
+o 23 26 e
+# turn 129
+o 23 27 e
+# turn 130
+o 23 28 e
+# turn 131
+o 23 29 e
+# turn 132
+o 23 30 e

@@ -24,7 +24,9 @@
                     <div class="title">{{visualizer.state.replay.meta['playernames'][0]}} </div>
                     <div class="progress">
                         <div class="ball">{{visualizer.state.replay.scores[turn][0]}}</div>
-                        <div class="in" style="height: {{(visualizer.state.replay.scores[turn][0]*71 / maxpoints) + '%'}}; background-image: url(../visualizer/data/img/ScoreBars/ScoreBar_1.png);"><i></i></div>
+                        <div class="in" style="height: {{visualizer.state.replay.scores[turn][0] > maxpoints ? (69+'%') : (visualizer.state.replay.scores[turn][0]*69 / maxpoints) + '%'}}; background-image: url(../visualizer/data/img/ScoreBars/ScoreBar_1.png);">
+                            <i></i>
+                        </div>
                     </div>
                 </div>
                 <div class="code pull-left debug-visible">
@@ -51,7 +53,7 @@
                     <div class="title">{{ visualizer.state.replay.meta['playernames'][1]}} </div>
                     <div class="progress">
                         <div class="ball">{{visualizer.state.replay.scores[turn][1]}}</div>
-                        <div class="in" style="height: {{(visualizer.state.replay.scores[turn][1]*71 / maxpoints) + '%'}}; background-image: url(../visualizer/data/img/ScoreBars/ScoreBar_2.png)"><i></i></div>
+                        <div class="in" style="height: {{visualizer.state.replay.scores[turn][1] > maxpoints ? (69+'%') : (visualizer.state.replay.scores[turn][1]*69 / maxpoints) + '%'}}; background-image: url(../visualizer/data/img/ScoreBars/ScoreBar_2.png)"><i></i></div>
                     </div>
                 </div>
                 <div class="code pull-right debug-visible">
