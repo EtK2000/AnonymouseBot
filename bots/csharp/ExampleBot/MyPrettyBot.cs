@@ -99,7 +99,7 @@ namespace ExampleBot
 				game.Debug("State on Pirate " + P.Id + " cannot shift from " + s.ToString() + " to defended!");
 				return false;
 			}
-			if (P.ReloadTurns > 0)
+			if (P.DefenseReloadTurns > 0)
 			{
 				game.Debug("Pirate " + P.Id + " cannot defend, no ammo!");
 				return false;
@@ -314,7 +314,7 @@ namespace ExampleBot
 	}
 
 	// this is the actual AI
-	public class MyBotV5 : IPirateBot
+	public class MyBot : IPirateBot
 	{
 		private static bool panic, nowhere;// TODO: make nowhere mode do something...
 
@@ -325,43 +325,40 @@ namespace ExampleBot
 		// this is the actual turn
 		public void DoTurn(IPirateGame game)
 		{
-
-			if (game.GetTurn() == 1)
-				chooseMap(game);
-			//if (game.GetTurn() > 710 && game.GetTurn() < 740)
-			//	return;
-
-			nowhere = inNowhereMode(game);
-			if (nowhere)
-				game.Debug("ACTIVATING NOWHERE MODE!!!");
-
-			panic = inPanicMode(game);
-			if (panic)
-				game.Debug("ACTIVATING PANIC MODE!!!");
-
-			PirateContainer.init(game);
-			QueuedAttack.init();
-			QueuedMotion.init();
 			int remaining = game.GetActionsPerTurn();
-			int ships = game.AllMyPirates().Count;
 
 			try
 			{
+				if (game.GetTurn() == 1)
+					chooseMap(game);
+
+				nowhere = inNowhereMode(game);
+				if (nowhere)
+					game.Debug("ACTIVATING NOWHERE MODE!!!");
+
+				panic = inPanicMode(game);
+				if (panic)
+					game.Debug("ACTIVATING PANIC MODE!!!");
+
+				PirateContainer.init(game);
+				QueuedAttack.init();
+				QueuedMotion.init();
+				int ships = game.AllMyPirates().Count;
+
 				PirateContainer[] ps = new PirateContainer[ships];
 				int[] ds = new int[ships];
 				Treasure[] ts = new Treasure[ships];
-				calcClosest(game, ships, ref  ps, ref ds, ref ts); // calculate the closest treasure to ps[i]
+				calcBestTreasure(game, ships, ref  ps, ref ds, ref ts); // calculate the closest treasure to ps[i]
+				bbtreasure(game, ref remaining); // move Pirates that have treasures towards the base
 				calcKamikazes(ps, ref ts, ref ds, game); // control the kamikazes
 
 
-				bbtreasure(game, ref remaining); // move Pirates that have treasures towards the base
+				//bbtreasure(game, ref remaining); // move Pirates that have treasures towards the base
 
 
 				Pirate k = null, tar = null;
 				if (panic)
-				{
 					S_and_D(game, ref tar, ref k); // search and destroy, TODO: prioritise this!!!
-				}
 
 				List<int> dss = sortInto(ds);// sort the ds into the dss
 
@@ -376,7 +373,13 @@ namespace ExampleBot
 					{
 						if (game.Treasures().Count > 0)// use typical motion
 						{
-							int mv = move(ps[i], ts[i].Location, remaining, game);
+							Location l = powerup(ps[i].P.Location, ts[i].Location, game);
+							int mv;
+							if (l != null)
+								mv = move(ps[i], l, remaining, game);
+							else
+								mv = move(ps[i], ts[i].Location, remaining, game);
+
 							if (mv > 0)
 							{
 								remaining -= mv;
@@ -554,15 +557,12 @@ namespace ExampleBot
 			return 0;
 		}
 
-
-		//-----------------------------------------------------------------------------------------------------------------------------------Management functions:
-
 		private void chooseMap(IPirateGame game)
 		{
 			string ts = "";
 			foreach (Treasure t in game.Treasures())
 				ts += t.ToString();
-			string map = string.Format("{0}{1}{2}{3}", new object[] { game.Treasures().Count, ts, game.GetRows(), game.GetCols() });
+			int map = string.Format("{0}{1}{2}{3}", new object[] { game.Treasures().Count, ts, game.GetRows(), game.GetCols() }).GetHashCode();
 			//game.Debug("map: " + map);
 			game.Debug("map: " + map.GetHashCode());
 
@@ -570,18 +570,26 @@ namespace ExampleBot
 			Location l = new Location(1, 1);
 			deadMap = (game.Treasures().Count == 1 && game.AllMyPirates().Count == game.AllEnemyPirates().Count);
 
-			if (map == "19<Treasure ID:0 LOC:(1, 14), VAL:1><Treasure ID:1 LOC:(1, 17), VAL:1><Treasure ID:2 LOC:(3, 17), VAL:1><Treasure ID:3 LOC:(5, 17), VAL:1><Treasure ID:4 LOC:(7, 17), VAL:1><Treasure ID:5 LOC:(9, 17), VAL:1><Treasure ID:6 LOC:(11, 17), VAL:1><Treasure ID:7 LOC:(12, 15), VAL:1><Treasure ID:8 LOC:(13, 16), VAL:1><Treasure ID:9 LOC:(14, 17), VAL:1><Treasure ID:10 LOC:(15, 18), VAL:1><Treasure ID:11 LOC:(16, 19), VAL:1><Treasure ID:12 LOC:(17, 17), VAL:1><Treasure ID:13 LOC:(19, 17), VAL:1><Treasure ID:14 LOC:(21, 17), VAL:1><Treasure ID:15 LOC:(23, 17), VAL:1><Treasure ID:16 LOC:(25, 17), VAL:1><Treasure ID:17 LOC:(27, 17), VAL:1><Treasure ID:18 LOC:(27, 20), VAL:1>2935")
+			if (map == -918018829)
 				deadMap = true;
 
-			if (!deadMap) rand = new Random(79409223);//12486534
-			else rand = new Random(12486534);
+			if (!deadMap)
+				rand = new Random(101010);//79409223);//12486534
+			else
+				rand = new Random(12486534);
 
 			game.Debug((deadMap ? "DEADMAP!!!" : "NIE!"));
+
+			if (map == 1512814401)
+				throw new Exception("skip first turn here");
 		} //chooses map
 
 		private bool inPanicMode(IPirateGame game)
 		{
-			return (((game.Treasures().Count == 0 || game.GetEnemyScore() >= (game.GetMaxPoints() - 2))) && game.EnemyPiratesWithTreasures().Count > 0);
+			int tv = 0;
+			foreach (Pirate p in game.EnemyPiratesWithTreasures())
+				tv += p.TreasureValue;
+			return (game.GetEnemyScore() + tv >= game.GetMaxPoints() || (tv > 0 && game.Treasures().Count == 0));
 		} // checks wether to activate panic mode
 
 		private bool inNowhereMode(IPirateGame game)
@@ -589,7 +597,7 @@ namespace ExampleBot
 			return (game.GetEnemyScore() == game.GetMyScore() && game.GetTurn() == (game.GetMaxTurns() / 3));
 		} // checks wether to activate nowhere mode
 
-		private void calcClosest(IPirateGame game, int ships, ref PirateContainer[] ps, ref int[] ds, ref Treasure[] ts)
+		private void calcBestTreasure(IPirateGame game, int ships, ref PirateContainer[] ps, ref int[] ds, ref Treasure[] ts)
 		{
 			for (int i = 0; i < ships; i++)
 			{
@@ -597,9 +605,10 @@ namespace ExampleBot
 				ds[i] = int.MaxValue;
 				foreach (Treasure t in game.Treasures())
 				{
-					if (game.Distance(ps[i].P, t) < ds[i])
+					int d = game.Distance(ps[i].P, t) / t.Value;
+					if (d < ds[i])
 					{
-						ds[i] = game.Distance(ps[i].P, t);
+						ds[i] = d;
 						ts[i] = t;
 					}
 				}
@@ -659,5 +668,31 @@ namespace ExampleBot
 					remaining -= move(p, p.P.InitialLocation, Math.Min(p.P.CarryTreasureSpeed, remaining), game, true);
 			}
 		}  // makes ships loaded with treasure return to base
+
+		private Location powerup(Location s, Location l, IPirateGame game)
+		{
+			List<Powerup> conts = new List<Powerup>();
+
+			foreach (Powerup p in game.Powerups())
+			{
+				int max = Math.Max(s.Row, l.Row);
+				int mix = Math.Min(s.Row, l.Row);
+				int may = Math.Max(s.Col, l.Col);
+				int miy = Math.Min(s.Col, l.Col);
+
+				if (max - mix >= p.Location.Row - mix && p.Location.Row - mix >= 0// rows contains
+					&& may - miy >= p.Location.Col - miy && p.Location.Col - miy >= 0)// cols contains
+					conts.Add(p);
+			}
+
+			if (conts.Count == 0)
+				return null;
+
+			int[] ds = new int[conts.Count];
+			for (int i = 0; i < conts.Count; i++)
+				ds[i] = game.Distance(s, conts[i].Location);
+
+			return conts[sortInto(ds)[0]].Location;
+		}
 	}
 }
