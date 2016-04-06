@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Pirates;
 
-namespace ExampleBot
+namespace ExampleBotV3
 {
     public class MyBotV3 : Pirates.IPirateBot
     {

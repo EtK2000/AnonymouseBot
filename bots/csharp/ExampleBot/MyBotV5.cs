@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pirates;
 
-namespace ExampleBot
+namespace ExampleBotV5
 {
 	// this class manages the queued action for the given Pirate
 	internal class PirateContainer
@@ -316,7 +316,7 @@ namespace ExampleBot
 	}
 
 	// this is the actual AI
-	public class MyBot : IPirateBot
+	public class MyBotV5 : IPirateBot
 	{
 		private static bool panic, nowhere;// TODO: make nowhere mode do something...
 
@@ -401,10 +401,13 @@ namespace ExampleBot
 					// find closest Pirate
 					foreach (PirateContainer p in PirateContainer.free)// notice all pirates with Treasure already moved, see: ltp
 					{
+						game.Debug("panic->k testing for " + p.P.Id + " | " + d);
+						game.Debug(p.AVALIBLE + " && " + (p.P.ReloadTurns < mx) + " && " + (d > game.Distance(p.P, tar)));
 						if (p.AVALIBLE && p.P.ReloadTurns < mx && d > game.Distance(p.P, tar))
 						{
 							d = game.Distance(p.P, tar);
 							k = p.P;
+							game.Debug("panic->k = " + p.P.Id + " | " + d);
 						}
 					}
 					if (k == null)// no Pirate with ammo, so choose the closest to the InitialLocation then move to there
