@@ -43,7 +43,8 @@ namespace Main
 			sw.Close();
 
 			// clear the logs from the last simulation
-			Directory.Delete(dir + @"lib\game_logs", true);
+			if (Directory.Exists(dir + @"lib\game_logs"))
+				Directory.Delete(dir + @"lib\game_logs", true);
 
 			// run the simulation
 			Process proc = new Process
