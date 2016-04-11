@@ -19,19 +19,11 @@ namespace ExampleBot
 		public static List<PirateContainer> kamikazes;
 		public static List<PirateContainer> withTreasure;// list of all Pirates that have Treasure
 
-		private static int remainingMoves;// number of remaining allowed moves
-
 		public static void init(IPirateGame game)
 		{
 			free = new List<PirateContainer>();
 			kamikazes = new List<PirateContainer>();
 			withTreasure = new List<PirateContainer>();
-			remainingMoves = game.GetActionsPerTurn();
-		}
-
-		public static int GetRemainingMoves()
-		{
-			return remainingMoves;
 		}
 
 		// instance variables
@@ -113,7 +105,7 @@ namespace ExampleBot
 			return true;
 		}
 
-		public bool move(Location l, IPirateGame game)
+		public bool move(Location l, IPirateGame game, int remaining)
 		{
 			if (s != State.none && s != State.treasure)
 			{
@@ -121,7 +113,7 @@ namespace ExampleBot
 				return false;
 			}
 			int d = game.Distance(P, l);
-			if (d > remainingMoves || (P.HasTreasure && d > 1))
+			if (d > remaining || (P.HasTreasure && d > P.CarryTreasureSpeed))
 			{
 				game.Debug("Pirate " + P.Id + " cannot move, not enough moves!");
 				return false;
@@ -134,7 +126,7 @@ namespace ExampleBot
 			return true;
 		}
 
-		public bool move1(Location l, IPirateGame game)
+		public bool move1(Location l, IPirateGame game, int remaining)
 		{
 			if (s != State.none && s != State.treasure && s != State.moved)
 			{
@@ -142,7 +134,7 @@ namespace ExampleBot
 				return false;
 			}
 			int d = game.Distance(P, l);
-			if (d > remainingMoves || (P.HasTreasure && d > 1))
+			if (d > remaining || (P.HasTreasure && d > P.CarryTreasureSpeed))
 			{
 				game.Debug("Pirate " + P.Id + " cannot move, not enough moves!");
 				return false;
@@ -313,6 +305,8 @@ namespace ExampleBot
 			queued.Add(this);
 		}
 	}
+
+	// string b64 to char[] --> Convert.FromBase64String(s);
 
 	// this is the actual AI
 	public class MyBot : IPirateBot
@@ -598,7 +592,7 @@ namespace ExampleBot
 
 				//if (game.GetMyPirate(i).HasTreasure)
 				//break;
-				ps[i] = new PirateContainer(game.GetMyPirate(i), true);//(i % 2) == 1
+				ps[i] = new PirateContainer(game.GetMyPirate(i), (i % 2) == 1);
 				ds[i] = int.MaxValue;
 				foreach (Powerup p in pu)
 				{
@@ -623,14 +617,8 @@ namespace ExampleBot
 			if (moves == 0 || (!p.AVALIBLE && p.S != PirateContainer.State.moved) || p.P.Location.Equals(t))
 				return 0;
 
-			// calculate the best route
-			/*foreach (Location l in game.GetSailOptions(p.P, t, moves))
-			{
-				if (!QueuedMotion.isOccupied(l, game, dontHitEnemies) && p.move(l, game))
-					return game.Distance(p.P, l);
-			}*/
 			var X = from l in game.GetSailOptions(p.P, t, moves)
-					where (!QueuedMotion.isOccupied(l, game, dontHitEnemies) && p.move1(l, game))
+					where (!QueuedMotion.isOccupied(l, game, dontHitEnemies) && p.move1(l, game, moves))
 					select l;
 
 			if (X.Count() > 0)
